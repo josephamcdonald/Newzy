@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019. josephamcdonald - All Rights Reserved
+  ~  Unauthorized copying of this file, via any medium is strictly prohibited
+  ~  Proprietary and confidential
+  ~  Written by josephamcdonald
+  -->
+
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        android:icon="@drawable/ic_key"
+        android:key="@string/settings_api_key_key"
+        android:summary="@string/provide_api_key"
+        android:title="@string/settings_api_key_label"
+        app:useSimpleSummaryProvider="true" />
+
+    <SwitchPreference
+        android:defaultValue="@string/settings_show_support_default"
+        android:icon="@drawable/ic_support"
+        android:key="@string/settings_show_support_key"
+        android:summary="@string/support_screen_summary"
+        android:title="@string/settings_show_support_label" />
+
+    <ListPreference
+        android:defaultValue="@string/settings_country_default"
+        android:entries="@array/settings_country_labels"
+        android:entryValues="@array/settings_country_values"
+        android:icon="@drawable/ic_news"
+        android:key="@string/settings_country_key"
+        android:title="@string/settings_country_label"
+        app:useSimpleSummaryProvider="true" />
+
+    <PreferenceCategory
+        android:title="@string/titles_and_searches"
+        app:iconSpaceReserved="false">
+        <EditTextPreference
+            android:icon="@drawable/ic_search"
+            android:key="@string/settings_newzy_title_one_key"
+            android:summary="@string/provide_newzy_title_one"
+            android:title="@string/settings_newzy_title_one_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="@string/settings_newzy_search_one_key"
+            android:summary="@string/provide_newzy_search_one"
+            android:title="@string/settings_newzy_search_one_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:icon="@drawable/ic_search"
+            android:key="@string/settings_newzy_title_two_key"
+            android:summary="@string/provide_newzy_title_two"
+            android:title="@string/settings_newzy_title_two_label"
+            app:allowDividerAbove="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="@string/settings_newzy_search_two_key"
+            android:summary="@string/provide_newzy_search_two"
+            android:title="@string/settings_newzy_search_two_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:icon="@drawable/ic_search"
+            android:key="@string/settings_newzy_title_three_key"
+            android:summary="@string/provide_newzy_title_three"
+            android:title="@string/settings_newzy_title_three_label"
+            app:allowDividerAbove="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="@string/settings_newzy_search_three_key"
+            android:summary="@string/provide_newzy_search_three"
+            android:title="@string/settings_newzy_search_three_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:icon="@drawable/ic_search"
+            android:key="@string/settings_newzy_title_four_key"
+            android:summary="@string/provide_newzy_title_four"
+            android:title="@string/settings_newzy_title_four_label"
+            app:allowDividerAbove="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="@string/settings_newzy_search_four_key"
+            android:summary="@string/provide_newzy_search_four"
+            android:title="@string/settings_newzy_search_four_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:icon="@drawable/ic_search"
+            android:key="@string/settings_newzy_title_five_key"
+            android:summary="@string/provide_newzy_title_five"
+            android:title="@string/settings_newzy_title_five_label"
+            app:allowDividerAbove="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="@string/settings_newzy_search_five_key"
+            android:summary="@string/provide_newzy_search_five"
+            android:title="@string/settings_newzy_search_five_label"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/organize"
+        app:iconSpaceReserved="false">
+        <ListPreference
+            android:defaultValue="@string/settings_sort_newzys_by_default"
+            android:entries="@array/settings_sort_newzys_by_labels"
+            android:entryValues="@array/settings_sort_newzys_by_values"
+            android:icon="@drawable/ic_sort"
+            android:key="@string/settings_sort_newzys_by_key"
+            android:title="@string/settings_sort_newzys_by_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:defaultValue="@string/settings_newzys_to_retrieve_default"
+            android:entries="@array/settings_newzys_to_retrieve_labels"
+            android:entryValues="@array/settings_newzys_to_retrieve_values"
+            android:icon="@drawable/ic_list_numbered"
+            android:key="@string/settings_newzys_to_retrieve_key"
+            android:title="@string/settings_newzys_to_retrieve_label"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/optional"
+        app:iconSpaceReserved="false">
+        <EditTextPreference
+            android:icon="@drawable/ic_date_from"
+            android:key="@string/settings_newzys_from_date_key"
+            android:summary="@string/provide_optional_from_date"
+            android:title="@string/settings_newzys_from_date_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:icon="@drawable/ic_date_to"
+            android:key="@string/settings_newzys_to_date_key"
+            android:summary="@string/provide_optional_to_date"
+            android:title="@string/settings_newzys_to_date_label"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

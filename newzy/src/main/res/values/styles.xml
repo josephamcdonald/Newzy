@@ -1,0 +1,87 @@
+<!--
+  ~ Copyright (c) 2019. josephamcdonald - All Rights Reserved
+  ~  Unauthorized copying of this file, via any medium is strictly prohibited
+  ~  Proprietary and confidential
+  ~  Written by josephamcdonald
+  -->
+
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/fira_sans</item>
+        <item name="cardViewStyle">@style/CardView.Light</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <!-- Navigation header theme. -->
+    <style name="AppTheme.NavHeader">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- Navigation item theme. -->
+    <style name="AppTheme.NavItem">
+        <item name="android:textSize">@dimen/text_standard</item>
+    </style>
+
+    <!-- CardView theme. -->
+    <style name="AppTheme.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Remove the action bar. -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- Newzy item standard text layout, size and color. -->
+    <style name="item_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorItemText</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!-- Newzy item title text layout, size and color. -->
+    <style name="item_text_title" parent="item_text">
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">@dimen/text_standard</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Newzy item tablet text layout, size and color. -->
+    <style name="item_text_sw600dp" parent="item_text">
+        <item name="android:textSize">@dimen/text_small_sw600dp</item>
+    </style>
+
+    <!-- Newzy item tablet title text layout, size and color. -->
+    <style name="item_text_title_sw600dp" parent="item_text_title">
+        <item name="android:textSize">@dimen/text_standard_sw600dp</item>
+    </style>
+
+    <!-- Newzy item tablet text layout, size and color. -->
+    <style name="item_text_sw720dp" parent="item_text">
+        <item name="android:textSize">@dimen/text_small_sw720dp</item>
+    </style>
+
+    <!-- Newzy item tablet title text layout, size and color. -->
+    <style name="item_text_title_sw720dp" parent="item_text_title">
+        <item name="android:textSize">@dimen/text_standard_sw720dp</item>
+    </style>
+
+</resources>

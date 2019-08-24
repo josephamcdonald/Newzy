@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019. josephamcdonald - All Rights Reserved
+  ~  Unauthorized copying of this file, via any medium is strictly prohibited
+  ~  Proprietary and confidential
+  ~  Written by josephamcdonald
+  -->
+
+<resources>
+    <string-array name="settings_sort_newzys_by_labels">
+        <item>@string/settings_sort_newzys_by_newest_label</item>
+        <item>@string/settings_sort_newzys_by_relevancy_label</item>
+        <item>@string/settings_sort_newzys_by_popularity_label</item>
+    </string-array>
+
+    <string-array name="settings_sort_newzys_by_values">
+        <item>@string/settings_sort_newzys_by_newest_value</item>
+        <item>@string/settings_sort_newzys_by_relevancy_value</item>
+        <item>@string/settings_sort_newzys_by_popularity_value</item>
+    </string-array>
+
+    <string-array name="settings_newzys_to_retrieve_labels">
+        <item>@string/settings_10_newzys_label</item>
+        <item>@string/settings_20_newzys_label</item>
+        <item>@string/settings_50_newzys_label</item>
+        <item>@string/settings_100_newzys_label</item>
+    </string-array>
+
+    <string-array name="settings_newzys_to_retrieve_values">
+        <item>@string/settings_10_newzys_value</item>
+        <item>@string/settings_20_newzys_value</item>
+        <item>@string/settings_50_newzys_value</item>
+        <item>@string/settings_100_newzys_value</item>
+    </string-array>
+
+    <string-array name="settings_country_labels">
+        <item>@string/settings_ar_label</item>
+        <item>@string/settings_au_label</item>
+        <item>@string/settings_at_label</item>
+        <item>@string/settings_be_label</item>
+        <item>@string/settings_br_label</item>
+        <item>@string/settings_bg_label</item>
+        <item>@string/settings_ca_label</item>
+        <item>@string/settings_cn_label</item>
+        <item>@string/settings_co_label</item>
+        <item>@string/settings_cu_label</item>
+        <item>@string/settings_cz_label</item>
+        <item>@string/settings_eg_label</item>
+        <item>@string/settings_fr_label</item>
+        <item>@string/settings_de_label</item>
+        <item>@string/settings_gr_label</item>
+        <item>@string/settings_hk_label</item>
+        <item>@string/settings_hu_label</item>
+        <item>@string/settings_in_label</item>
+        <item>@string/settings_id_label</item>
+        <item>@string/settings_ie_label</item>
+        <item>@string/settings_il_label</item>
+        <item>@string/settings_it_label</item>
+        <item>@string/settings_jp_label</item>
+        <item>@string/settings_lv_label</item>
+        <item>@string/settings_lt_label</item>
+        <item>@string/settings_my_label</item>
+        <item>@string/settings_mx_label</item>
+        <item>@string/settings_ma_label</item>
+        <item>@string/settings_nl_label</item>
+        <item>@string/settings_nz_label</item>
+        <item>@string/settings_ng_label</item>
+        <item>@string/settings_no_label</item>
+        <item>@string/settings_ph_label</item>
+        <item>@string/settings_pl_label</item>
+        <item>@string/settings_pt_label</item>
+        <item>@string/settings_ro_label</item>
+        <item>@string/settings_ru_label</item>
+        <item>@string/settings_sa_label</item>
+        <item>@string/settings_rs_label</item>
+        <item>@string/settings_sg_label</item>
+        <item>@string/settings_sk_label</item>
+        <item>@string/settings_si_label</item>
+        <item>@string/settings_za_label</item>
+        <item>@string/settings_kr_label</item>
+        <item>@string/settings_se_label</item>
+        <item>@string/settings_ch_label</item>
+        <item>@string/settings_tw_label</item>
+        <item>@string/settings_th_label</item>
+        <item>@string/settings_tr_label</item>
+        <item>@string/settings_ae_label</item>
+        <item>@string/settings_ua_label</item>
+        <item>@string/settings_gb_label</item>
+        <item>@string/settings_us_label</item>
+        <item>@string/settings_ve_label</item>
+    </string-array>
+
+    <string-array name="settings_country_values">
+        <item>@string/settings_ar_value</item>
+        <item>@string/settings_au_value</item>
+        <item>@string/settings_at_value</item>
+        <item>@string/settings_be_value</item>
+        <item>@string/settings_br_value</item>
+        <item>@string/settings_bg_value</item>
+        <item>@string/settings_ca_value</item>
+        <item>@string/settings_cn_value</item>
+        <item>@string/settings_co_value</item>
+        <item>@string/settings_cu_value</item>
+        <item>@string/settings_cz_value</item>
+        <item>@string/settings_eg_value</item>
+        <item>@string/settings_fr_value</item>
+        <item>@string/settings_de_value</item>
+        <item>@string/settings_gr_value</item>
+        <item>@string/settings_hk_value</item>
+        <item>@string/settings_hu_value</item>
+        <item>@string/settings_in_value</item>
+        <item>@string/settings_id_value</item>
+        <item>@string/settings_ie_value</item>
+        <item>@string/settings_il_value</item>
+        <item>@string/settings_it_value</item>
+        <item>@string/settings_jp_value</item>
+        <item>@string/settings_lv_value</item>
+        <item>@string/settings_lt_value</item>
+        <item>@string/settings_my_value</item>
+        <item>@string/settings_mx_value</item>
+        <item>@string/settings_ma_value</item>
+        <item>@string/settings_nl_value</item>
+        <item>@string/settings_nz_value</item>
+        <item>@string/settings_ng_value</item>
+        <item>@string/settings_no_value</item>
+        <item>@string/settings_ph_value</item>
+        <item>@string/settings_pl_value</item>
+        <item>@string/settings_pt_value</item>
+        <item>@string/settings_ro_value</item>
+        <item>@string/settings_ru_value</item>
+        <item>@string/settings_sa_value</item>
+        <item>@string/settings_rs_value</item>
+        <item>@string/settings_sg_value</item>
+        <item>@string/settings_sk_value</item>
+        <item>@string/settings_si_value</item>
+        <item>@string/settings_za_value</item>
+        <item>@string/settings_kr_value</item>
+        <item>@string/settings_se_value</item>
+        <item>@string/settings_ch_value</item>
+        <item>@string/settings_tw_value</item>
+        <item>@string/settings_th_value</item>
+        <item>@string/settings_tr_value</item>
+        <item>@string/settings_ae_value</item>
+        <item>@string/settings_ua_value</item>
+        <item>@string/settings_gb_value</item>
+        <item>@string/settings_us_value</item>
+        <item>@string/settings_ve_value</item>
+    </string-array>
+</resources>

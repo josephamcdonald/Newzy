@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019. josephamcdonald - All Rights Reserved
+  ~  Unauthorized copying of this file, via any medium is strictly prohibited
+  ~  Proprietary and confidential
+  ~  Written by josephamcdonald
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/choose_your_newzys">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/newzy_headlines"
+                    android:icon="@drawable/ic_news"
+                    android:title="@string/newzy_headlines" />
+                <item
+                    android:id="@+id/newzys_one"
+                    android:icon="@drawable/ic_news"
+                    android:title="@string/settings_newzy_title_one_default" />
+                <item
+                    android:id="@+id/newzys_two"
+                    android:icon="@drawable/ic_news"
+                    android:title="@string/settings_newzy_title_two_default" />
+                <item
+                    android:id="@+id/newzys_three"
+                    android:icon="@drawable/ic_news"
+                    android:title="@string/settings_newzy_title_three_default" />
+                <item
+                    android:id="@+id/newzys_four"
+                    android:icon="@drawable/ic_news"
+                    android:title="@string/settings_newzy_title_four_default" />
+                <item
+                    android:id="@+id/newzys_five"
+                    android:icon="@drawable/ic_news"
+                    android:title="@string/settings_newzy_title_five_default" />
+            </group>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/support"
+            android:icon="@drawable/ic_support"
+            android:title="@string/support" />
+    </group>
+</menu>

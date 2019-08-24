@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019. josephamcdonald - All Rights Reserved
+  ~  Unauthorized copying of this file, via any medium is strictly prohibited
+  ~  Proprietary and confidential
+  ~  Written by josephamcdonald
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_standard"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/support_main">
+
+    <TextView
+        android:id="@+id/support_activate_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activate"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/support_activate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="@string/support_activate"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/support_activate_header" />
+
+    <TextView
+        android:id="@+id/news_api_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/touch_target"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="@string/news_api_reg"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/support_activate" />
+
+    <TextView
+        android:id="@+id/support_customize_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="@string/customize"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_api_reg" />
+
+    <TextView
+        android:id="@+id/support_customize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="@string/support_customize"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintEnd_toEndOf="@+id/support_activate"
+        app:layout_constraintStart_toStartOf="@+id/support_activate"
+        app:layout_constraintTop_toBottomOf="@+id/support_customize_header" />
+
+    <TextView
+        android:id="@+id/support_searches_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/search"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/support_customize" />
+
+    <TextView
+        android:id="@+id/support_searches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="@string/support_search"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintEnd_toEndOf="@+id/support_customize"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/support_customize"
+        app:layout_constraintTop_toBottomOf="@+id/support_searches_header" />
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="@dimen/touch_target"
+        android:layout_height="@dimen/touch_target"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:contentDescription="@string/newzy_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/support_searches"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/powered_by"
+        app:layout_constraintStart_toStartOf="@+id/powered_by" />
+
+    <TextView
+        android:id="@+id/powered_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:text="@string/powered_by"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintBottom_toBottomOf="@+id/image_logo"
+        app:layout_constraintStart_toEndOf="@+id/image_logo" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:text="@string/version"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_standard"
+        app:layout_constraintBottom_toBottomOf="@+id/app_name"
+        app:layout_constraintStart_toEndOf="@+id/app_name" />
+
+    <TextView
+        android:id="@+id/ver_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_4dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_standard"
+        app:layout_constraintBottom_toBottomOf="@+id/version"
+        app:layout_constraintStart_toEndOf="@+id/version" />
+
+    <TextView
+        android:id="@+id/news_api_org"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/touch_target"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/news_api_org"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintStart_toEndOf="@+id/powered_by"
+        app:layout_constraintTop_toTopOf="@+id/powered_by" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
