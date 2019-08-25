@@ -45,6 +45,7 @@
     <string name="newzys_to_retrieve">Newzys To Retrieve</string>
     <string name="from_date">From Date</string>
     <string name="to_date">To Date</string>
+    <string name="show_support">show-support</string>
 
     <!--Navigation -->
     <string name="choose_your_newzys">Choose your Newzys!</string>
@@ -247,12 +248,12 @@
 
     <!-- Strings For Show Support Preference -->
     <string name="settings_show_support_label">@string/support_screen</string>
-    <string name="settings_show_support_key" translatable="false">show-support</string>
+    <string name="settings_show_support_key" translatable="false">@string/show_support</string>
     <string name="settings_show_support_default" translatable="false">true</string>
 
     <!-- Strings For API Key Preference [CHAR LIMIT=32] -->
     <string name="settings_api_key_label">@string/news_api_key</string>
-    <string name="settings_api_key_key" translatable="false">api-key</string>
+    <string name="settings_api_key_key" translatable="false">@string/apikey</string>
     <string name="settings_api_key_default" translatable="false">@string/empty_string</string>
     <string name="provide_api_key">Provide News API key</string>
 
