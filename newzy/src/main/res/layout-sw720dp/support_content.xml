@@ -11,7 +11,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/padding_standard_sw720dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:showIn="@layout/support_main">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="@dimen/touch_target_sw720dp"
+        android:layout_height="@dimen/touch_target_sw720dp"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:contentDescription="@string/newzy_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/support_searches"
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
         android:id="@+id/support_activate_header"
@@ -98,17 +110,6 @@
         app:layout_constraintEnd_toEndOf="@+id/support_customize"
         app:layout_constraintStart_toStartOf="@+id/support_customize"
         app:layout_constraintTop_toBottomOf="@+id/support_searches_header" />
-
-    <ImageView
-        android:id="@+id/image_logo"
-        android:layout_width="@dimen/touch_target_sw720dp"
-        android:layout_height="@dimen/touch_target_sw720dp"
-        android:layout_marginTop="@dimen/margin_32dp"
-        android:contentDescription="@string/newzy_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/support_searches"
-        app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
         android:id="@+id/app_name"
