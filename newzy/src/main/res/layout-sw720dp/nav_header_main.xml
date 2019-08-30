@@ -12,7 +12,7 @@
     android:layout_height="wrap_content"
     android:gravity="bottom"
     android:orientation="vertical"
-    android:padding="@dimen/padding_standard"
+    android:padding="@dimen/padding_standard_sw720dp"
     android:theme="@style/AppTheme.NavHeader"
     tools:context=".MainActivity">
 
@@ -20,16 +20,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/newzy_logo"
-        android:paddingTop="@dimen/padding_standard"
+        android:paddingTop="@dimen/padding_standard_sw720dp"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:paddingTop="@dimen/nav_header_vertical_spacing_sw720"
         android:text="@string/app_name"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/text_large"
+        android:textSize="@dimen/text_large_sw720dp"
         android:textStyle="bold" />
 
     <TextView
@@ -37,6 +37,6 @@
         android:layout_height="wrap_content"
         android:text="@string/app_catch"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/text_small" />
+        android:textSize="@dimen/text_small_sw720dp" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
