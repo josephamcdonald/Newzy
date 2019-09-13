@@ -2,6 +2,8 @@
 
 ### Custom "Newzy" News
 
+Simple and straightforward, Newzy gathers and displays the news results you want to see. These search results are affectionately called "Newzys."
+
 [![Image](screenshots/google-play-badge-small.png)](http://newzy.josephamcdonald.com "Get it on Google Play!")
 
 ## Getting Started
@@ -24,7 +26,7 @@ API Level: 23. Android 6.0 (MARSHMALLOW)
 
 ## Versioning
 
-1.3.1
+1.3.2
 
 ## Author
 
