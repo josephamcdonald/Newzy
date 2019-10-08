@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ Copyright (c) 2019. josephamcdonald - All Rights Reserved
-  ~  Unauthorized copying of this file, via any medium is strictly prohibited
-  ~  Proprietary and confidential
-  ~  Written by josephamcdonald
-  -->
-
 <resources>
     <color name="ic_launcher_background">#000000</color>
 </resources>
