@@ -84,12 +84,12 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // Set the root newzy item view to the newzy recycler view.
         newzyRecyclerView = rootView.findViewById(R.id.newzy_recycler_view);
 
-        // For performance, tell newzyRecyclerView its size is fixed.
-        newzyRecyclerView.setHasFixedSize(true);
-
-        // Declare and set the recycler view layout manager.
+        // Declare and set the RecyclerView LayoutManager.
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
         newzyRecyclerView.setLayoutManager(layoutManager);
+
+        // For performance, tell newzyRecyclerView its size is fixed.
+        newzyRecyclerView.setHasFixedSize(true);
 
         // Find the swipe refresh layout and set color scheme.
         swipeLayout = rootView.findViewById(R.id.swipe_layout);
@@ -180,9 +180,6 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         progressCircle.setVisibility(View.GONE);
         progressImage.setVisibility(View.GONE);
 
-        // Clear the newzy adapter.
-        newzyAdapter = null;
-
         // If there is a valid list of newzyData returned, then add it to the adapter's data set.
         if (newzyData != null && !newzyData.isEmpty()) {
 
@@ -191,8 +188,8 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
             // Assign the data to the adapter and RecyclerView.
             newzyAdapter = new NewzyAdapter(getContext(), newzyData);
-            newzyRecyclerView.setAdapter(newzyAdapter);
             newzyAdapter.notifyDataSetChanged();
+            newzyRecyclerView.setAdapter(newzyAdapter);
 
             // Show the Newzy RecyclerView.
             newzyRecyclerView.setVisibility(View.VISIBLE);
