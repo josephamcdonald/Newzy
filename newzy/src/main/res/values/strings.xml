@@ -33,7 +33,7 @@
     <string name="news_api_key">News API Key</string>
     <string name="support_screen">Support Screen</string>
     <string name="support_screen_summary">Display Newzy support screen at app launch</string>
-    <string name="local_newzy_headlines">Local Newzy Headlines</string>
+    <string name="local_headlines">Local Headlines</string>
     <string name="newzy_title">Newzy Title</string>
     <string name="newzy_search">Newzy Search</string>
     <string name="provide_newzy_title">Provide Newzy Title</string>
@@ -49,7 +49,7 @@
 
     <!--Navigation -->
     <string name="choose_your_newzys">Choose your Newzys!</string>
-    <string name="newzy_headlines">Newzy Headlines</string>
+    <string name="headlines">Headlines</string>
     <string name="settings">Settings</string>
     <string name="support">Support</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -62,7 +62,7 @@
     <string name="powered_by">Powered by:</string>
     <string name="version">version</string>
     <string name="support_activate">Newzy is activated with a free News API Key. Benefits of this key include up to 500 search requests per day (250 requests per 12 hours.) NOTE: during News API Key registration, check the box to \"add an attribution link.\" Newzy provides this link to News API within the app to satisfy this requirement. Once obtained, provide your 32-character key in Settings. Get yours at:</string>
-    <string name="support_customize">Configured within Settings, set the \"Newzy Headlines\" for your country of choice. News API tracks headlines across 50+ countries.\n\nIn addition to setting the current \"Newzy Headlines,\" Newzy includes up to five (5) custom Newzy Titles and Searches. Also configured within Settings, Newzy Titles are descriptive names for your personal Newzy Searches and appear in the drawer menu.</string>
+    <string name="support_customize">Configured within Settings, set the Newzy \"Headlines\" for your country of choice. News API tracks headlines across 50+ countries.\n\nIn addition to setting the current Newzy \"Headlines,\" Newzy includes up to six (6) custom Newzy Titles and Searches. Also configured within Settings, Newzy Titles are descriptive names for your personal Newzy Searches and appear in the drawer menu.</string>
     <string name="support_search">Newzy Searches contain the words and phrases you seek in your news results. These searches (also configured in Settings) may range from simple to more complex. Some search tips:\n\n&#8226; Surround phrases with quotes (\") for an exact match.\nExample: \"Bitcoin Marketplace\"\n\n&#8226; Prepend words or phrases that must appear in your results with a plus (+) symbol.\nExample: +bitcoin\n\n&#8226; Prepend words or phrases that must not appear in your results with a minus (-) symbol.\nExample: -bitcoin\n\n&#8226; Alternatively, you may use the AND / OR / NOT keywords, and optionally group these with parentheses.\nExample: crypto AND (ethereum OR litecoin) NOT bitcoin</string>
 
     <!-- URLs -->
@@ -118,7 +118,7 @@
     <string name="settings_100_newzys_value" translatable="false">100</string>
 
     <!-- Strings For Country Preference [CHAR LIMIT=30] -->
-    <string name="settings_country_label">@string/local_newzy_headlines</string>
+    <string name="settings_country_label">@string/local_headlines</string>
     <string name="settings_country_key" translatable="false">@string/country</string>
     <string name="settings_country_default" translatable="false">@string/settings_us_value</string>
 
@@ -287,6 +287,12 @@
     <string name="settings_newzy_title_five_default" translatable="false">@string/empty_string</string>
     <string name="provide_newzy_title_five">@string/provide_newzy_title</string>
 
+    <!-- Strings For Newzy Title 5 Preference [CHAR LIMIT=30] -->
+    <string name="settings_newzy_title_six_label">@string/newzy_title</string>
+    <string name="settings_newzy_title_six_key" translatable="false">title6</string>
+    <string name="settings_newzy_title_six_default" translatable="false">@string/empty_string</string>
+    <string name="provide_newzy_title_six">@string/provide_newzy_title</string>
+
     <!-- Strings For Newzy Search 1 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_search_one_label">@string/newzy_search</string>
     <string name="settings_newzy_search_one_key" translatable="false">search1</string>
@@ -316,4 +322,10 @@
     <string name="settings_newzy_search_five_key" translatable="false">search5</string>
     <string name="settings_newzy_search_five_default" translatable="false">@string/empty_string</string>
     <string name="provide_newzy_search_five">@string/provide_newzy_search</string>
+
+    <!-- Strings For Newzy Search 5 Preference [CHAR LIMIT=30] -->
+    <string name="settings_newzy_search_six_label">@string/newzy_search</string>
+    <string name="settings_newzy_search_six_key" translatable="false">search6</string>
+    <string name="settings_newzy_search_six_default" translatable="false">@string/empty_string</string>
+    <string name="provide_newzy_search_six">@string/provide_newzy_search</string>
 </resources>

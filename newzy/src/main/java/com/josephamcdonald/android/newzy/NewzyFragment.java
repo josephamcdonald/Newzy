@@ -158,7 +158,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         String REQUEST_URL = getString(R.string.default_request_url);
 
         // If Newzys chosen are not the Newzy Headlines default, assign custom request URL.
-        if (!MainActivity.newzysTitle.equals(getString(R.string.newzy_headlines))) {
+        if (!MainActivity.newzysTitle.equals(getString(R.string.headlines))) {
             REQUEST_URL = getString(R.string.custom_request_url);
         }
 
@@ -239,7 +239,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // Prepare the baseUri that we just parsed so we can add query parameters to it.
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
-        if (MainActivity.newzysTitle.equals(getString(R.string.newzy_headlines))) {
+        if (MainActivity.newzysTitle.equals(getString(R.string.headlines))) {
             // Append DEFAULT QUERY parameter.
             uriBuilder.appendQueryParameter(getString(R.string.country), MainActivity.newzysQuery);
 

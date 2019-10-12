@@ -10,9 +10,9 @@
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/newzy_headlines"
+                    android:id="@+id/headlines"
                     android:icon="@drawable/ic_news"
-                    android:title="@string/newzy_headlines" />
+                    android:title="@string/headlines" />
                 <item
                     android:id="@+id/newzys_one"
                     android:icon="@drawable/ic_news"
@@ -33,6 +33,10 @@
                     android:id="@+id/newzys_five"
                     android:icon="@drawable/ic_news"
                     android:title="@string/settings_newzy_title_five_default" />
+                <item
+                    android:id="@+id/newzys_six"
+                    android:icon="@drawable/ic_news"
+                    android:title="@string/settings_newzy_title_six_default" />
             </group>
         </menu>
     </item>

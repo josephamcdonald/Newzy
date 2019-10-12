@@ -30,18 +30,22 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
 
         //Find Newzy EditTextPreferences.
         EditTextPreference newzyApiKey = findPreference(getString(R.string.settings_api_key_key));
+        EditTextPreference newzyFromDate = findPreference(getString(R.string.settings_newzys_from_date_key));
+        EditTextPreference newzyToDate = findPreference(getString(R.string.settings_newzys_to_date_key));
+
         EditTextPreference newzyTitleOne = findPreference(getString(R.string.settings_newzy_title_one_key));
         EditTextPreference newzyTitleTwo = findPreference(getString(R.string.settings_newzy_title_two_key));
         EditTextPreference newzyTitleThree = findPreference(getString(R.string.settings_newzy_title_three_key));
         EditTextPreference newzyTitleFour = findPreference(getString(R.string.settings_newzy_title_four_key));
         EditTextPreference newzyTitleFive = findPreference(getString(R.string.settings_newzy_title_five_key));
+        EditTextPreference newzyTitleSix = findPreference(getString(R.string.settings_newzy_title_six_key));
+
         EditTextPreference newzySearchOne = findPreference(getString(R.string.settings_newzy_search_one_key));
         EditTextPreference newzySearchTwo = findPreference(getString(R.string.settings_newzy_search_two_key));
         EditTextPreference newzySearchThree = findPreference(getString(R.string.settings_newzy_search_three_key));
         EditTextPreference newzySearchFour = findPreference(getString(R.string.settings_newzy_search_four_key));
         EditTextPreference newzySearchFive = findPreference(getString(R.string.settings_newzy_search_five_key));
-        EditTextPreference newzyFromDate = findPreference(getString(R.string.settings_newzys_from_date_key));
-        EditTextPreference newzyToDate = findPreference(getString(R.string.settings_newzys_to_date_key));
+        EditTextPreference newzySearchSix = findPreference(getString(R.string.settings_newzy_search_six_key));
 
         // Create listener to set input type and hint for News API key.
         EditTextPreference.OnBindEditTextListener apiBindEditTextListener = new EditTextPreference.OnBindEditTextListener() {
@@ -88,6 +92,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         Objects.requireNonNull(newzyTitleThree).setOnBindEditTextListener(titleBindEditTextListener);
         Objects.requireNonNull(newzyTitleFour).setOnBindEditTextListener(titleBindEditTextListener);
         Objects.requireNonNull(newzyTitleFive).setOnBindEditTextListener(titleBindEditTextListener);
+        Objects.requireNonNull(newzyTitleSix).setOnBindEditTextListener(titleBindEditTextListener);
 
         // Set listeners on Newzy search preferences.
         Objects.requireNonNull(newzySearchOne).setOnBindEditTextListener(searchBindEditTextListener);
@@ -95,6 +100,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         Objects.requireNonNull(newzySearchThree).setOnBindEditTextListener(searchBindEditTextListener);
         Objects.requireNonNull(newzySearchFour).setOnBindEditTextListener(searchBindEditTextListener);
         Objects.requireNonNull(newzySearchFive).setOnBindEditTextListener(searchBindEditTextListener);
+        Objects.requireNonNull(newzySearchSix).setOnBindEditTextListener(searchBindEditTextListener);
 
         // Set listeners on Newzy date preferences.
         Objects.requireNonNull(newzyFromDate).setOnBindEditTextListener(dateBindEditTextListener);
@@ -106,6 +112,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         Objects.requireNonNull(newzyTitleThree).setOnPreferenceChangeListener(this);
         Objects.requireNonNull(newzyTitleFour).setOnPreferenceChangeListener(this);
         Objects.requireNonNull(newzyTitleFive).setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(newzyTitleSix).setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -154,6 +161,14 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
             } else {
                 MainActivity.mi5.setTitle(stringValue);
                 MainActivity.mi5.setVisible(true);
+            }
+        } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_six_key))) {
+            if (stringValue.isEmpty()) {
+                MainActivity.mi6.setVisible(false);
+
+            } else {
+                MainActivity.mi6.setTitle(stringValue);
+                MainActivity.mi6.setVisible(true);
             }
         }
         return true;

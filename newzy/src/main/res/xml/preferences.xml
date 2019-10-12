@@ -102,6 +102,20 @@
             android:summary="@string/provide_newzy_search_five"
             android:title="@string/settings_newzy_search_five_label"
             app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:icon="@drawable/ic_search"
+            android:key="@string/settings_newzy_title_six_key"
+            android:summary="@string/provide_newzy_title_six"
+            android:title="@string/settings_newzy_title_six_label"
+            app:allowDividerAbove="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="@string/settings_newzy_search_six_key"
+            android:summary="@string/provide_newzy_search_six"
+            android:title="@string/settings_newzy_search_six_label"
+            app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 
     <PreferenceCategory

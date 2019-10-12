@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     static MenuItem mi3;
     static MenuItem mi4;
     static MenuItem mi5;
+    static MenuItem mi6;
 
     // Declare Newzys title.
     static String newzysTitle;
@@ -85,9 +86,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             launchFragment(R.id.support);
 
         } else {
-            // Show Top Headlines on startup.
-            newzysTitle = getString(R.string.newzy_headlines);
-            launchFragment(R.id.newzy_headlines);
+            // Show Headlines on startup.
+            newzysTitle = getString(R.string.headlines);
+            launchFragment(R.id.headlines);
         }
     }
 
@@ -99,6 +100,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mi3 = menu.findItem(R.id.newzys_three);
         mi4 = menu.findItem(R.id.newzys_four);
         mi5 = menu.findItem(R.id.newzys_five);
+        mi6 = menu.findItem(R.id.newzys_six);
 
         // Assign current preference titles.
         String title1 = sp.getString(getString(R.string.settings_newzy_title_one_key),
@@ -111,6 +113,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getString(R.string.settings_newzy_title_four_default));
         String title5 = sp.getString(getString(R.string.settings_newzy_title_five_key),
                 getString(R.string.settings_newzy_title_five_default));
+        String title6 = sp.getString(getString(R.string.settings_newzy_title_six_key),
+                getString(R.string.settings_newzy_title_six_default));
 
         if (title1.isEmpty()) {
             mi1.setVisible(false);
@@ -151,14 +155,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mi5.setTitle(title5);
             mi5.setVisible(true);
         }
+
+        if (title6.isEmpty()) {
+            mi6.setVisible(false);
+
+        } else {
+            mi6.setTitle(title6);
+            mi6.setVisible(true);
+        }
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.newzy_headlines:
-                newzysTitle = getString(R.string.newzy_headlines);
+            case R.id.headlines:
+                newzysTitle = getString(R.string.headlines);
                 newzysQuery = sp.getString(
                         getString(R.string.settings_country_key),
                         getString(R.string.settings_country_default));
@@ -207,6 +219,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 newzysQuery = sp.getString(
                         getString(R.string.settings_newzy_search_five_key),
                         getString(R.string.settings_newzy_search_five_default));
+                break;
+
+            case R.id.newzys_six:
+                newzysTitle = sp.getString(
+                        getString(R.string.settings_newzy_title_six_key),
+                        getString(R.string.settings_newzy_title_six_default));
+                newzysQuery = sp.getString(
+                        getString(R.string.settings_newzy_search_six_key),
+                        getString(R.string.settings_newzy_search_six_default));
                 break;
 
             case R.id.settings:
