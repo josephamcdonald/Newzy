@@ -2,7 +2,7 @@
 
 ### Custom "Newzy" News
 
-Simple and straightforward, Newzy gathers and displays the news results you want to see. These search results are affectionately called "Newzys."
+Simple, straightforward and efficient, Newzy gathers and displays the news results you want to see. These search results are affectionately called "Newzys."
 
 [![Image](screenshots/google-play-badge-small.png)](http://newzy.josephamcdonald.com "Get it on Google Play!")
 
@@ -64,7 +64,7 @@ API Level: 23. Android 6.0 (MARSHMALLOW)
 
 ## Acknowledgements
 
-The [News API](https://newsapi.org/) is the great resource supplying this news app.
+The [News API](https://newsapi.org/) is the great resource supplying this app.
 
 The theme is inspired from the [New Zealand All-of-Government Brand](https://www.ssc.govt.nz/govt-brand).
 
