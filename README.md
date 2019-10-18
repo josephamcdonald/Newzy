@@ -2,7 +2,7 @@
 
 ### Custom "Newzy" News
 
-Simple, straightforward and efficient. Newzy gathers and displays the news results you want to see. These search results are affectionately called "Newzys."
+Simple, straightforward and efficient. Newzy gathers and displays the news results you want to see. These results are affectionately called "Newzys."
 
 [![Image](screenshots/google-play-badge-small.png)](http://newzy.josephamcdonald.com "Get it on Google Play!")
 
