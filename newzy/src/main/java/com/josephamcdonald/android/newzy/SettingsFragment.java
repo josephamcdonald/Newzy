@@ -48,11 +48,12 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         EditTextPreference newzySearchSix = findPreference(getString(R.string.settings_newzy_search_six_key));
 
         // Create listener to set input type and hint for News API key.
-        EditTextPreference.OnBindEditTextListener apiBindEditTextListener = new EditTextPreference.OnBindEditTextListener() {
+        EditTextPreference.OnBindEditTextListener apiKeyBindEditTextListener = new EditTextPreference.OnBindEditTextListener() {
             @Override
             public void onBindEditText(@NonNull EditText editText) {
                 editText.setInputType(InputType.TYPE_CLASS_TEXT);
                 editText.setHint(R.string.provide_api_key);
+                editText.selectAll();
             }
         };
 
@@ -62,6 +63,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
             public void onBindEditText(@NonNull EditText editText) {
                 editText.setInputType(InputType.TYPE_CLASS_TEXT);
                 editText.setHint(R.string.provide_newzy_title);
+                editText.selectAll();
             }
         };
 
@@ -71,6 +73,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
             public void onBindEditText(@NonNull EditText editText) {
                 editText.setInputType(InputType.TYPE_CLASS_TEXT);
                 editText.setHint(R.string.provide_newzy_search);
+                editText.selectAll();
             }
         };
 
@@ -80,11 +83,12 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
             public void onBindEditText(@NonNull EditText editText) {
                 editText.setInputType(InputType.TYPE_CLASS_DATETIME);
                 editText.setHint(R.string.date_format);
+                editText.selectAll();
             }
         };
 
         // Set listener on News API key preference.
-        Objects.requireNonNull(newzyApiKey).setOnBindEditTextListener(apiBindEditTextListener);
+        Objects.requireNonNull(newzyApiKey).setOnBindEditTextListener(apiKeyBindEditTextListener);
 
         // Set listeners on Newzy title preferences.
         Objects.requireNonNull(newzyTitleOne).setOnBindEditTextListener(titleBindEditTextListener);
