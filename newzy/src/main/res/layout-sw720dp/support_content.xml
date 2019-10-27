@@ -22,7 +22,7 @@
         android:contentDescription="@string/newzy_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/support_searches"
+        app:layout_constraintTop_toBottomOf="@+id/support_dates"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
@@ -110,6 +110,30 @@
         app:layout_constraintEnd_toEndOf="@+id/support_customize"
         app:layout_constraintStart_toStartOf="@+id/support_customize"
         app:layout_constraintTop_toBottomOf="@+id/support_searches_header" />
+
+    <TextView
+        android:id="@+id/support_dates_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:text="@string/dates"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_large_sw720dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/support_searches" />
+
+    <TextView
+        android:id="@+id/support_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/support_dates"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_large_sw720dp"
+        app:layout_constraintEnd_toEndOf="@+id/support_searches"
+        app:layout_constraintStart_toStartOf="@+id/support_dates_header"
+        app:layout_constraintTop_toBottomOf="@+id/support_dates_header" />
 
     <TextView
         android:id="@+id/app_name"
