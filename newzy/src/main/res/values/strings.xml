@@ -12,6 +12,8 @@
     <string name="newzy_logo" translatable="false">newzy logo</string>
     <string name="loading_newzy">Loading Newzy&#8230;</string>
     <string name="date_separator" translatable="false">T</string>
+    <string name="time_separator" translatable="false">Z</string>
+    <string name="at">" \@ "</string>
     <string name="date_format" translatable="false">YYYY-MM-DD</string>
     <string name="progress_image" translatable="false">progress image</string>
     <string name="empty_view_image" translatable="false">Empty View Image</string>

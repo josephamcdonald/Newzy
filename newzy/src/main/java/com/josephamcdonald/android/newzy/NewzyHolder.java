@@ -21,8 +21,6 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
-import java.util.regex.Pattern;
-
 public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     private final Context context;
@@ -104,7 +102,8 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
     private String formatDate(String dateAndTime) {
 
         // Parse the date from the "dateAndTime".
-        String[] date = dateAndTime.split(Pattern.quote(context.getString(R.string.date_separator)));
-        return date[0];
+        String[] date = dateAndTime.split(context.getString(R.string.date_separator));
+        String[] time = date[1].split(context.getString(R.string.time_separator));
+        return date[0] + context.getString(R.string.at) + time[0];
     }
 }
