@@ -26,7 +26,7 @@ API Level: 23. Android 6.0 (MARSHMALLOW)
 
 ## Versioning
 
-1.4.7
+1.4.8
 
 ## Author
 
