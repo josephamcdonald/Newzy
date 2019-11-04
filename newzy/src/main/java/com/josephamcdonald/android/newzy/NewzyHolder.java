@@ -21,6 +21,12 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.Objects;
+
 public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     private final Context context;
@@ -99,11 +105,21 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         customTabsIntent.launchUrl(context, Uri.parse(currentNewzy.getNewzyUrl()));
     }
 
-    private String formatDate(String dateAndTime) {
+    private String formatDate(String dateIn) {
 
-        // Parse the date from the "dateAndTime".
-        String[] date = dateAndTime.split(context.getString(R.string.date_separator));
-        String[] time = date[1].split(context.getString(R.string.time_separator));
-        return date[0] + context.getString(R.string.at) + time[0];
+        String patternIn = context.getString(R.string.date_pattern_in);
+        String patternOut = context.getString(R.string.date_pattern_out);
+
+        SimpleDateFormat dateFormatIn = new SimpleDateFormat(patternIn, Locale.getDefault());
+        SimpleDateFormat dateFormatOut = new SimpleDateFormat(patternOut, Locale.getDefault());
+
+        try {
+            Date dateOut = dateFormatIn.parse(dateIn);
+            return dateFormatOut.format(Objects.requireNonNull(dateOut));
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return context.getString(R.string.error_bad_date);
+        }
     }
 }
