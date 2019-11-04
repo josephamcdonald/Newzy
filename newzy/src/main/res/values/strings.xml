@@ -13,6 +13,7 @@
     <string name="loading_newzy">Loading Newzy&#8230;</string>
     <string name="date_pattern_in">"yyyy-MM-dd\'T\'HH:mm:ss\'Z\'"</string>
     <string name="date_pattern_out">"MM-dd-yyyy  h:mm a"</string>
+    <string name="utc">" UTC"</string>
     <string name="error_bad_date">Error: bad date</string>
     <string name="date_format" translatable="false">YYYY-MM-DD</string>
     <string name="progress_image" translatable="false">progress image</string>

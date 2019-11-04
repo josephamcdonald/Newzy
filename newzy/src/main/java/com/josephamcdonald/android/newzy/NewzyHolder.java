@@ -115,7 +115,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
 
         try {
             Date dateOut = dateFormatIn.parse(dateIn);
-            return dateFormatOut.format(Objects.requireNonNull(dateOut));
+            return dateFormatOut.format(Objects.requireNonNull(dateOut)) + context.getString(R.string.utc);
 
         } catch (ParseException e) {
             e.printStackTrace();
