@@ -119,7 +119,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
 
         } catch (ParseException e) {
             e.printStackTrace();
-            return context.getString(R.string.error_bad_date);
+            return context.getString(R.string.app_name);
         }
     }
 }
