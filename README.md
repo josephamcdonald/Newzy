@@ -18,7 +18,7 @@ NOTE: during News API Key registration, check the box to \"add an attribution li
 
 ## Built With
 
-Android Studio 3.5.1
+Android Studio 3.5.2
 
 Gradle 5.4.1
 
