@@ -12,7 +12,7 @@
     <string name="newzy_logo" translatable="false">newzy logo</string>
     <string name="loading_newzy">Loading Newzy&#8230;</string>
     <string name="date_pattern_in" translatable="false">"yyyy-MM-dd\'T\'HH:mm:ss\'Z\'"</string>
-    <string name="date_pattern_out" translatable="false">"MM-dd-yyyy h:mm a"</string>
+    <string name="date_pattern_out" translatable="false">"d MMM yyyy h:mm a"</string>
     <string name="utc" translatable="false">" UTC"</string>
     <string name="date_format" translatable="false">YYYY-MM-DD</string>
     <string name="progress_image" translatable="false">progress image</string>
