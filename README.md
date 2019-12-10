@@ -18,7 +18,7 @@ NOTE: during News API Key registration, check the box to \"add an attribution li
 
 ## Built With
 
-Android Studio 3.5.2
+Android Studio 3.5.3
 
 Gradle 5.4.1
 
@@ -26,7 +26,7 @@ API Level: 23. Android 6.0 (MARSHMALLOW)
 
 ## Versioning
 
-1.5.3
+1.5.5
 
 ## Author
 
