@@ -2,7 +2,7 @@
 
 ### Custom "Newzy" News
 
-**Simple...straightforward...efficient.** Newzy gathers and displays the news results you want to see. These results are affectionately called "Newzys."
+**Simple...efficient...free.** Newzy gathers and displays the news results you want to see. These results are affectionately called "Newzys."
 
 [![Image](screenshots/google-play-badge-small.png)](http://newzy.josephamcdonald.com "Get it on Google Play!")
 
@@ -30,7 +30,7 @@ API Level: 23. Android 6.0 (MARSHMALLOW)
 
 ## Author
 
-[josephamcdonald](http://josephamcdonald.com)
+[josephamcdonald](http://portfolio.josephamcdonald.com)
 
 ## Design Features
 
@@ -68,9 +68,7 @@ The [News API](https://newsapi.org/) is the great resource supplying this app.
 
 The theme is inspired from the [New Zealand All-of-Government Brand](https://www.ssc.govt.nz/govt-brand).
 
-For example, [their official typeface (Fira Sans)](https://www.govt.nz/about/about-this-website/style-and-design/typography/#typefaces) is used throughout this app.
-
-Also, the app's colors are inspired from [here](https://www.govt.nz/about/about-this-website/style-and-design/colours-and-graphics/#colours).
+For example, [their official typeface (Fira Sans)](https://www.govt.nz/about/about-this-website/style-and-design/typography/#typefaces) is used throughout this app. The colors are inspired from [here](https://www.govt.nz/about/about-this-website/style-and-design/colours-and-graphics/#colours).
 
 Black, white, gray and the Māori red are all represented. Loved the red contrast so much so that I used it for the app's "colorAccent." Some great info on the [Māori flag](https://nzhistory.govt.nz/media/photo/national-maori-flag).
 
