@@ -26,7 +26,7 @@ import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
 
-final class NewzyUtils {
+class NewzyUtils {
 
     private NewzyUtils() {
         // Required empty constructor.
