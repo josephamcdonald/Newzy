@@ -93,7 +93,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
         // Find the swipe refresh layout and set color scheme.
         swipeLayout = rootView.findViewById(R.id.swipe_layout);
-        swipeLayout.setColorSchemeColors(ContextCompat.getColor(Objects.requireNonNull(getActivity()), R.color.colorAccent));
+        swipeLayout.setColorSchemeColors(ContextCompat.getColor(requireActivity(), R.color.colorAccent));
 
         // Declare and set the OnRefreshListener to the swipe refresh layout.
         SwipeRefreshLayout.OnRefreshListener onRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
@@ -119,7 +119,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
     private void getTheNewzys() {
 
         // Check Internet connectivity.
-        ConnectivityManager cm = (ConnectivityManager) Objects.requireNonNull(getActivity()).
+        ConnectivityManager cm = (ConnectivityManager) requireActivity().
                 getSystemService(Context.CONNECTIVITY_SERVICE);
         Network activeNetwork = Objects.requireNonNull(cm).getActiveNetwork();
 
@@ -210,7 +210,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
     private String buildRequestUrl(String baseUrl) {
 
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Objects.requireNonNull(getContext()));
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(requireContext());
 
         // Preferences string variables.
         String newzysSortBy = sp.getString(

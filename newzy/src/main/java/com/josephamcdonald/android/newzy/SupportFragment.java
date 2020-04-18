@@ -21,8 +21,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.Objects;
-
 public class SupportFragment extends Fragment implements View.OnClickListener {
 
     public SupportFragment() {
@@ -69,8 +67,8 @@ public class SupportFragment extends Fragment implements View.OnClickListener {
                 .setCloseButtonIcon(BitmapFactory.decodeResource(
                         getResources(), R.drawable.ic_arrow_back))
                 .setShowTitle(true)
-                .setToolbarColor(Objects.requireNonNull(getActivity()).getColor(R.color.colorPrimary))
+                .setToolbarColor(requireActivity().getColor(R.color.colorPrimary))
                 .build();
-        cti.launchUrl(getActivity(), Uri.parse(newzyUrl));
+        cti.launchUrl(requireActivity(), Uri.parse(newzyUrl));
     }
 }
