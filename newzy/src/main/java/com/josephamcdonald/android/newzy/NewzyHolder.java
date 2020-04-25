@@ -70,7 +70,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         newzyAuthorTextView.setText(currentNewzy.getNewzyAuthor());
         newzyDateTextView.setText(formatDate(currentNewzy.getNewzyDate()));
 
-        if (currentNewzy.getNewzyImage().isEmpty()) {
+        if (currentNewzy.getNewzyImage().equals(context.getString(R.string.null_string))) {
             newzyImageView.setImageResource(R.drawable.newzy);
 
         } else {

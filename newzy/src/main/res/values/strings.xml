@@ -18,6 +18,7 @@
     <string name="progress_image" translatable="false">progress image</string>
     <string name="empty_view_image" translatable="false">Empty View Image</string>
     <string name="empty_string" />
+    <string name="null_string">null</string>
 
     <!-- Build Request URL -->
     <string name="country" translatable="false">country</string>
