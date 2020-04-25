@@ -70,19 +70,17 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         newzyAuthorTextView.setText(currentNewzy.getNewzyAuthor());
         newzyDateTextView.setText(formatDate(currentNewzy.getNewzyDate()));
 
-        if (!currentNewzy.getNewzyImage().isEmpty()) {
+        if (currentNewzy.getNewzyImage().isEmpty()) {
+            newzyImageView.setImageResource(R.drawable.newzy);
 
+        } else {
             int IMAGE_TARGET_WIDTH = 500;
             int IMAGE_TARGET_HEIGHT = 300;
-
             Picasso.get().load(currentNewzy.getNewzyImage())
                     .resize(IMAGE_TARGET_WIDTH, IMAGE_TARGET_HEIGHT)
                     .centerCrop()
                     .error(R.drawable.newzy)
                     .into(newzyImageView);
-
-        } else {
-            newzyImageView.setImageResource(R.drawable.newzy);
         }
     }
 
