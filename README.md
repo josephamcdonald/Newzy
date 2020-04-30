@@ -22,11 +22,11 @@ Android Studio 3.6.3
 
 Gradle 5.6.4
 
-API Level: 23. Android 6.0 (MARSHMALLOW)
+API Level: 24. Android 7.0 (NOUGAT)
 
 ## Versioning
 
-1.6.3
+1.6.4
 
 ## Author
 
