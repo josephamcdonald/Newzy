@@ -26,7 +26,7 @@ API Level: 24. Android 7.0 (NOUGAT)
 
 ## Versioning
 
-1.6.4
+1.6.5
 
 ## Author
 

@@ -6,8 +6,8 @@ android {
         applicationId 'com.josephamcdonald.android.newzy'
         minSdkVersion 24
         targetSdkVersion 29
-        versionCode 91
-        versionName '1.6.4'
+        versionCode 92
+        versionName '1.6.5'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
