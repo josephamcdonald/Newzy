@@ -63,7 +63,7 @@ public class SupportFragment extends Fragment implements View.OnClickListener {
 
         // Create a CustomTabsIntent and launch the NewsAPI.org Url with CustomTabsIntent.launchUrl()
         CustomTabsIntent cti = new CustomTabsIntent.Builder()
-                .addDefaultShareMenuItem()
+                .setDefaultShareMenuItemEnabled(true)
                 .setCloseButtonIcon(BitmapFactory.decodeResource(
                         getResources(), R.drawable.ic_arrow_back))
                 .setShowTitle(true)

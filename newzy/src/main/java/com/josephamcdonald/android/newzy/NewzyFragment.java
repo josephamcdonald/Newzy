@@ -248,11 +248,11 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
             uriBuilder.appendQueryParameter(getString(R.string.q), MainActivity.newzysQuery);
 
             // If NOT empty, append FROM DATE parameter.
-            if (!newzysFromDate.isEmpty()) {
+            if (!Objects.requireNonNull(newzysFromDate).isEmpty()) {
                 uriBuilder.appendQueryParameter(getString(R.string.from), newzysFromDate);
             }
             // If NOT empty, append TO DATE parameter.
-            if (!newzysToDate.isEmpty()) {
+            if (!Objects.requireNonNull(newzysToDate).isEmpty()) {
                 uriBuilder.appendQueryParameter(getString(R.string.to), newzysToDate);
             }
             // Append SORT BY parameter.

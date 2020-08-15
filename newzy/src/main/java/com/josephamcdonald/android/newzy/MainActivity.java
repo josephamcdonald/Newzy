@@ -24,6 +24,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     // Declare Newzys query string.
@@ -116,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         String title6 = sp.getString(getString(R.string.settings_newzy_title_six_key),
                 getString(R.string.settings_newzy_title_six_default));
 
-        if (title1.isEmpty()) {
+        if (Objects.requireNonNull(title1).isEmpty()) {
             mi1.setVisible(false);
 
         } else {
@@ -124,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mi1.setVisible(true);
         }
 
-        if (title2.isEmpty()) {
+        if (Objects.requireNonNull(title2).isEmpty()) {
             mi2.setVisible(false);
 
         } else {
@@ -132,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mi2.setVisible(true);
         }
 
-        if (title3.isEmpty()) {
+        if (Objects.requireNonNull(title3).isEmpty()) {
             mi3.setVisible(false);
 
         } else {
@@ -140,7 +142,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mi3.setVisible(true);
         }
 
-        if (title4.isEmpty()) {
+        if (Objects.requireNonNull(title4).isEmpty()) {
             mi4.setVisible(false);
 
         } else {
@@ -148,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mi4.setVisible(true);
         }
 
-        if (title5.isEmpty()) {
+        if (Objects.requireNonNull(title5).isEmpty()) {
             mi5.setVisible(false);
 
         } else {
@@ -156,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mi5.setVisible(true);
         }
 
-        if (title6.isEmpty()) {
+        if (Objects.requireNonNull(title6).isEmpty()) {
             mi6.setVisible(false);
 
         } else {

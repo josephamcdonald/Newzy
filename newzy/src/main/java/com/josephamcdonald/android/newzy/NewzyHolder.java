@@ -94,7 +94,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         // Once ready, create a CustomTabsIntent and launch the current
         // Newzy Url with CustomTabsIntent.launchUrl()
         CustomTabsIntent customTabsIntent = new CustomTabsIntent.Builder()
-                .addDefaultShareMenuItem()
+                .setDefaultShareMenuItemEnabled(true)
                 .setCloseButtonIcon(BitmapFactory.decodeResource(
                         context.getResources(), R.drawable.ic_arrow_back))
                 .setShowTitle(true)
