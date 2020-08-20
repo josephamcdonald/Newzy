@@ -18,15 +18,15 @@ NOTE: during News API Key registration, check the box to \"add an attribution li
 
 ## Built With
 
-Android Studio 3.6.3
+Android Studio 4.0.1
 
-Gradle 5.6.4
+Gradle 6.6.0
 
-API Level: 24. Android 7.0 (NOUGAT)
+API Level: 26. Android 8.0 (OREO)
 
 ## Versioning
 
-1.6.5
+1.7.0
 
 ## Author
 
