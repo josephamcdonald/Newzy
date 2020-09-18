@@ -2,15 +2,13 @@
 
 ### Custom "Newzy" News
 
-**Simple...efficient...free.** Newzy gathers and displays the news results you want to see. These results are affectionately called "Newzys."
+**Simple...Efficient...Free.** Newzy gathers and displays the news results you want to see. These results are affectionately called "Newzys."
 
 [![Image](screenshots/google-play-badge-small.png)](http://newzy.josephamcdonald.com "Get it on Google Play!")
 
 ## Getting Started
 
-Newzy is activated with a free News API Key. Benefits of this key include up to 500 search requests per day (250 requests per 12 hours.) Get yours at [NewsAPI.org/register](https://newsapi.org/register). Once obtained, provide your 32-character key in Settings.
-
-NOTE: during News API Key registration, check the box to \"add an attribution link.\" Newzy provides this link to NewsAPI.org within the app to satisfy this requirement. 
+Newzy is activated with a free News API Key. Benefits of your personal key include up to 500 search requests per day (250 requests per 12 hours.) Once obtained, provide your 32-character key in Settings. Get your key at [NewsAPI.org/register](https://newsapi.org/register)
 
 ## Screenshots
 
