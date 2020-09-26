@@ -82,9 +82,7 @@ class Newzy {
     /**
      * Get the Newzy web URL.
      */
-    String getNewzyUrl() {
-        return newzyUrl;
-    }
+    String getNewzyUrl() { return newzyUrl; }
 
     /**
      * Get the Newzy author.

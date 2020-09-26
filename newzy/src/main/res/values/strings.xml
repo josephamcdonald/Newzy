@@ -11,6 +11,7 @@
     <string name="newzy_image" translatable="false">newzy image</string>
     <string name="newzy_logo" translatable="false">newzy logo</string>
     <string name="loading_newzy">Loading Newzy&#8230;</string>
+    <string name="no_newzy_provided">No Newzy Provided!</string>
     <string name="date_pattern_in" translatable="false">"yyyy-MM-dd\'T\'HH:mm:ss\'Z\'"</string>
     <string name="date_pattern_out" translatable="false">"d MMM yyyy h:mm a"</string>
     <string name="utc" translatable="false">" UTC"</string>

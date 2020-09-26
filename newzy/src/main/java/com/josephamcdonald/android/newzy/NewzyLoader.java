@@ -15,16 +15,14 @@ import java.util.List;
 
 class NewzyLoader extends AsyncTaskLoader<List<Newzy>> {
 
-    /**
-     * Declare the newzy request URL
-     */
-    private final String newzyUrl;
+    // Declare the newzy request URL.
+    private final String newzyRequestUrl;
 
     NewzyLoader(Context context, String url) {
         super(context);
 
-        // Assign the newzy URl.
-        newzyUrl = url;
+        // Assign the newzy URL.
+        newzyRequestUrl = url;
     }
 
     @Override
@@ -37,9 +35,9 @@ class NewzyLoader extends AsyncTaskLoader<List<Newzy>> {
     public List<Newzy> loadInBackground() {
 
         // Don't perform the request if there are no URLs, or the first URL is null.
-        if (newzyUrl == null) {
+        if (newzyRequestUrl == null) {
             return null;
         }
-        return NewzyUtils.fetchNewzys(newzyUrl);
+        return NewzyUtils.fetchNewzys(newzyRequestUrl);
     }
 }

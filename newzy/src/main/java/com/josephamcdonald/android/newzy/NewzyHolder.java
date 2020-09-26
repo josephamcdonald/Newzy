@@ -87,20 +87,27 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
     @Override
     public void onClick(View v) {
 
-        // Create the toast message and show it.
-        Toast.makeText(context, context.getString(R.string.loading_newzy), Toast.LENGTH_SHORT).show();
+        // If no Newzy URL provided...
+        if (currentNewzy.getNewzyUrl().equals(context.getString(R.string.null_string))) {
+            // Create the 'No Newzy!" toast message and show it.
+            Toast.makeText(context, context.getString(R.string.no_newzy_provided), Toast.LENGTH_SHORT).show();
 
-        // Use a CustomTabsIntent.Builder to configure CustomTabsIntent.
-        // Once ready, create a CustomTabsIntent and launch the current
-        // Newzy Url with CustomTabsIntent.launchUrl()
-        CustomTabsIntent customTabsIntent = new CustomTabsIntent.Builder()
-                .setDefaultShareMenuItemEnabled(true)
-                .setCloseButtonIcon(BitmapFactory.decodeResource(
-                        context.getResources(), R.drawable.ic_arrow_back))
-                .setShowTitle(true)
-                .setToolbarColor(context.getColor(R.color.colorPrimary))
-                .build();
-        customTabsIntent.launchUrl(context, Uri.parse(currentNewzy.getNewzyUrl()));
+        } else {
+            // Create the "Loading Newzy..." toast message and show it.
+            Toast.makeText(context, context.getString(R.string.loading_newzy), Toast.LENGTH_SHORT).show();
+
+            // Use a CustomTabsIntent.Builder to configure CustomTabsIntent.
+            // Once ready, create a CustomTabsIntent and launch the current
+            // Newzy Url with CustomTabsIntent.launchUrl()
+            CustomTabsIntent customTabsIntent = new CustomTabsIntent.Builder()
+                    .setDefaultShareMenuItemEnabled(true)
+                    .setCloseButtonIcon(BitmapFactory.decodeResource(
+                            context.getResources(), R.drawable.ic_arrow_back))
+                    .setShowTitle(true)
+                    .setToolbarColor(context.getColor(R.color.colorPrimary))
+                    .build();
+            customTabsIntent.launchUrl(context, Uri.parse(currentNewzy.getNewzyUrl()));
+        }
     }
 
     private String formatDate(String dateIn) {
