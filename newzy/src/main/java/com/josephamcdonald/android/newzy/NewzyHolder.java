@@ -70,7 +70,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         newzyAuthorTextView.setText(currentNewzy.getNewzyAuthor());
         newzyDateTextView.setText(formatDate(currentNewzy.getNewzyDate()));
 
-        if (currentNewzy.getNewzyImage().equals(context.getString(R.string.null_string))) {
+        if (currentNewzy.getNewzyImage().equals(context.getString(R.string.null_string)) || currentNewzy.getNewzyImage().equals(context.getString(R.string.empty_string))) {
             newzyImageView.setImageResource(R.drawable.newzy);
 
         } else {
@@ -88,7 +88,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
     public void onClick(View v) {
 
         // If no Newzy URL provided...
-        if (currentNewzy.getNewzyUrl().equals(context.getString(R.string.null_string))) {
+        if (currentNewzy.getNewzyUrl().equals(context.getString(R.string.null_string)) || currentNewzy.getNewzyUrl().equals(context.getString(R.string.empty_string))) {
             // Create the 'No Newzy!" toast message and show it.
             Toast.makeText(context, context.getString(R.string.no_newzy_provided), Toast.LENGTH_SHORT).show();
 
