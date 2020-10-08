@@ -16,7 +16,7 @@ Newzy is activated with a free News API Key. Benefits of your personal key inclu
 
 ## Built With
 
-Android Studio 4.0.1
+Android Studio 4.0.2
 
 Gradle 6.6.0
 
