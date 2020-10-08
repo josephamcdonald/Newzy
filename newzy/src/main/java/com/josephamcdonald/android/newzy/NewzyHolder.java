@@ -11,6 +11,7 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 
+import androidx.browser.customtabs.CustomTabColorSchemeParams;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -70,6 +71,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         newzyAuthorTextView.setText(currentNewzy.getNewzyAuthor());
         newzyDateTextView.setText(formatDate(currentNewzy.getNewzyDate()));
 
+        // If no Newzy image provided, use a stock image.
         if (currentNewzy.getNewzyImage().equals(context.getString(R.string.null_string)) || currentNewzy.getNewzyImage().equals(context.getString(R.string.empty_string))) {
             newzyImageView.setImageResource(R.drawable.newzy);
 
@@ -87,7 +89,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
     @Override
     public void onClick(View v) {
 
-        // If no Newzy URL provided...
+        // If no Newzy URL provided, toast it so.
         if (currentNewzy.getNewzyUrl().equals(context.getString(R.string.null_string)) || currentNewzy.getNewzyUrl().equals(context.getString(R.string.empty_string))) {
             // Create the 'No Newzy!" toast message and show it.
             Toast.makeText(context, context.getString(R.string.no_newzy_provided), Toast.LENGTH_SHORT).show();
@@ -96,17 +98,22 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
             // Create the "Loading Newzy..." toast message and show it.
             Toast.makeText(context, context.getString(R.string.loading_newzy), Toast.LENGTH_SHORT).show();
 
+            // Use CustomTabColorSchemeParams to set Toolbar color.
+            CustomTabColorSchemeParams toolbarColor = new CustomTabColorSchemeParams.Builder()
+                    .setToolbarColor(context.getColor(R.color.colorPrimary))
+                    .build();
+
             // Use a CustomTabsIntent.Builder to configure CustomTabsIntent.
             // Once ready, create a CustomTabsIntent and launch the current
-            // Newzy Url with CustomTabsIntent.launchUrl()
-            CustomTabsIntent customTabsIntent = new CustomTabsIntent.Builder()
-                    .setDefaultShareMenuItemEnabled(true)
+            // Newzy Url with intent.launchUrl()
+            CustomTabsIntent intent = new CustomTabsIntent.Builder()
+                    .setDefaultColorSchemeParams(toolbarColor)
+                    .setShareState(CustomTabsIntent.SHARE_STATE_ON)
                     .setCloseButtonIcon(BitmapFactory.decodeResource(
                             context.getResources(), R.drawable.ic_arrow_back))
                     .setShowTitle(true)
-                    .setToolbarColor(context.getColor(R.color.colorPrimary))
                     .build();
-            customTabsIntent.launchUrl(context, Uri.parse(currentNewzy.getNewzyUrl()));
+            intent.launchUrl(context, Uri.parse(currentNewzy.getNewzyUrl()));
         }
     }
 

@@ -13,6 +13,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.browser.customtabs.CustomTabColorSchemeParams;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.fragment.app.Fragment;
 
@@ -61,14 +62,19 @@ public class SupportFragment extends Fragment implements View.OnClickListener {
             newzyUrl = getString(R.string.news_api_reg_url);
         }
 
-        // Create a CustomTabsIntent and launch the NewsAPI.org Url with CustomTabsIntent.launchUrl()
-        CustomTabsIntent cti = new CustomTabsIntent.Builder()
-                .setDefaultShareMenuItemEnabled(true)
+        // Use CustomTabColorSchemeParams to set Toolbar color.
+        CustomTabColorSchemeParams toolbarColor = new CustomTabColorSchemeParams.Builder()
+                .setToolbarColor(requireActivity().getColor(R.color.colorPrimary))
+                .build();
+
+        // Create a CustomTabsIntent and launch the NewsAPI.org Url with intent.launchUrl()
+        CustomTabsIntent intent = new CustomTabsIntent.Builder()
+                .setDefaultColorSchemeParams(toolbarColor)
+                .setShareState(CustomTabsIntent.SHARE_STATE_ON)
                 .setCloseButtonIcon(BitmapFactory.decodeResource(
                         getResources(), R.drawable.ic_arrow_back))
                 .setShowTitle(true)
-                .setToolbarColor(requireActivity().getColor(R.color.colorPrimary))
                 .build();
-        cti.launchUrl(requireActivity(), Uri.parse(newzyUrl));
+        intent.launchUrl(requireActivity(), Uri.parse(newzyUrl));
     }
 }
