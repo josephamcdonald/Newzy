@@ -96,10 +96,11 @@ class NewzyUtils {
 
             } else {
                 Log.e(LOG_TAG, "Error response code: " + urlConnection.getResponseCode());
+                Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
             }
         } catch (IOException e) {
 
-            Log.e(LOG_TAG, "Problem retrieving the JSON results.", e);
+            Log.e(LOG_TAG, "Problem retrieving the JSON results", e);
         } finally {
 
             if (inputStream != null) inputStream.close();
