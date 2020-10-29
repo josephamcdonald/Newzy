@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-Newzy is activated with a free News API Key. Benefits of your personal key include up to 500 search requests per day (250 requests per 12 hours.) Once obtained, provide your 32-character key in Settings. Get your key at [NewsAPI.org/register](https://newsapi.org/register)
+Newzy is activated with a free News API Key. Benefits of your personal key include up to 100 API requests per day. Once obtained, provide your 32-character key in Settings. Get your key at [NewsAPI.org/register](https://newsapi.org/register)
 
 ## Screenshots
 
@@ -16,7 +16,7 @@ Newzy is activated with a free News API Key. Benefits of your personal key inclu
 
 ## Built With
 
-Android Studio 4.0.2
+Android Studio 4.1.0
 
 Gradle 6.6.0
 
@@ -24,7 +24,7 @@ API Level: 26. Android 8.0 (OREO)
 
 ## Versioning
 
-1.7.6
+1.8.0
 
 ## Author
 
