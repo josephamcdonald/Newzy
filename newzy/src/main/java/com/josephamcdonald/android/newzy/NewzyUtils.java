@@ -18,12 +18,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 class NewzyUtils {
 
@@ -42,7 +43,7 @@ class NewzyUtils {
         // Perform HTTP request to the URL and receive a JSON response back.
         String jsonResponse = null;
         try {
-            jsonResponse = makeHttpRequest(url);
+            jsonResponse = makeHttpsRequest(url);
 
         } catch (IOException e) {
             Log.e(LOG_TAG, "Error closing input stream", e);
@@ -53,6 +54,7 @@ class NewzyUtils {
 
     // Returns new URL object from the given URL string.
     private static URL createUrl(String stringUrl) {
+
         URL url = null;
 
         try {
@@ -65,7 +67,7 @@ class NewzyUtils {
     }
 
     // Make an HTTP request to the given URL and return a String as the response.
-    private static String makeHttpRequest(URL url) throws IOException {
+    private static String makeHttpsRequest(URL url) throws IOException {
 
         // Declare connectivity constants.
         final int TIMEOUT_10_SECONDS = 10000;
@@ -74,27 +76,27 @@ class NewzyUtils {
         String jsonResponse = "";
 
         // If the URL is null, then return early.
-        if (url == null) {
-            return jsonResponse;
-        }
+        if (url == null) return jsonResponse;
+
         // Initialize URL connection and input stream.
-        HttpURLConnection urlConnection = null;
+        HttpsURLConnection urlConnection = null;
         InputStream inputStream = null;
 
         try {
-            urlConnection = (HttpURLConnection) url.openConnection();
+            urlConnection = (HttpsURLConnection) url.openConnection();
             urlConnection.setRequestMethod("GET");
             urlConnection.setReadTimeout(TIMEOUT_10_SECONDS);
             urlConnection.setConnectTimeout(TIMEOUT_15_SECONDS);
             urlConnection.connect();
 
-            // If the request was successful (response code 200),
+            // If the request was successful (response code 200=OK),
             // then read the input stream and parse the response.
-            if (urlConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
+            if (urlConnection.getResponseCode() == HttpsURLConnection.HTTP_OK) {
                 inputStream = urlConnection.getInputStream();
                 jsonResponse = readFromStream(inputStream);
 
             } else {
+
                 Log.e(LOG_TAG, "Error response code: " + urlConnection.getResponseCode());
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
             }
