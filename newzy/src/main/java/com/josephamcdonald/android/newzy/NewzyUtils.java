@@ -63,6 +63,7 @@ class NewzyUtils {
         } catch (MalformedURLException e) {
             Log.e(LOG_TAG, "Error creating URL", e);
         }
+
         return url;
     }
 
@@ -96,19 +97,16 @@ class NewzyUtils {
                 jsonResponse = readFromStream(inputStream);
 
             } else {
-
                 Log.e(LOG_TAG, "Error response code: " + urlConnection.getResponseCode());
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
             }
         } catch (IOException e) {
-
             Log.e(LOG_TAG, "Problem retrieving the JSON results", e);
-        } finally {
 
+        } finally {
             if (inputStream != null) inputStream.close();
             if (urlConnection != null) urlConnection.disconnect();
         }
-
         return jsonResponse;
     }
 
@@ -126,7 +124,6 @@ class NewzyUtils {
                 line = reader.readLine();
             }
         }
-
         return output.toString();
     }
 
@@ -165,10 +162,8 @@ class NewzyUtils {
             }
 
         } catch (JSONException e) {
-
             Log.e("NewzyUtils", "Problem parsing the JSON results", e);
         }
-
         // Return the list of Newzys.
         return newzys;
     }
