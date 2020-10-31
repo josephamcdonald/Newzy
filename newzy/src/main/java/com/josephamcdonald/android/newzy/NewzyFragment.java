@@ -229,7 +229,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
                 getString(R.string.settings_newzys_to_date_key),
                 getString(R.string.settings_newzys_to_date_default));
 
-        String apiKey = sp.getString(
+        String token = sp.getString(
                 getString(R.string.settings_api_key_key),
                 getString(R.string.settings_api_key_default));
 
@@ -259,10 +259,10 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
             uriBuilder.appendQueryParameter(getString(R.string.sortby), newzysSortBy);
         }
         // Append PAGE SIZE parameter.
-        uriBuilder.appendQueryParameter(getString(R.string.pagesize), newzysToRetrieve);
+        uriBuilder.appendQueryParameter(getString(R.string.max), newzysToRetrieve);
 
         // Append News API Key parameter.
-        uriBuilder.appendQueryParameter(getString(R.string.apikey), apiKey);
+        uriBuilder.appendQueryParameter(getString(R.string.token), token);
 
         return uriBuilder.toString();
     }

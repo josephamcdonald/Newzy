@@ -26,15 +26,15 @@
     <string name="q" translatable="false">q</string>
     <string name="from" translatable="false">from</string>
     <string name="to" translatable="false">to</string>
-    <string name="sortby" translatable="false">sortBy</string>
-    <string name="pagesize" translatable="false">pageSize</string>
-    <string name="apikey" translatable="false">apiKey</string>
+    <string name="sortby" translatable="false">sortby</string>
+    <string name="max" translatable="false">max</string>
+    <string name="token" translatable="false">token</string>
 
     <!-- Preferences -->
     <string name="titles_and_searches">TITLES &amp; SEARCHES</string>
     <string name="organize">ORGANIZE</string>
     <string name="optional">OPTIONAL</string>
-    <string name="news_api_key">News API Key</string>
+    <string name="gnews_api_token">GNews Token</string>
     <string name="support_screen">Support Screen</string>
     <string name="support_screen_summary">Display Newzy support screen at launch</string>
     <string name="show_support">show-support</string>
@@ -66,24 +66,24 @@
     <string name="dates">DATES</string>
     <string name="powered_by">Powered by:</string>
     <string name="version">version</string>
-    <string name="support_activate">Newzy is activated with a free News API Key. Benefits of your personal key include up to 100 API requests per day. Once obtained, provide your 32-character key in Settings. Get your key at:</string>
-    <string name="support_customize">Configured within Settings, set the Newzy \"Headlines\" for your country of choice. News API tracks headlines across 50+ countries.\n\nIn addition to setting the local Newzy \"Headlines,\" Newzy includes up to six (6) custom Newzy Titles and Searches. Also configured within Settings, Newzy Titles are descriptive labels for your personal Newzy Searches and appear in the drawer menu.</string>
+    <string name="support_activate">Newzy is activated with a free GNews API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character key in Settings. Get your token at:</string>
+    <string name="support_customize">Configured within Settings, set the Newzy \"Headlines\" for your country of choice. GNews API tracks headlines across 30+ countries.\n\nIn addition to setting the local Newzy \"Headlines,\" Newzy includes up to six (6) custom Newzy Titles and Searches. Also configured within Settings, Newzy Titles are descriptive labels for your personal Newzy Searches and appear in the drawer menu.</string>
     <string name="support_search">Newzy Searches contain the words and phrases you seek in your news results. These searches (also configured in Settings) may range from simple to more complex. Search tips:\n\n&#8226; Surround phrases with quotes (\") for an exact match.\nExample: \"Bitcoin Marketplace\"\n\n&#8226; Prepend words or phrases that must appear in your results with a plus (+) symbol.\nExample: +bitcoin\n\n&#8226; Prepend words or phrases that must not appear in your results with a minus (-) symbol.\nExample: -bitcoin\n\n&#8226; Alternatively, you may use the AND / OR / NOT keywords, and optionally group these with parentheses.\nExample: crypto AND (ethereum OR litecoin) NOT bitcoin</string>
-    <string name="support_dates">Focus your custom Newzys with an optional date range in Settings. News API provides items up to ONE month old. NOTE: date settings do not apply to local \"Headlines.\" Dates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26</string>
+    <string name="support_dates">Focus your custom Newzys with an optional date range in Settings. GNews API provides items up to ONE month old. NOTE: date settings do not apply to local \"Headlines.\" Dates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26</string>
 
     <!-- News API URLs -->
-    <string name="news_api_org" translatable="false">NewsAPI.org</string>
-    <string name="news_api_reg" translatable="false">NewsAPI.org/register</string>
-    <string name="news_api_org_url" translatable="false">https://newsapi.org</string>
-    <string name="news_api_reg_url" translatable="false">https://newsapi.org/register</string>
+    <string name="news_api_org" translatable="false">GNews.io</string>
+    <string name="news_api_reg" translatable="false">GNews.io/register</string>
+    <string name="news_api_org_url" translatable="false">https://gnews.io</string>
+    <string name="news_api_reg_url" translatable="false">https://gnews.io/register</string>
 
     <!-- Empty list view notifications -->
     <string name="no_internet_available">No internet available.\nPlease check internet connectivity and try again.</string>
-    <string name="no_newzys_to_display">No Newzys to display.\nPlease confirm settings for API Key, searches, keywords or choose other Newzys.</string>
+    <string name="no_newzys_to_display">No Newzys to display.\nPlease confirm settings for API token, searches, keywords or choose other Newzys.</string>
 
     <!-- Search request URLs -->
-    <string name="default_request_url"><![CDATA[https://newsapi.org/v2/top-headlines?]]></string>
-    <string name="custom_request_url"><![CDATA[https://newsapi.org/v2/everything?]]></string>
+    <string name="default_request_url"><![CDATA[https://gnews.io/api/v4/top-headlines?]]></string>
+    <string name="custom_request_url"><![CDATA[https://gnews.io/api/v4/search?]]></string>
 
     <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
     <string name="settings_sort_newzys_by_label">@string/sort_newzys_by</string>
@@ -104,7 +104,7 @@
 
     <!-- Strings For Newzys To Retrieve Preference [CHAR LIMIT=30] -->
     <string name="settings_newzys_to_retrieve_label">@string/newzys_to_retrieve</string>
-    <string name="settings_newzys_to_retrieve_key" translatable="false">@string/pagesize</string>
+    <string name="settings_newzys_to_retrieve_key" translatable="false">@string/max</string>
     <string name="settings_newzys_to_retrieve_default" translatable="false">@string/settings_10_newzys_value</string>
 
     <!-- Label for 10 Newzys option -->
@@ -258,10 +258,10 @@
     <string name="settings_show_support_default" translatable="false">true</string>
 
     <!-- Strings For API Key Preference [CHAR LIMIT=32] -->
-    <string name="settings_api_key_label">@string/news_api_key</string>
-    <string name="settings_api_key_key" translatable="false">@string/apikey</string>
+    <string name="settings_api_key_label">@string/gnews_api_token</string>
+    <string name="settings_api_key_key" translatable="false">@string/token</string>
     <string name="settings_api_key_default" translatable="false">@string/empty_string</string>
-    <string name="provide_api_key">Provide News API key</string>
+    <string name="provide_api_key">Provide GNews API token</string>
 
     <!-- Strings For Newzy Title 1 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_title_one_label">@string/newzy_title</string>

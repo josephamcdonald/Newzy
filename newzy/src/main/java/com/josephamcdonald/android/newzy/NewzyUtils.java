@@ -155,8 +155,8 @@ class NewzyUtils {
                 String date = currentArticle.optString("publishedAt");
                 String title = currentArticle.optString("title");
                 String url = currentArticle.optString("url");
-                String author = currentArticle.optString("author");
-                String image = currentArticle.optString("urlToImage");
+                String author = source.optString("url");
+                String image = currentArticle.optString("image");
 
                 newzys.add(new Newzy(name, date, title, url, author, image));
             }
