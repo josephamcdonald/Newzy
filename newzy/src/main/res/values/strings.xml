@@ -34,7 +34,7 @@
     <string name="titles_and_searches">TITLES &amp; SEARCHES</string>
     <string name="organize">ORGANIZE</string>
     <string name="optional">OPTIONAL</string>
-    <string name="gnews_api_token">GNews Token</string>
+    <string name="gnews_api_token">GNews API Token</string>
     <string name="support_screen">Support Screen</string>
     <string name="support_screen_summary">Display Newzy support screen at launch</string>
     <string name="show_support">show-support</string>
