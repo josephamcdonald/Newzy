@@ -170,75 +170,65 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()) {
-            case R.id.headlines:
-                newzysTitle = getString(R.string.headlines);
-                newzysQuery = sp.getString(
-                        getString(R.string.settings_country_key),
-                        getString(R.string.settings_country_default));
-                break;
+        if (item.getItemId() == R.id.newzys_one) {
+            newzysTitle = sp.getString(
+                    getString(R.string.settings_newzy_title_one_key),
+                    getString(R.string.settings_newzy_title_one_default));
+            newzysQuery = sp.getString(
+                    getString(R.string.settings_newzy_search_one_key),
+                    getString(R.string.settings_newzy_search_one_default));
 
-            case R.id.newzys_one:
-                newzysTitle = sp.getString(
-                        getString(R.string.settings_newzy_title_one_key),
-                        getString(R.string.settings_newzy_title_one_default));
-                newzysQuery = sp.getString(
-                        getString(R.string.settings_newzy_search_one_key),
-                        getString(R.string.settings_newzy_search_one_default));
-                break;
+        } else if (item.getItemId() == R.id.newzys_two) {
+            newzysTitle = sp.getString(
+                    getString(R.string.settings_newzy_title_two_key),
+                    getString(R.string.settings_newzy_title_two_default));
+            newzysQuery = sp.getString(
+                    getString(R.string.settings_newzy_search_two_key),
+                    getString(R.string.settings_newzy_search_two_default));
 
-            case R.id.newzys_two:
-                newzysTitle = sp.getString(
-                        getString(R.string.settings_newzy_title_two_key),
-                        getString(R.string.settings_newzy_title_two_default));
-                newzysQuery = sp.getString(
-                        getString(R.string.settings_newzy_search_two_key),
-                        getString(R.string.settings_newzy_search_two_default));
-                break;
+        } else if (item.getItemId() == R.id.newzys_three) {
+            newzysTitle = sp.getString(
+                    getString(R.string.settings_newzy_title_three_key),
+                    getString(R.string.settings_newzy_title_three_default));
+            newzysQuery = sp.getString(
+                    getString(R.string.settings_newzy_search_three_key),
+                    getString(R.string.settings_newzy_search_three_default));
 
-            case R.id.newzys_three:
-                newzysTitle = sp.getString(
-                        getString(R.string.settings_newzy_title_three_key),
-                        getString(R.string.settings_newzy_title_three_default));
-                newzysQuery = sp.getString(
-                        getString(R.string.settings_newzy_search_three_key),
-                        getString(R.string.settings_newzy_search_three_default));
-                break;
+        } else if (item.getItemId() == R.id.newzys_four) {
+            newzysTitle = sp.getString(
+                    getString(R.string.settings_newzy_title_four_key),
+                    getString(R.string.settings_newzy_title_four_default));
+            newzysQuery = sp.getString(
+                    getString(R.string.settings_newzy_search_four_key),
+                    getString(R.string.settings_newzy_search_four_default));
 
-            case R.id.newzys_four:
-                newzysTitle = sp.getString(
-                        getString(R.string.settings_newzy_title_four_key),
-                        getString(R.string.settings_newzy_title_four_default));
-                newzysQuery = sp.getString(
-                        getString(R.string.settings_newzy_search_four_key),
-                        getString(R.string.settings_newzy_search_four_default));
-                break;
+        } else if (item.getItemId() == R.id.newzys_five) {
+            newzysTitle = sp.getString(
+                    getString(R.string.settings_newzy_title_five_key),
+                    getString(R.string.settings_newzy_title_five_default));
+            newzysQuery = sp.getString(
+                    getString(R.string.settings_newzy_search_five_key),
+                    getString(R.string.settings_newzy_search_five_default));
 
-            case R.id.newzys_five:
-                newzysTitle = sp.getString(
-                        getString(R.string.settings_newzy_title_five_key),
-                        getString(R.string.settings_newzy_title_five_default));
-                newzysQuery = sp.getString(
-                        getString(R.string.settings_newzy_search_five_key),
-                        getString(R.string.settings_newzy_search_five_default));
-                break;
+        } else if (item.getItemId() == R.id.newzys_six) {
+            newzysTitle = sp.getString(
+                    getString(R.string.settings_newzy_title_six_key),
+                    getString(R.string.settings_newzy_title_six_default));
+            newzysQuery = sp.getString(
+                    getString(R.string.settings_newzy_search_six_key),
+                    getString(R.string.settings_newzy_search_six_default));
 
-            case R.id.newzys_six:
-                newzysTitle = sp.getString(
-                        getString(R.string.settings_newzy_title_six_key),
-                        getString(R.string.settings_newzy_title_six_default));
-                newzysQuery = sp.getString(
-                        getString(R.string.settings_newzy_search_six_key),
-                        getString(R.string.settings_newzy_search_six_default));
-                break;
+        } else if (item.getItemId() == R.id.settings) {
+            newzysTitle = getString(R.string.settings);
 
-            case R.id.settings:
-                newzysTitle = getString(R.string.settings);
-                break;
+        } else if (item.getItemId() == R.id.support) {
+            newzysTitle = getString(R.string.support);
 
-            case R.id.support:
-                newzysTitle = getString(R.string.support);
-                break;
+        } else {
+            newzysTitle = getString(R.string.headlines);
+            newzysQuery = sp.getString(
+                    getString(R.string.settings_country_key),
+                    getString(R.string.settings_country_default));
         }
         launchFragment(item.getItemId());
 
