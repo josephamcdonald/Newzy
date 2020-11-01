@@ -1,6 +1,6 @@
 # Newzy
 
-### Custom "Newzy" News
+### Your Custom "Newzy" News
 
 **Simple...Efficient...Free.** Newzy gathers and displays the news results you want to see. These results are affectionately called "Newzys."
 
@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-Newzy is activated with a free GNews API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token in Settings. Get your token at [GNews.io/register](https://gnews.io/register)
+Newzy is activated with a free API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token in Settings. Get your token at [GNews.io/register](https://gnews.io/register)
 
 ## Screenshots
 
@@ -61,8 +61,6 @@ API Level: 26. Android 8.0 (OREO)
 **ProgressBar**
 
 ## Acknowledgements
-
-The [GNews API](https://gnews.io/) is the great resource supplying this app.
 
 The theme is inspired from the [New Zealand All-of-Government Brand](https://www.ssc.govt.nz/govt-brand).
 
