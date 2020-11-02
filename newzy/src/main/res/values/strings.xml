@@ -14,6 +14,7 @@
     <string name="no_newzy_provided">No Newzy Provided!</string>
     <string name="date_pattern_in" translatable="false">"yyyy-MM-dd\'T\'HH:mm:ss\'Z\'"</string>
     <string name="date_pattern_out" translatable="false">"d MMM yyyy h:mm a"</string>
+    <string name="time_append" translatable="false">"T00:00:00Z"</string>
     <string name="utc" translatable="false">" UTC"</string>
     <string name="date_format" translatable="false">YYYY-MM-DD</string>
     <string name="progress_image" translatable="false">progress image</string>
@@ -46,7 +47,7 @@
     <string name="sort_newzys_by">Sort Newzys By</string>
     <string name="newest">Newest</string>
     <string name="relevance">Relevance</string>
-    <string name="newzys_to_retrieve">Newzys To Retrieve (max)</string>
+    <string name="newzys_to_retrieve">Newzys To Retrieve</string>
     <string name="from_date">From Date</string>
     <string name="to_date">To Date</string>
 
@@ -68,10 +69,10 @@
     <string name="support_activate">Newzy is activated with a free GNews API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token in Settings. Get your token at:</string>
     <string name="support_customize">Configured within Settings, set the Newzy \"Headlines\" for your country of choice. GNews API tracks headlines across 30+ countries.\n\nIn addition to setting the local Newzy \"Headlines,\" Newzy includes up to six (6) custom Newzy Titles and Searches. Also configured within Settings, Newzy Titles are descriptive labels for your personal Newzy Searches and appear in the drawer menu.</string>
     <string name="support_search">Newzy Searches contain the words and phrases you seek in your news results. These searches (also configured in Settings) may range from simple to more complex. Search tips:\n\n&#8226; Surround phrases with quotes (\") for an exact match.\nExample: \"Bitcoin Marketplace\"\n\n&#8226; Alternatively, you may use the AND / OR / NOT keywords, and optionally group these with parentheses.\nExample: crypto AND (ethereum OR litecoin) NOT bitcoin</string>
-    <string name="support_dates">Focus your custom Newzys with an optional date range in Settings. GNews API provides items up to ONE month old. NOTE: date settings do not apply to local \"Headlines.\" Dates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26</string>
+    <string name="support_dates">Focus your custom Newzys with an optional date range in Settings. NOTE: date settings do not apply to local \"Headlines.\" Dates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26</string>
 
     <!-- News API URLs -->
-    <string name="news_api_org" translatable="false">GNews.io</string>
+    <string name="news_api_org" translatable="false">GNews API</string>
     <string name="news_api_reg" translatable="false">GNews.io/register</string>
     <string name="news_api_org_url" translatable="false">https://gnews.io</string>
     <string name="news_api_reg_url" translatable="false">https://gnews.io/register</string>
@@ -107,15 +108,15 @@
     <string name="settings_10_newzys_value" translatable="false">10</string>
 
     <!-- Label for 20 Newzys option -->
-    <string name="settings_20_newzys_label">20 (PLUS)</string>
+    <string name="settings_20_newzys_label">20 (PLUS plan)</string>
     <string name="settings_20_newzys_value" translatable="false">20</string>
 
     <!-- Label for 50 Newzys option -->
-    <string name="settings_50_newzys_label">50 (PRO)</string>
+    <string name="settings_50_newzys_label">50 (PRO plan)</string>
     <string name="settings_50_newzys_value" translatable="false">50</string>
 
     <!-- Label for 100 Newzys option -->
-    <string name="settings_100_newzys_label">100 (PRO)</string>
+    <string name="settings_100_newzys_label">100 (PRO plan)</string>
     <string name="settings_100_newzys_value" translatable="false">100</string>
 
     <!-- Strings For Country Preference [CHAR LIMIT=30] -->
