@@ -16,7 +16,7 @@ Newzy is activated with a free API token. Benefits of your personal token includ
 
 ## Built With
 
-Android Studio 4.1.0
+Android Studio 4.1.2
 
 Gradle 6.6.0
 
@@ -24,7 +24,7 @@ API Level: 26. Android 8.0 (OREO)
 
 ## Versioning
 
-2.0.1
+2.1.0
 
 ## Author
 
