@@ -104,7 +104,7 @@
     <string name="settings_newzys_to_list_default" translatable="false">@string/settings_10_newzys_value</string>
 
     <!-- Label for 10 Newzys option -->
-    <string name="settings_10_newzys_label">10 (Free plan)</string>
+    <string name="settings_10_newzys_label">10 (FREE plan)</string>
     <string name="settings_10_newzys_value" translatable="false">10</string>
 
     <!-- Label for 20 Newzys option -->
