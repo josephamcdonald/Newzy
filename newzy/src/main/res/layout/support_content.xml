@@ -180,14 +180,14 @@
         app:layout_constraintStart_toEndOf="@+id/version" />
 
     <TextView
-        android:id="@+id/news_api_org"
+        android:id="@+id/news_api"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/touch_target"
         android:layout_marginStart="@dimen/margin_8dp"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?android:attr/selectableItemBackground"
-        android:text="@string/news_api_org"
+        android:text="@string/news_api"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/text_large"
         app:layout_constraintStart_toEndOf="@+id/powered_by"

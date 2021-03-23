@@ -36,7 +36,7 @@ public class SupportFragment extends Fragment implements View.OnClickListener {
         View rootView = inflater.inflate(R.layout.support_main, container, false);
 
         // Find NewsAPI.org views.
-        TextView newsApiOrg = rootView.findViewById(R.id.news_api_org);
+        TextView newsApiOrg = rootView.findViewById(R.id.news_api);
         TextView newsApiReg = rootView.findViewById(R.id.news_api_reg);
 
         // Set click listeners on NewsAPI.org views.
@@ -55,8 +55,8 @@ public class SupportFragment extends Fragment implements View.OnClickListener {
 
         String newzyUrl;
 
-        if (view.getId() == R.id.news_api_org) {
-            newzyUrl = getString(R.string.news_api_org_url);
+        if (view.getId() == R.id.news_api) {
+            newzyUrl = getString(R.string.news_api_url);
 
         } else {
             newzyUrl = getString(R.string.news_api_reg_url);

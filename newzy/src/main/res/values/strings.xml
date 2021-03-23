@@ -39,7 +39,7 @@
     <string name="support_screen">Support Screen</string>
     <string name="support_screen_summary">Display Newzy support screen at launch</string>
     <string name="show_support">show-support</string>
-    <string name="local_headlines">Local Headlines</string>
+    <string name="choose_country">Choose Country</string>
     <string name="newzy_title">Newzy Title</string>
     <string name="newzy_search">Newzy Search</string>
     <string name="provide_newzy_title">Provide Newzy Title</string>
@@ -47,17 +47,17 @@
     <string name="sort_newzys_by">Sort Newzys By</string>
     <string name="newest">Newest</string>
     <string name="relevance">Relevance</string>
-    <string name="newzys_to_retrieve">Newzys To Retrieve</string>
+    <string name="newzys_to_retrieve">Newzys in List</string>
     <string name="from_date">From Date</string>
     <string name="to_date">To Date</string>
 
     <!--Navigation -->
     <string name="choose_your_newzys">Choose your Newzys!</string>
-    <string name="headlines">Headlines</string>
+    <string name="top_headlines">Top Headlines</string>
     <string name="settings">Settings</string>
     <string name="support">Support</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="open_navigation_drawer">Open navigation drawer</string>
+    <string name="close_navigation_drawer">Close navigation drawer</string>
 
     <!-- Support page -->
     <string name="activate">ACTIVATE</string>
@@ -72,16 +72,16 @@
     <string name="support_dates">Focus your custom Newzys with an optional date range in Settings. NOTE: date settings do not apply to local \"Headlines.\" Dates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26</string>
 
     <!-- News API URLs -->
-    <string name="news_api_org" translatable="false">GNews API</string>
+    <string name="news_api" translatable="false">GNews API</string>
     <string name="news_api_reg" translatable="false">GNews.io/register</string>
-    <string name="news_api_org_url" translatable="false">https://gnews.io</string>
+    <string name="news_api_url" translatable="false">https://gnews.io</string>
     <string name="news_api_reg_url" translatable="false">https://gnews.io/register</string>
 
     <!-- Empty list view notifications -->
     <string name="no_internet_available">No internet available.\nPlease check internet connectivity and try again.</string>
     <string name="no_newzys_to_display">No Newzys to display.\nPlease confirm settings for API token, searches, keywords or choose other Newzys.</string>
 
-    <!-- Search request URLs -->
+    <!-- API endpoint URLs -->
     <string name="default_request_url"><![CDATA[https://gnews.io/api/v4/top-headlines?]]></string>
     <string name="custom_request_url"><![CDATA[https://gnews.io/api/v4/search?]]></string>
 
@@ -104,7 +104,7 @@
     <string name="settings_newzys_to_retrieve_default" translatable="false">@string/settings_10_newzys_value</string>
 
     <!-- Label for 10 Newzys option -->
-    <string name="settings_10_newzys_label">10</string>
+    <string name="settings_10_newzys_label">10 (Free plan)</string>
     <string name="settings_10_newzys_value" translatable="false">10</string>
 
     <!-- Label for 20 Newzys option -->
@@ -120,121 +120,73 @@
     <string name="settings_100_newzys_value" translatable="false">100</string>
 
     <!-- Strings For Country Preference [CHAR LIMIT=30] -->
-    <string name="settings_country_label">@string/local_headlines</string>
+    <string name="settings_country_label">@string/choose_country</string>
     <string name="settings_country_key" translatable="false">@string/country</string>
     <string name="settings_country_default" translatable="false">@string/settings_us_value</string>
 
     <!-- Strings for Country labels -->
-    <string name="settings_ar_label">Argentina</string>
     <string name="settings_au_label">Australia</string>
-    <string name="settings_at_label">Austria</string>
-    <string name="settings_be_label">Belgium</string>
     <string name="settings_br_label">Brazil</string>
-    <string name="settings_bg_label">Bulgaria</string>
     <string name="settings_ca_label">Canada</string>
+    <string name="settings_ch_label">Switzerland</string>
     <string name="settings_cn_label">China</string>
-    <string name="settings_co_label">Colombia</string>
-    <string name="settings_cu_label">Cuba</string>
-    <string name="settings_cz_label">Czech Republic</string>
-    <string name="settings_eg_label">Egypt</string>
-    <string name="settings_fr_label">France</string>
     <string name="settings_de_label">Germany</string>
+    <string name="settings_eg_label">Egypt</string>
+    <string name="settings_es_label">Spain</string>
+    <string name="settings_fr_label">France</string>
+    <string name="settings_gb_label">United Kingdom</string>
     <string name="settings_gr_label">Greece</string>
     <string name="settings_hk_label">Hong Kong</string>
-    <string name="settings_hu_label">Hungary</string>
-    <string name="settings_in_label">India</string>
-    <string name="settings_id_label">Indonesia</string>
     <string name="settings_ie_label">Ireland</string>
     <string name="settings_il_label">Israel</string>
+    <string name="settings_in_label">India</string>
     <string name="settings_it_label">Italy</string>
     <string name="settings_jp_label">Japan</string>
-    <string name="settings_lv_label">Latvia</string>
-    <string name="settings_lt_label">Lithuania</string>
-    <string name="settings_my_label">Malaysia</string>
-    <string name="settings_mx_label">Mexico</string>
-    <string name="settings_ma_label">Morocco</string>
     <string name="settings_nl_label">Netherlands</string>
-    <string name="settings_nz_label">New Zealand</string>
-    <string name="settings_ng_label">Nigeria</string>
     <string name="settings_no_label">Norway</string>
+    <string name="settings_pe_label">Peru</string>
     <string name="settings_ph_label">Philippines</string>
-    <string name="settings_pl_label">Poland</string>
+    <string name="settings_pk_label">Pakistan</string>
     <string name="settings_pt_label">Portugal</string>
     <string name="settings_ro_label">Romania</string>
-    <string name="settings_ru_label">Russia</string>
-    <string name="settings_sa_label">Saudi Arabia</string>
-    <string name="settings_rs_label">Serbia</string>
-    <string name="settings_sg_label">Singapore</string>
-    <string name="settings_sk_label">Slovakia</string>
-    <string name="settings_si_label">Slovenia</string>
-    <string name="settings_za_label">South Africa</string>
-    <string name="settings_kr_label">South Korea</string>
+    <string name="settings_ru_label">Russian Federation</string>
     <string name="settings_se_label">Sweden</string>
-    <string name="settings_ch_label">Switzerland</string>
+    <string name="settings_sg_label">Singapore</string>
     <string name="settings_tw_label">Taiwan</string>
-    <string name="settings_th_label">Thailand</string>
-    <string name="settings_tr_label">Turkey</string>
-    <string name="settings_ae_label">UAE</string>
     <string name="settings_ua_label">Ukraine</string>
-    <string name="settings_gb_label">United Kingdom</string>
     <string name="settings_us_label">United States</string>
-    <string name="settings_ve_label">Venezuela</string>
 
     <!-- Strings for Country values -->
-    <string name="settings_ar_value">ar</string>
     <string name="settings_au_value">au</string>
-    <string name="settings_at_value">at</string>
-    <string name="settings_be_value">be</string>
     <string name="settings_br_value">br</string>
-    <string name="settings_bg_value">bg</string>
     <string name="settings_ca_value">ca</string>
+    <string name="settings_ch_value">ch</string>
     <string name="settings_cn_value">cn</string>
-    <string name="settings_co_value">co</string>
-    <string name="settings_cu_value">cu</string>
-    <string name="settings_cz_value">cz</string>
-    <string name="settings_eg_value">eg</string>
-    <string name="settings_fr_value">fr</string>
     <string name="settings_de_value">de</string>
+    <string name="settings_eg_value">eg</string>
+    <string name="settings_es_value">es</string>
+    <string name="settings_fr_value">fr</string>
+    <string name="settings_gb_value">gb</string>
     <string name="settings_gr_value">gr</string>
     <string name="settings_hk_value">hk</string>
-    <string name="settings_hu_value">hu</string>
-    <string name="settings_in_value">in</string>
-    <string name="settings_id_value">id</string>
     <string name="settings_ie_value">ie</string>
     <string name="settings_il_value">il</string>
+    <string name="settings_in_value">in</string>
     <string name="settings_it_value">it</string>
     <string name="settings_jp_value">jp</string>
-    <string name="settings_lv_value">lv</string>
-    <string name="settings_lt_value">lt</string>
-    <string name="settings_my_value">my</string>
-    <string name="settings_mx_value">mx</string>
-    <string name="settings_ma_value">ma</string>
     <string name="settings_nl_value">nl</string>
-    <string name="settings_nz_value">nz</string>
-    <string name="settings_ng_value">ng</string>
     <string name="settings_no_value">no</string>
+    <string name="settings_pe_value">pe</string>
     <string name="settings_ph_value">ph</string>
-    <string name="settings_pl_value">pl</string>
+    <string name="settings_pk_value">pk</string>
     <string name="settings_pt_value">pt</string>
     <string name="settings_ro_value">ro</string>
     <string name="settings_ru_value">ru</string>
-    <string name="settings_sa_value">sa</string>
-    <string name="settings_rs_value">rs</string>
-    <string name="settings_sg_value">sg</string>
-    <string name="settings_sk_value">sk</string>
-    <string name="settings_si_value">si</string>
-    <string name="settings_za_value">za</string>
-    <string name="settings_kr_value">kr</string>
     <string name="settings_se_value">se</string>
-    <string name="settings_ch_value">ch</string>
+    <string name="settings_sg_value">sg</string>
     <string name="settings_tw_value">tw</string>
-    <string name="settings_th_value">th</string>
-    <string name="settings_tr_value">tr</string>
-    <string name="settings_ae_value">ae</string>
     <string name="settings_ua_value">ua</string>
-    <string name="settings_gb_value">gb</string>
     <string name="settings_us_value">us</string>
-    <string name="settings_ve_value">ve</string>
 
     <!-- Strings For Newzys From Date Preference [CHAR LIMIT=30] -->
     <string name="settings_newzys_from_date_label">@string/from_date</string>

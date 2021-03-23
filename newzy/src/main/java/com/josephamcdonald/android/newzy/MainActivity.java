@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Find and setup the navigation drawer and open/close toggle.
         drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, tb, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, tb, R.string.open_navigation_drawer, R.string.close_navigation_drawer);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else {
             // Show Headlines on startup.
-            newzysTitle = getString(R.string.headlines);
+            newzysTitle = getString(R.string.top_headlines);
             launchFragment(R.id.headlines);
         }
     }
@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             newzysTitle = getString(R.string.support);
 
         } else {
-            newzysTitle = getString(R.string.headlines);
+            newzysTitle = getString(R.string.top_headlines);
             newzysQuery = sp.getString(
                     getString(R.string.settings_country_key),
                     getString(R.string.settings_country_default));
