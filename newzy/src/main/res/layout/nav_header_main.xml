@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/newzy_logo"
-        android:paddingTop="@dimen/margin_32dp"
+        android:paddingTop="@dimen/margin_48dp"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
