@@ -47,7 +47,7 @@
     <string name="sort_newzys_by">Sort Newzys By</string>
     <string name="newest">Newest</string>
     <string name="relevance">Relevance</string>
-    <string name="newzys_to_retrieve">Newzys in List</string>
+    <string name="newzys_to_list">Newzys To List</string>
     <string name="from_date">From Date</string>
     <string name="to_date">To Date</string>
 
@@ -98,10 +98,10 @@
     <string name="settings_sort_newzys_by_relevancy_label">@string/relevance</string>
     <string name="settings_sort_newzys_by_relevancy_value" translatable="false">relevancy</string>
 
-    <!-- Strings For Newzys To Retrieve Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzys_to_retrieve_label">@string/newzys_to_retrieve</string>
-    <string name="settings_newzys_to_retrieve_key" translatable="false">@string/max</string>
-    <string name="settings_newzys_to_retrieve_default" translatable="false">@string/settings_10_newzys_value</string>
+    <!-- Strings For Newzys To List Preference [CHAR LIMIT=30] -->
+    <string name="settings_newzys_to_list_label">@string/newzys_to_list</string>
+    <string name="settings_newzys_to_list_key" translatable="false">@string/max</string>
+    <string name="settings_newzys_to_list_default" translatable="false">@string/settings_10_newzys_value</string>
 
     <!-- Label for 10 Newzys option -->
     <string name="settings_10_newzys_label">10 (Free plan)</string>

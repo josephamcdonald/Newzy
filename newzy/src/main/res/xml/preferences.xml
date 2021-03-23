@@ -137,12 +137,12 @@
             app:useSimpleSummaryProvider="true" />
 
         <ListPreference
-            android:defaultValue="@string/settings_newzys_to_retrieve_default"
-            android:entries="@array/settings_newzys_to_retrieve_labels"
-            android:entryValues="@array/settings_newzys_to_retrieve_values"
+            android:defaultValue="@string/settings_newzys_to_list_default"
+            android:entries="@array/settings_newzys_to_list_labels"
+            android:entryValues="@array/settings_newzys_to_list_values"
             android:icon="@drawable/ic_list_numbered"
-            android:key="@string/settings_newzys_to_retrieve_key"
-            android:title="@string/settings_newzys_to_retrieve_label"
+            android:key="@string/settings_newzys_to_list_key"
+            android:title="@string/settings_newzys_to_list_label"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 
