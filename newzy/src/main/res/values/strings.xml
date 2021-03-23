@@ -109,7 +109,7 @@
 
     <!-- Label for 20 Newzys option -->
     <string name="settings_30_newzys_label">30 (GNews PLUS plan)</string>
-    <string name="settings_30_newzys_value" translatable="false">20</string>
+    <string name="settings_30_newzys_value" translatable="false">30</string>
 
     <!-- Label for 100 Newzys option -->
     <string name="settings_100_newzys_label">100 (GNews PRO plan)</string>
