@@ -239,29 +239,31 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // Prepare the baseUri that we just parsed so we can add query parameters to it.
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
-        if (MainActivity.newzysTitle.equals(getString(R.string.top_headlines))) {
-            // Append DEFAULT QUERY parameter.
-            uriBuilder.appendQueryParameter(getString(R.string.country), MainActivity.newzysQuery);
-
-        } else {
+        // If NOT "Top Headlines," append CUSTOM SEARCH parameters.
+        if (!MainActivity.newzysTitle.equals(getString(R.string.top_headlines))) {
             // Append CUSTOM QUERY parameter.
             uriBuilder.appendQueryParameter(getString(R.string.q), MainActivity.newzysQuery);
-
-            // If NOT empty, append FROM DATE parameter.
-            if (!Objects.requireNonNull(newzysFromDate).isEmpty()) {
-                uriBuilder.appendQueryParameter(getString(R.string.from), newzysFromDate + getString(R.string.time_append));
-            }
-            // If NOT empty, append TO DATE parameter.
-            if (!Objects.requireNonNull(newzysToDate).isEmpty()) {
-                uriBuilder.appendQueryParameter(getString(R.string.to), newzysToDate + getString(R.string.time_append));
-            }
             // Append SORT BY parameter.
             uriBuilder.appendQueryParameter(getString(R.string.sortby), newzysSortBy);
         }
-        // Append PAGE SIZE parameter.
+
+        // Append COUNTRY parameter.
+        uriBuilder.appendQueryParameter(getString(R.string.country), MainActivity.newzysQuery);
+
+        // Append MAX items to list parameter.
         uriBuilder.appendQueryParameter(getString(R.string.max), newzysToList);
 
-        // Append News API Key parameter.
+        // If NOT empty, append FROM DATE parameter.
+        if (!Objects.requireNonNull(newzysFromDate).isEmpty()) {
+            uriBuilder.appendQueryParameter(getString(R.string.from), newzysFromDate + getString(R.string.from_time_append));
+        }
+
+        // If NOT empty, append TO DATE parameter.
+        if (!Objects.requireNonNull(newzysToDate).isEmpty()) {
+            uriBuilder.appendQueryParameter(getString(R.string.to), newzysToDate + getString(R.string.to_time_append));
+        }
+
+        // Append API TOKEN parameter.
         uriBuilder.appendQueryParameter(getString(R.string.token), token);
 
         return uriBuilder.toString();
