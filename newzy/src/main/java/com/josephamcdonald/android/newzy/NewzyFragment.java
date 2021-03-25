@@ -154,11 +154,15 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // Hide the empty list view.
         emptyNewzysView.setVisibility(View.GONE);
 
-        // Declare and assign The Headlines default request URL.
-        String REQUEST_URL = getString(R.string.default_request_url);
+        // Declare request URL.
+        String REQUEST_URL;
 
-        // If Newzys chosen are not the default Top Headlines, assign the custom request URL.
-        if (!MainActivity.newzysTitle.equals(getString(R.string.top_headlines))) {
+        // If Newzys chosen are Top Headlines, assign the default request URL.
+        if (MainActivity.newzysTitle.equals(getString(R.string.top_headlines))) {
+            REQUEST_URL = getString(R.string.default_request_url);
+
+        } else {
+            // Assign the custom request URL.
             REQUEST_URL = getString(R.string.custom_request_url);
         }
 
@@ -212,12 +216,20 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(requireContext());
 
-        // Preferences string variables.
+        // Assign Preferences string variables.
+        String newzysTopic = sp.getString(
+                getString(R.string.settings_topic_key),
+                getString(R.string.settings_topic_default));
+
+        String newzysCountry = sp.getString(
+                getString(R.string.settings_country_key),
+                getString(R.string.settings_country_default));
+
         String newzysSortBy = sp.getString(
                 getString(R.string.settings_sort_newzys_by_key),
                 getString(R.string.settings_sort_newzys_by_default));
 
-        String newzysToList = sp.getString(
+       String newzysToList = sp.getString(
                 getString(R.string.settings_newzys_to_list_key),
                 getString(R.string.settings_newzys_to_list_default));
 
@@ -239,26 +251,31 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // Prepare the baseUri that we just parsed so we can add query parameters to it.
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
-        // If NOT "Top Headlines," append CUSTOM SEARCH parameters.
-        if (!MainActivity.newzysTitle.equals(getString(R.string.top_headlines))) {
-            // Append CUSTOM QUERY parameter.
+        // If "Top Headlines" chosen, append TOPIC parameter.
+        if (MainActivity.newzysTitle.equals(getString(R.string.top_headlines))) {
+            // Append TOPIC parameter.
+            uriBuilder.appendQueryParameter(getString(R.string.topic), newzysTopic);
+
+        } else {
+            // Append QUERY parameter.
             uriBuilder.appendQueryParameter(getString(R.string.q), MainActivity.newzysQuery);
-            // Append SORT BY parameter.
+
+            // Append SORTBY parameter.
             uriBuilder.appendQueryParameter(getString(R.string.sortby), newzysSortBy);
         }
 
         // Append COUNTRY parameter.
-        uriBuilder.appendQueryParameter(getString(R.string.country), MainActivity.newzysQuery);
+        uriBuilder.appendQueryParameter(getString(R.string.country), newzysCountry);
 
         // Append MAX items to list parameter.
         uriBuilder.appendQueryParameter(getString(R.string.max), newzysToList);
 
-        // If NOT empty, append FROM DATE parameter.
+        // If NOT empty, append FROM date parameter.
         if (!Objects.requireNonNull(newzysFromDate).isEmpty()) {
             uriBuilder.appendQueryParameter(getString(R.string.from), newzysFromDate + getString(R.string.from_time_append));
         }
 
-        // If NOT empty, append TO DATE parameter.
+        // If NOT empty, append TO date parameter.
         if (!Objects.requireNonNull(newzysToDate).isEmpty()) {
             uriBuilder.appendQueryParameter(getString(R.string.to), newzysToDate + getString(R.string.to_time_append));
         }

@@ -28,8 +28,8 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    // Declare Newzys query string.
-    static String newzysQuery;
+    // Initiate Newzys query string.
+    static String newzysQuery = "";
 
     // Declare Navigation Drawer menu items.
     static MenuItem mi1;
@@ -74,10 +74,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Set menu with current Newzy titles.
         setNewzyTitles(nv.getMenu());
 
-        // Assign startup Newzys query.
-        newzysQuery = sp.getString(getString(R.string.settings_country_key),
-                getString(R.string.settings_country_default));
-
         // Get "Show Support on startup" switch preference.
         boolean showSupport = sp.getBoolean(getString(R.string.settings_show_support_key), true);
 
@@ -90,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else {
             // Show Headlines on startup.
             newzysTitle = getString(R.string.top_headlines);
-            launchFragment(R.id.headlines);
+            launchFragment(R.id.top_headlines);
         }
     }
 
@@ -226,9 +222,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else {
             newzysTitle = getString(R.string.top_headlines);
-            newzysQuery = sp.getString(
-                    getString(R.string.settings_country_key),
-                    getString(R.string.settings_country_default));
         }
         launchFragment(item.getItemId());
 

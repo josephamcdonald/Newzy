@@ -42,7 +42,7 @@
     <string name="support_screen_summary">Display Newzy support screen at launch</string>
     <string name="show_support">show-support</string>
     <string name="choose_country">Choose Country</string>
-    <string name="choose_topic">Choose Topic</string>
+    <string name="top_headlines_topic">Top Headlines Topic</string>
     <string name="newzy_title">Newzy Title</string>
     <string name="newzy_search">Newzy Search</string>
     <string name="provide_newzy_title">Provide Newzy Title</string>
@@ -124,7 +124,7 @@
     <string name="settings_country_default" translatable="false">@string/settings_us_value</string>
 
     <!-- Strings For Topic Preference [CHAR LIMIT=30] -->
-    <string name="settings_topic_label">@string/choose_topic</string>
+    <string name="settings_topic_label">@string/top_headlines_topic</string>
     <string name="settings_topic_key" translatable="false">@string/topic</string>
     <string name="settings_topic_default" translatable="false">@string/settings_breaking_news_value</string>
 
