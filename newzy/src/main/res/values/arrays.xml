@@ -69,12 +69,14 @@
         <item>@string/settings_it_label</item>
         <item>@string/settings_jp_label</item>
         <item>@string/settings_nl_label</item>
-        <item>@string/settings_no_label</item>
+        <item>@string/settings_pk_label</item>
+        <item>@string/settings_pe_label</item>
         <item>@string/settings_ph_label</item>
         <item>@string/settings_pt_label</item>
         <item>@string/settings_ro_label</item>
         <item>@string/settings_ru_label</item>
         <item>@string/settings_sg_label</item>
+        <item>@string/settings_es_label</item>
         <item>@string/settings_se_label</item>
         <item>@string/settings_ch_label</item>
         <item>@string/settings_tw_label</item>
@@ -100,11 +102,14 @@
         <item>@string/settings_jp_value</item>
         <item>@string/settings_nl_value</item>
         <item>@string/settings_no_value</item>
+        <item>@string/settings_pk_value</item>
+        <item>@string/settings_pe_value</item>
         <item>@string/settings_ph_value</item>
         <item>@string/settings_pt_value</item>
         <item>@string/settings_ro_value</item>
         <item>@string/settings_ru_value</item>
         <item>@string/settings_sg_value</item>
+        <item>@string/settings_es_value</item>
         <item>@string/settings_se_value</item>
         <item>@string/settings_ch_value</item>
         <item>@string/settings_tw_value</item>
