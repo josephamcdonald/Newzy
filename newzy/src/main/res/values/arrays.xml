@@ -28,6 +28,30 @@
         <item>@string/settings_100_newzys_value</item>
     </string-array>
 
+    <string-array name="settings_topic_labels">
+        <item>@string/settings_breaking_news_label</item>
+        <item>@string/settings_world_label</item>
+        <item>@string/settings_nation_label</item>
+        <item>@string/settings_business_label</item>
+        <item>@string/settings_technology_label</item>
+        <item>@string/settings_entertainment_label</item>
+        <item>@string/settings_sports_label</item>
+        <item>@string/settings_science_label</item>
+        <item>@string/settings_health_label</item>
+    </string-array>
+
+    <string-array name="settings_topic_values">
+        <item>@string/settings_breaking_news_value</item>
+        <item>@string/settings_world_value</item>
+        <item>@string/settings_nation_value</item>
+        <item>@string/settings_business_value</item>
+        <item>@string/settings_technology_value</item>
+        <item>@string/settings_entertainment_value</item>
+        <item>@string/settings_sports_value</item>
+        <item>@string/settings_science_value</item>
+        <item>@string/settings_health_value</item>
+    </string-array>
+
     <string-array name="settings_country_labels">
         <item>@string/settings_au_label</item>
         <item>@string/settings_br_label</item>

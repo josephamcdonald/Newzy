@@ -25,6 +25,7 @@
 
     <!-- Build Request URL -->
     <string name="country" translatable="false">country</string>
+    <string name="topic" translatable="false">topic</string>
     <string name="q" translatable="false">q</string>
     <string name="from" translatable="false">from</string>
     <string name="to" translatable="false">to</string>
@@ -41,6 +42,7 @@
     <string name="support_screen_summary">Display Newzy support screen at launch</string>
     <string name="show_support">show-support</string>
     <string name="choose_country">Choose Country</string>
+    <string name="choose_topic">Choose Topic</string>
     <string name="newzy_title">Newzy Title</string>
     <string name="newzy_search">Newzy Search</string>
     <string name="provide_newzy_title">Provide Newzy Title</string>
@@ -108,7 +110,7 @@
     <string name="settings_10_newzys_label">10 (GNews FREE plan)</string>
     <string name="settings_10_newzys_value" translatable="false">10</string>
 
-    <!-- Label for 20 Newzys option -->
+    <!-- Label for 30 Newzys option -->
     <string name="settings_30_newzys_label">30 (GNews PLUS plan)</string>
     <string name="settings_30_newzys_value" translatable="false">30</string>
 
@@ -120,6 +122,11 @@
     <string name="settings_country_label">@string/choose_country</string>
     <string name="settings_country_key" translatable="false">@string/country</string>
     <string name="settings_country_default" translatable="false">@string/settings_us_value</string>
+
+    <!-- Strings For Topic Preference [CHAR LIMIT=30] -->
+    <string name="settings_topic_label">@string/choose_topic</string>
+    <string name="settings_topic_key" translatable="false">@string/topic</string>
+    <string name="settings_topic_default" translatable="false">@string/settings_breaking_news_value</string>
 
     <!-- Strings for Country labels -->
     <string name="settings_au_label">Australia</string>
@@ -185,6 +192,28 @@
     <string name="settings_ua_value">ua</string>
     <string name="settings_us_value">us</string>
 
+    <!-- Strings for Topic labels -->
+    <string name="settings_breaking_news_label">Breaking News</string>
+    <string name="settings_world_label">World</string>
+    <string name="settings_nation_label">National</string>
+    <string name="settings_business_label">Business</string>
+    <string name="settings_technology_label">Technology</string>
+    <string name="settings_entertainment_label">Entertainment</string>
+    <string name="settings_sports_label">Sports</string>
+    <string name="settings_science_label">Science</string>
+    <string name="settings_health_label">Health</string>
+
+    <!-- Strings for Topic values -->
+    <string name="settings_breaking_news_value">breaking-news</string>
+    <string name="settings_world_value">world</string>
+    <string name="settings_nation_value">nation</string>
+    <string name="settings_business_value">business</string>
+    <string name="settings_technology_value">technology</string>
+    <string name="settings_entertainment_value">entertainment</string>
+    <string name="settings_sports_value">sports</string>
+    <string name="settings_science_value">science</string>
+    <string name="settings_health_value">health</string>
+
     <!-- Strings For Newzys From Date Preference [CHAR LIMIT=30] -->
     <string name="settings_newzys_from_date_label">@string/from_date</string>
     <string name="settings_newzys_from_date_key" translatable="false">@string/from</string>
@@ -238,7 +267,7 @@
     <string name="settings_newzy_title_five_default" translatable="false">@string/empty_string</string>
     <string name="provide_newzy_title_five">@string/provide_newzy_title</string>
 
-    <!-- Strings For Newzy Title 5 Preference [CHAR LIMIT=30] -->
+    <!-- Strings For Newzy Title 6 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_title_six_label">@string/newzy_title</string>
     <string name="settings_newzy_title_six_key" translatable="false">title6</string>
     <string name="settings_newzy_title_six_default" translatable="false">@string/empty_string</string>
@@ -274,7 +303,7 @@
     <string name="settings_newzy_search_five_default" translatable="false">@string/empty_string</string>
     <string name="provide_newzy_search_five">@string/provide_newzy_search</string>
 
-    <!-- Strings For Newzy Search 5 Preference [CHAR LIMIT=30] -->
+    <!-- Strings For Newzy Search 6 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_search_six_label">@string/newzy_search</string>
     <string name="settings_newzy_search_six_key" translatable="false">search6</string>
     <string name="settings_newzy_search_six_default" translatable="false">@string/empty_string</string>
