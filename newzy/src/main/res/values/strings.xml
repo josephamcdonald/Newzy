@@ -136,7 +136,6 @@
     <string name="settings_cn_label">China</string>
     <string name="settings_de_label">Germany</string>
     <string name="settings_eg_label">Egypt</string>
-    <string name="settings_es_label">Spain</string>
     <string name="settings_fr_label">France</string>
     <string name="settings_gb_label">United Kingdom</string>
     <string name="settings_gr_label">Greece</string>
@@ -148,9 +147,7 @@
     <string name="settings_jp_label">Japan</string>
     <string name="settings_nl_label">Netherlands</string>
     <string name="settings_no_label">Norway</string>
-    <string name="settings_pe_label">Peru</string>
     <string name="settings_ph_label">Philippines</string>
-    <string name="settings_pk_label">Pakistan</string>
     <string name="settings_pt_label">Portugal</string>
     <string name="settings_ro_label">Romania</string>
     <string name="settings_ru_label">Russian Federation</string>
@@ -168,7 +165,6 @@
     <string name="settings_cn_value">cn</string>
     <string name="settings_de_value">de</string>
     <string name="settings_eg_value">eg</string>
-    <string name="settings_es_value">es</string>
     <string name="settings_fr_value">fr</string>
     <string name="settings_gb_value">gb</string>
     <string name="settings_gr_value">gr</string>
@@ -180,9 +176,7 @@
     <string name="settings_jp_value">jp</string>
     <string name="settings_nl_value">nl</string>
     <string name="settings_no_value">no</string>
-    <string name="settings_pe_value">pe</string>
     <string name="settings_ph_value">ph</string>
-    <string name="settings_pk_value">pk</string>
     <string name="settings_pt_value">pt</string>
     <string name="settings_ro_value">ro</string>
     <string name="settings_ru_value">ru</string>
