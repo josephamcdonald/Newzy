@@ -136,7 +136,6 @@
     <string name="settings_cn_label">China</string>
     <string name="settings_de_label">Germany</string>
     <string name="settings_eg_label">Egypt</string>
-    <string name="settings_es_label">Spain</string>
     <string name="settings_fr_label">France</string>
     <string name="settings_gb_label">United Kingdom</string>
     <string name="settings_gr_label">Greece</string>
@@ -168,7 +167,6 @@
     <string name="settings_cn_value">cn</string>
     <string name="settings_de_value">de</string>
     <string name="settings_eg_value">eg</string>
-    <string name="settings_es_value">es</string>
     <string name="settings_fr_value">fr</string>
     <string name="settings_gb_value">gb</string>
     <string name="settings_gr_value">gr</string>
