@@ -69,6 +69,7 @@
         <item>@string/settings_it_label</item>
         <item>@string/settings_jp_label</item>
         <item>@string/settings_nl_label</item>
+        <item>@string/settings_no_label</item>
         <item>@string/settings_pk_label</item>
         <item>@string/settings_pe_label</item>
         <item>@string/settings_ph_label</item>
