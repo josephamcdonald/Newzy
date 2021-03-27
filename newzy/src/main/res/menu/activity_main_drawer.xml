@@ -12,7 +12,7 @@
                 <item
                     android:id="@+id/top_headlines"
                     android:icon="@drawable/ic_news"
-                    android:title="@string/top_headlines" />
+                    android:title="@string/top_newzys" />
                 <item
                     android:id="@+id/newzys_one"
                     android:icon="@drawable/ic_news"

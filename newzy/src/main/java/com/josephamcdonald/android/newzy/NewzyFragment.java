@@ -158,7 +158,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         String REQUEST_URL;
 
         // If Newzys chosen are Top Headlines, assign the default request URL.
-        if (MainActivity.newzysTitle.equals(getString(R.string.top_headlines))) {
+        if (MainActivity.newzysTitle.equals(getString(R.string.top_newzys))) {
             REQUEST_URL = getString(R.string.default_request_url);
 
         } else {
@@ -252,7 +252,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         // If "Top Headlines" chosen, append TOPIC parameter.
-        if (MainActivity.newzysTitle.equals(getString(R.string.top_headlines))) {
+        if (MainActivity.newzysTitle.equals(getString(R.string.top_newzys))) {
             // Append TOPIC parameter.
             uriBuilder.appendQueryParameter(getString(R.string.topic), newzysTopic);
 

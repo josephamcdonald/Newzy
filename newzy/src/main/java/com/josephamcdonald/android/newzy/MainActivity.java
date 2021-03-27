@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else {
             // Show Headlines on startup.
-            newzysTitle = getString(R.string.top_headlines);
+            newzysTitle = getString(R.string.top_newzys);
             launchFragment(R.id.top_headlines);
         }
     }
@@ -221,7 +221,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             newzysTitle = getString(R.string.support);
 
         } else {
-            newzysTitle = getString(R.string.top_headlines);
+            newzysTitle = getString(R.string.top_newzys);
         }
         launchFragment(item.getItemId());
 
