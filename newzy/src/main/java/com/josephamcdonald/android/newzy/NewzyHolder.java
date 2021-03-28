@@ -22,11 +22,10 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-import java.util.Objects;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 
 public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
@@ -117,21 +116,13 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         }
     }
 
-    private String formatDate(String dateIn) {
+    private String formatDate(String dateStringIn) {
 
-        String patternIn = context.getString(R.string.date_pattern_in);
-        String patternOut = context.getString(R.string.date_pattern_out);
+        Instant instantIn = Instant.parse(dateStringIn);
+        LocalDateTime dateTimeIn = LocalDateTime.ofInstant(instantIn, ZoneId.systemDefault());
+        String datePatternOut = context.getString(R.string.date_pattern_out);
+        DateTimeFormatter dateFormatOut = DateTimeFormatter.ofPattern(datePatternOut);
 
-        SimpleDateFormat dateFormatIn = new SimpleDateFormat(patternIn, Locale.getDefault());
-        SimpleDateFormat dateFormatOut = new SimpleDateFormat(patternOut, Locale.getDefault());
-
-        try {
-            Date dateOut = dateFormatIn.parse(dateIn);
-            return dateFormatOut.format(Objects.requireNonNull(dateOut)) + context.getString(R.string.utc);
-
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return context.getString(R.string.app_name);
-        }
+        return dateFormatOut.format(dateTimeIn);
     }
 }

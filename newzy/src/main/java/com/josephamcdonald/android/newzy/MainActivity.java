@@ -84,9 +84,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             launchFragment(R.id.support);
 
         } else {
-            // Show Headlines on startup.
+            // Show Top Newzys on startup.
             newzysTitle = getString(R.string.top_newzys);
-            launchFragment(R.id.top_headlines);
+            launchFragment(R.id.top_newzys);
         }
     }
 

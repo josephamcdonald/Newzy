@@ -10,7 +10,7 @@
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/top_headlines"
+                    android:id="@+id/top_newzys"
                     android:icon="@drawable/ic_news"
                     android:title="@string/top_newzys" />
                 <item
