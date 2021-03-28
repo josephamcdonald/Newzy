@@ -96,8 +96,8 @@
     <string name="settings_sort_newzys_by_newest_value" translatable="false">publishedAt</string>
 
     <!-- Label for order-by relevance option [CHAR LIMIT=20] -->
-    <string name="settings_sort_newzys_by_relevancy_label">@string/relevance</string>
-    <string name="settings_sort_newzys_by_relevancy_value" translatable="false">relevancy</string>
+    <string name="settings_sort_newzys_by_relevance_label">@string/relevance</string>
+    <string name="settings_sort_newzys_by_relevance_value" translatable="false">relevance</string>
 
     <!-- Strings For Newzys To List Preference [CHAR LIMIT=30] -->
     <string name="settings_newzys_to_list_label">@string/newzys_to_list</string>
