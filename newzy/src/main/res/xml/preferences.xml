@@ -44,7 +44,7 @@
         android:title="@string/titles_and_searches"
         app:iconSpaceReserved="false">
         <EditTextPreference
-            android:icon="@drawable/ic_label"
+            android:icon="@drawable/ic_news"
             android:key="@string/settings_newzy_title_one_key"
             android:summary="@string/provide_newzy_title_one"
             android:title="@string/settings_newzy_title_one_label"
@@ -58,7 +58,7 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
-            android:icon="@drawable/ic_label"
+            android:icon="@drawable/ic_news"
             android:key="@string/settings_newzy_title_two_key"
             android:summary="@string/provide_newzy_title_two"
             android:title="@string/settings_newzy_title_two_label"
@@ -73,7 +73,7 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
-            android:icon="@drawable/ic_label"
+            android:icon="@drawable/ic_news"
             android:key="@string/settings_newzy_title_three_key"
             android:summary="@string/provide_newzy_title_three"
             android:title="@string/settings_newzy_title_three_label"
@@ -88,7 +88,7 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
-            android:icon="@drawable/ic_label"
+            android:icon="@drawable/ic_news"
             android:key="@string/settings_newzy_title_four_key"
             android:summary="@string/provide_newzy_title_four"
             android:title="@string/settings_newzy_title_four_label"
@@ -103,7 +103,7 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
-            android:icon="@drawable/ic_label"
+            android:icon="@drawable/ic_news"
             android:key="@string/settings_newzy_title_five_key"
             android:summary="@string/provide_newzy_title_five"
             android:title="@string/settings_newzy_title_five_label"
@@ -118,7 +118,7 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
-            android:icon="@drawable/ic_label"
+            android:icon="@drawable/ic_news"
             android:key="@string/settings_newzy_title_six_key"
             android:summary="@string/provide_newzy_title_six"
             android:title="@string/settings_newzy_title_six_label"
