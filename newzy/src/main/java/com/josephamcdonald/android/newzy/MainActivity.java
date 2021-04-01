@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         newzysTopic = sp.getString(getString(R.string.settings_topic_key),
                 getString(R.string.settings_topic_default));
+
         if (newzysTopic.equals(getString(R.string.settings_breaking_news_value))) {
             newzysTitle = getString(R.string.settings_breaking_news_label);
 
@@ -201,6 +202,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (item.getItemId() == R.id.newzys_topic) {
             newzysTopic = sp.getString(getString(R.string.settings_topic_key),
                     getString(R.string.settings_topic_default));
+
             if (newzysTopic.equals(getString(R.string.settings_breaking_news_value))) {
                 newzysTitle = getString(R.string.settings_breaking_news_label);
 
