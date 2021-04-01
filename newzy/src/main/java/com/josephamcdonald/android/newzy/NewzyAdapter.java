@@ -35,7 +35,7 @@ class NewzyAdapter extends RecyclerView.Adapter<NewzyHolder> {
 
     @NonNull
     @Override
-    public NewzyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public NewzyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         // Inflate the item view and return the NewzyHolder.
         View view = LayoutInflater.from(parent.getContext()).inflate(this.itemResource, parent, false);
@@ -44,7 +44,7 @@ class NewzyAdapter extends RecyclerView.Adapter<NewzyHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NewzyHolder holder, int position) {
+    public void onBindViewHolder(NewzyHolder holder, int position) {
 
         // Use position to access the current Newzy.
         Newzy newzy = this.newzys.get(position);

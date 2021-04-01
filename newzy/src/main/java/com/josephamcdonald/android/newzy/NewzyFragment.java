@@ -35,7 +35,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -67,7 +66,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         // Inflate the root newzy item view.
@@ -158,15 +157,13 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // Declare request URL.
         String REQUEST_URL;
 
-        String[] topics = getResources().getStringArray(R.array.settings_topic_labels);
-
-        // If Newzys chosen are Top Headlines, assign the default request URL.
-        if (Arrays.asList(topics).contains(MainActivity.newzysTitle)) {
-            REQUEST_URL = getString(R.string.default_request_url);
-
-        } else {
+        // If Newzys Search chosen, assign the custom request URL.
+        if (MainActivity.newzysSearch) {
             // Assign the custom request URL.
             REQUEST_URL = getString(R.string.custom_request_url);
+
+        } else {
+            REQUEST_URL = getString(R.string.default_request_url);
         }
 
         // Build the requested URL. Load the Newzy list. Return the Loader.
@@ -220,6 +217,10 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(requireContext());
 
         // Assign Preferences string variables.
+        String newzysTopic = sp.getString(
+                getString(R.string.settings_topic_key),
+                getString(R.string.settings_topic_default));
+
         String newzysCountry = sp.getString(
                 getString(R.string.settings_country_key),
                 getString(R.string.settings_country_default));
@@ -250,21 +251,18 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // Prepare the baseUri that we just parsed so we can add query parameters to it.
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
-        String[] topics = getResources().getStringArray(R.array.settings_topic_labels);
-
         // If topic Newzys chosen, append TOPIC parameter.
-        if (Arrays.asList(topics).contains(MainActivity.newzysTitle)) {
-            // Append TOPIC parameter.
-            uriBuilder.appendQueryParameter(getString(R.string.topic), MainActivity.newzysTopic);
-
-        } else {
+        if (MainActivity.newzysSearch) {
             // Append QUERY parameter.
             uriBuilder.appendQueryParameter(getString(R.string.q), MainActivity.newzysQuery);
 
             // Append SORTBY parameter.
             uriBuilder.appendQueryParameter(getString(R.string.sortby), newzysSortBy);
-        }
 
+        } else {
+            // Append TOPIC parameter.
+            uriBuilder.appendQueryParameter(getString(R.string.topic), newzysTopic);
+        }
         // Append COUNTRY parameter.
         uriBuilder.appendQueryParameter(getString(R.string.country), newzysCountry);
 
@@ -275,12 +273,10 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         if (!Objects.requireNonNull(newzysFromDate).isEmpty()) {
             uriBuilder.appendQueryParameter(getString(R.string.from), newzysFromDate + getString(R.string.from_time_append));
         }
-
         // If NOT empty, append TO date parameter.
         if (!Objects.requireNonNull(newzysToDate).isEmpty()) {
             uriBuilder.appendQueryParameter(getString(R.string.to), newzysToDate + getString(R.string.to_time_append));
         }
-
         // Append API TOKEN parameter.
         uriBuilder.appendQueryParameter(getString(R.string.token), token);
 

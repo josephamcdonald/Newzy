@@ -12,7 +12,6 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.browser.customtabs.CustomTabColorSchemeParams;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.fragment.app.Fragment;
@@ -29,18 +28,18 @@ public class SupportFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         // Inflate the support_main screen view.
         View rootView = inflater.inflate(R.layout.support_main, container, false);
 
         // Find NewsAPI.org views.
-        TextView newsApiOrg = rootView.findViewById(R.id.news_api);
+        TextView newsApi = rootView.findViewById(R.id.news_api);
         TextView newsApiReg = rootView.findViewById(R.id.news_api_reg);
 
         // Set click listeners on NewsAPI.org views.
-        newsApiOrg.setOnClickListener(this);
+        newsApi.setOnClickListener(this);
         newsApiReg.setOnClickListener(this);
 
         // Set current app version name.

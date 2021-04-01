@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.text.InputType;
 import android.widget.EditText;
 
-import androidx.annotation.NonNull;
 import androidx.preference.EditTextPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -53,7 +52,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         // Create listener to set input type and hint for News API key.
         EditTextPreference.OnBindEditTextListener apiKeyBindEditTextListener = new EditTextPreference.OnBindEditTextListener() {
             @Override
-            public void onBindEditText(@NonNull EditText editText) {
+            public void onBindEditText(EditText editText) {
                 editText.setInputType(InputType.TYPE_CLASS_TEXT);
                 editText.setHint(R.string.provide_api_key);
                 editText.selectAll();
@@ -63,7 +62,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         // Create listener to set input type and hint for Newzy titles.
         EditTextPreference.OnBindEditTextListener titleBindEditTextListener = new EditTextPreference.OnBindEditTextListener() {
             @Override
-            public void onBindEditText(@NonNull EditText editText) {
+            public void onBindEditText(EditText editText) {
                 editText.setInputType(InputType.TYPE_CLASS_TEXT);
                 editText.setHint(R.string.provide_newzy_title);
                 editText.selectAll();
@@ -73,7 +72,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         // Create listener to set input type and hint for Newzy searches.
         EditTextPreference.OnBindEditTextListener searchBindEditTextListener = new EditTextPreference.OnBindEditTextListener() {
             @Override
-            public void onBindEditText(@NonNull EditText editText) {
+            public void onBindEditText(EditText editText) {
                 editText.setInputType(InputType.TYPE_CLASS_TEXT);
                 editText.setHint(R.string.provide_newzy_search);
                 editText.selectAll();
@@ -83,7 +82,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         // Create listener to set input type and hint for Newzy dates.
         EditTextPreference.OnBindEditTextListener dateBindEditTextListener = new EditTextPreference.OnBindEditTextListener() {
             @Override
-            public void onBindEditText(@NonNull EditText editText) {
+            public void onBindEditText(EditText editText) {
                 editText.setInputType(InputType.TYPE_CLASS_DATETIME);
                 editText.setHint(R.string.date_format);
                 editText.selectAll();
