@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     static String newzysQuery = "";
 
     // Declare Navigation Drawer menu items.
+    static MenuItem mi0;
     static MenuItem mi1;
     static MenuItem mi2;
     static MenuItem mi3;
@@ -41,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // Declare Newzys title.
     static String newzysTitle;
+
+    // Declare Newzys Topic;
+    static String newzysTopic;
 
     // Declare Navigation Drawer.
     private DrawerLayout drawer;
@@ -84,15 +88,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             launchFragment(R.id.support);
 
         } else {
-            // Show Top Newzys on startup.
-            newzysTitle = getString(R.string.top_newzys);
-            launchFragment(R.id.top_newzys);
+            launchFragment(R.id.newzys_topic);
         }
     }
 
     private void setNewzyTitles(Menu menu) {
-
         // Find the Menu Items.
+        mi0 = menu.findItem(R.id.newzys_topic);
         mi1 = menu.findItem(R.id.newzys_one);
         mi2 = menu.findItem(R.id.newzys_two);
         mi3 = menu.findItem(R.id.newzys_three);
@@ -100,7 +102,37 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mi5 = menu.findItem(R.id.newzys_five);
         mi6 = menu.findItem(R.id.newzys_six);
 
-        // Assign current preference titles.
+        newzysTopic = sp.getString(getString(R.string.settings_topic_key),
+                getString(R.string.settings_topic_default));
+        if (newzysTopic.equals(getString(R.string.settings_breaking_news_value))) {
+            newzysTitle = getString(R.string.settings_breaking_news_label);
+
+        } else if (newzysTopic.equals(getString(R.string.settings_world_value))) {
+            newzysTitle = getString(R.string.settings_world_label);
+
+        } else if (newzysTopic.equals(getString(R.string.settings_nation_value))) {
+            newzysTitle = getString(R.string.settings_nation_label);
+
+        } else if (newzysTopic.equals(getString(R.string.settings_business_value))) {
+            newzysTitle = getString(R.string.settings_business_label);
+
+        } else if (newzysTopic.equals(getString(R.string.settings_technology_value))) {
+            newzysTitle = getString(R.string.settings_technology_label);
+
+        } else if (newzysTopic.equals(getString(R.string.settings_entertainment_value))) {
+            newzysTitle = getString(R.string.settings_entertainment_label);
+
+        } else if (newzysTopic.equals(getString(R.string.settings_sports_value))) {
+            newzysTitle = getString(R.string.settings_sports_label);
+
+        } else if (newzysTopic.equals(getString(R.string.settings_science_value))) {
+            newzysTitle = getString(R.string.settings_science_label);
+
+        } else if (newzysTopic.equals(getString(R.string.settings_health_value))) {
+            newzysTitle = getString(R.string.settings_health_label);
+        }
+        mi0.setTitle(newzysTitle);
+
         String title1 = sp.getString(getString(R.string.settings_newzy_title_one_key),
                 getString(R.string.settings_newzy_title_one_default));
         String title2 = sp.getString(getString(R.string.settings_newzy_title_two_key),
@@ -166,7 +198,38 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        if (item.getItemId() == R.id.newzys_one) {
+        if (item.getItemId() == R.id.newzys_topic) {
+            newzysTopic = sp.getString(getString(R.string.settings_topic_key),
+                    getString(R.string.settings_topic_default));
+            if (newzysTopic.equals(getString(R.string.settings_breaking_news_value))) {
+                newzysTitle = getString(R.string.settings_breaking_news_label);
+
+            } else if (newzysTopic.equals(getString(R.string.settings_world_value))) {
+                newzysTitle = getString(R.string.settings_world_label);
+
+            } else if (newzysTopic.equals(getString(R.string.settings_nation_value))) {
+                newzysTitle = getString(R.string.settings_nation_label);
+
+            } else if (newzysTopic.equals(getString(R.string.settings_business_value))) {
+                newzysTitle = getString(R.string.settings_business_label);
+
+            } else if (newzysTopic.equals(getString(R.string.settings_technology_value))) {
+                newzysTitle = getString(R.string.settings_technology_label);
+
+            } else if (newzysTopic.equals(getString(R.string.settings_entertainment_value))) {
+                newzysTitle = getString(R.string.settings_entertainment_label);
+
+            } else if (newzysTopic.equals(getString(R.string.settings_sports_value))) {
+                newzysTitle = getString(R.string.settings_sports_label);
+
+            } else if (newzysTopic.equals(getString(R.string.settings_science_value))) {
+                newzysTitle = getString(R.string.settings_science_label);
+
+            } else if (newzysTopic.equals(getString(R.string.settings_health_value))) {
+                newzysTitle = getString(R.string.settings_health_label);
+            }
+
+        } else if (item.getItemId() == R.id.newzys_one) {
             newzysTitle = sp.getString(
                     getString(R.string.settings_newzy_title_one_key),
                     getString(R.string.settings_newzy_title_one_default));
@@ -219,9 +282,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else if (item.getItemId() == R.id.support) {
             newzysTitle = getString(R.string.support);
-
-        } else {
-            newzysTitle = getString(R.string.top_newzys);
         }
         launchFragment(item.getItemId());
 

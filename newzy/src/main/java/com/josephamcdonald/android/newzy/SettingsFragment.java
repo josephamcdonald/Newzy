@@ -13,6 +13,7 @@ import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.preference.EditTextPreference;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
@@ -28,7 +29,9 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.preferences, rootKey);
 
-        //Find Newzy EditTextPreferences.
+        //Find Newzy Preferences.
+        ListPreference newzyTopic = findPreference(getString(R.string.settings_topic_key));
+
         EditTextPreference newzyApiKey = findPreference(getString(R.string.settings_api_key_key));
         EditTextPreference newzyFromDate = findPreference(getString(R.string.settings_newzys_from_date_key));
         EditTextPreference newzyToDate = findPreference(getString(R.string.settings_newzys_to_date_key));
@@ -110,6 +113,9 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         Objects.requireNonNull(newzyFromDate).setOnBindEditTextListener(dateBindEditTextListener);
         Objects.requireNonNull(newzyToDate).setOnBindEditTextListener(dateBindEditTextListener);
 
+        // Set listener on Newzy topic preference.
+        newzyTopic.setOnPreferenceChangeListener(this);
+
         // Set preference change listeners on Newzy title preferences.
         Objects.requireNonNull(newzyTitleOne).setOnPreferenceChangeListener(this);
         Objects.requireNonNull(newzyTitleTwo).setOnPreferenceChangeListener(this);
@@ -125,8 +131,45 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         String preferenceKey = preference.getKey();
         String stringValue = newValue.toString();
 
-        // If a Newzy title preference is changed, update its menu title.
-        if (preferenceKey.equals(getString(R.string.settings_newzy_title_one_key))) {
+        // If a Newzy preference is changed, update its menu title.
+        if (preferenceKey.equals(getString(R.string.settings_topic_key))) {
+            if (stringValue.equals(getString(R.string.settings_breaking_news_value))) {
+                MainActivity.mi0.setTitle(getString(R.string.settings_breaking_news_label));
+                MainActivity.mi0.setIcon(R.drawable.ic_news);
+
+            } else if (stringValue.equals(getString(R.string.settings_world_value))) {
+                MainActivity.mi0.setTitle(getString(R.string.settings_world_label));
+                MainActivity.mi0.setIcon(R.drawable.ic_world);
+
+            } else if (stringValue.equals(getString(R.string.settings_nation_value))) {
+                MainActivity.mi0.setTitle(getString(R.string.settings_nation_label));
+                MainActivity.mi0.setIcon(R.drawable.ic_national);
+
+            } else if (stringValue.equals(getString(R.string.settings_business_value))) {
+                MainActivity.mi0.setTitle(getString(R.string.settings_business_label));
+                MainActivity.mi0.setIcon(R.drawable.ic_business);
+
+            } else if (stringValue.equals(getString(R.string.settings_technology_value))) {
+                MainActivity.mi0.setTitle(getString(R.string.settings_technology_label));
+                MainActivity.mi0.setIcon(R.drawable.ic_technology);
+
+            } else if (stringValue.equals(getString(R.string.settings_entertainment_value))) {
+                MainActivity.mi0.setTitle(getString(R.string.settings_entertainment_label));
+                MainActivity.mi0.setIcon(R.drawable.ic_entertainment);
+
+            } else if (stringValue.equals(getString(R.string.settings_sports_value))) {
+                MainActivity.mi0.setTitle(getString(R.string.settings_sports_label));
+                MainActivity.mi0.setIcon(R.drawable.ic_sports);
+
+            } else if (stringValue.equals(getString(R.string.settings_science_value))) {
+                MainActivity.mi0.setTitle(getString(R.string.settings_science_label));
+                MainActivity.mi0.setIcon(R.drawable.ic_science);
+
+            } else if (stringValue.equals(getString(R.string.settings_health_value))) {
+                MainActivity.mi0.setTitle(getString(R.string.settings_health_label));
+                MainActivity.mi0.setIcon(R.drawable.ic_health);
+            }
+        } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_one_key))) {
             if (stringValue.isEmpty()) {
                 MainActivity.mi1.setVisible(false);
 

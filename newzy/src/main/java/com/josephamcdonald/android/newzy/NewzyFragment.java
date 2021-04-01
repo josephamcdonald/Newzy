@@ -35,6 +35,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -157,8 +158,10 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // Declare request URL.
         String REQUEST_URL;
 
+        String[] topics = getResources().getStringArray(R.array.settings_topic_labels);
+
         // If Newzys chosen are Top Headlines, assign the default request URL.
-        if (MainActivity.newzysTitle.equals(getString(R.string.top_newzys))) {
+        if (Arrays.asList(topics).contains(MainActivity.newzysTitle)) {
             REQUEST_URL = getString(R.string.default_request_url);
 
         } else {
@@ -217,10 +220,6 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(requireContext());
 
         // Assign Preferences string variables.
-        String newzysTopic = sp.getString(
-                getString(R.string.settings_topic_key),
-                getString(R.string.settings_topic_default));
-
         String newzysCountry = sp.getString(
                 getString(R.string.settings_country_key),
                 getString(R.string.settings_country_default));
@@ -229,7 +228,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
                 getString(R.string.settings_sort_newzys_by_key),
                 getString(R.string.settings_sort_newzys_by_default));
 
-       String newzysToList = sp.getString(
+        String newzysToList = sp.getString(
                 getString(R.string.settings_newzys_to_list_key),
                 getString(R.string.settings_newzys_to_list_default));
 
@@ -251,10 +250,12 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // Prepare the baseUri that we just parsed so we can add query parameters to it.
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
-        // If "Top Headlines" chosen, append TOPIC parameter.
-        if (MainActivity.newzysTitle.equals(getString(R.string.top_newzys))) {
+        String[] topics = getResources().getStringArray(R.array.settings_topic_labels);
+
+        // If topic Newzys chosen, append TOPIC parameter.
+        if (Arrays.asList(topics).contains(MainActivity.newzysTitle)) {
             // Append TOPIC parameter.
-            uriBuilder.appendQueryParameter(getString(R.string.topic), newzysTopic);
+            uriBuilder.appendQueryParameter(getString(R.string.topic), MainActivity.newzysTopic);
 
         } else {
             // Append QUERY parameter.
