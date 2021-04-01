@@ -35,7 +35,7 @@
         android:defaultValue="@string/settings_topic_default"
         android:entries="@array/settings_topic_labels"
         android:entryValues="@array/settings_topic_values"
-        android:icon="@drawable/ic_news"
+        android:icon="@drawable/ic_topic"
         android:key="@string/settings_topic_key"
         android:title="@string/settings_topic_label"
         app:useSimpleSummaryProvider="true" />
