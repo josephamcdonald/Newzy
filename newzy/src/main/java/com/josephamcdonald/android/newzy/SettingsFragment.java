@@ -113,7 +113,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         Objects.requireNonNull(newzyToDate).setOnBindEditTextListener(dateBindEditTextListener);
 
         // Set listener on Newzy topic preference.
-        newzyTopic.setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(newzyTopic).setOnPreferenceChangeListener(this);
 
         // Set preference change listeners on Newzy title preferences.
         Objects.requireNonNull(newzyTitleOne).setOnPreferenceChangeListener(this);
@@ -130,42 +130,42 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         String preferenceKey = preference.getKey();
         String stringValue = newValue.toString();
 
-        // If a Newzy preference is changed, update its menu title.
+        // If a Newzy preference is changed, update its menu item title.
         if (preferenceKey.equals(getString(R.string.settings_topic_key))) {
             if (stringValue.equals(getString(R.string.settings_breaking_news_value))) {
                 MainActivity.mi0.setTitle(getString(R.string.settings_breaking_news_label));
                 MainActivity.mi0.setIcon(R.drawable.ic_breaking);
 
             } else if (stringValue.equals(getString(R.string.settings_world_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_world_label));
+                MainActivity.mi0.setTitle(getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.mi0.setIcon(R.drawable.ic_world);
 
             } else if (stringValue.equals(getString(R.string.settings_nation_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_nation_label));
+                MainActivity.mi0.setTitle(getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.mi0.setIcon(R.drawable.ic_national);
 
             } else if (stringValue.equals(getString(R.string.settings_business_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_business_label));
+                MainActivity.mi0.setTitle(getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.mi0.setIcon(R.drawable.ic_business);
 
             } else if (stringValue.equals(getString(R.string.settings_technology_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_technology_label));
+                MainActivity.mi0.setTitle(getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.mi0.setIcon(R.drawable.ic_technology);
 
             } else if (stringValue.equals(getString(R.string.settings_entertainment_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_entertainment_label));
+                MainActivity.mi0.setTitle(getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.mi0.setIcon(R.drawable.ic_entertainment);
 
             } else if (stringValue.equals(getString(R.string.settings_sports_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_sports_label));
+                MainActivity.mi0.setTitle(getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.mi0.setIcon(R.drawable.ic_sports);
 
             } else if (stringValue.equals(getString(R.string.settings_science_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_science_label));
+                MainActivity.mi0.setTitle(getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.mi0.setIcon(R.drawable.ic_science);
 
             } else if (stringValue.equals(getString(R.string.settings_health_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_health_label));
+                MainActivity.mi0.setTitle(getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.mi0.setIcon(R.drawable.ic_health);
             }
         } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_one_key))) {

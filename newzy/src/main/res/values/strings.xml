@@ -10,7 +10,8 @@
     <string name="app_catch" translatable="false">Custom \"Newzy\" News!</string>
     <string name="newzy_image" translatable="false">newzy image</string>
     <string name="newzy_logo" translatable="false">newzy logo</string>
-    <string name="loading_newzy">Loading Newzy&#8230;</string>
+    <string name="loading_newzy">Loading Newzy\u2026</string>
+    <string name="space">\u0020</string>
     <string name="no_newzy_provided">No Newzy Provided!</string>
     <string name="date_pattern_out" translatable="false">"d MMM yyyy h:mm a"</string>
     <string name="from_time_append" translatable="false">"T00:00:00Z"</string>
@@ -43,6 +44,7 @@
     <string name="choose_topic">Choose Topic</string>
     <string name="newzy_title">Newzy Title</string>
     <string name="newzy_search">Newzy Search</string>
+    <string name="news">News</string>
     <string name="provide_newzy_title">Provide Newzy Title</string>
     <string name="provide_newzy_search">Provide Newzy Search</string>
     <string name="sort_newzys_by">Sort Newzys By</string>
