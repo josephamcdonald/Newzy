@@ -134,7 +134,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         if (preferenceKey.equals(getString(R.string.settings_topic_key))) {
             if (stringValue.equals(getString(R.string.settings_breaking_news_value))) {
                 MainActivity.mi0.setTitle(getString(R.string.settings_breaking_news_label));
-                MainActivity.mi0.setIcon(R.drawable.ic_news);
+                MainActivity.mi0.setIcon(R.drawable.ic_breaking);
 
             } else if (stringValue.equals(getString(R.string.settings_world_value))) {
                 MainActivity.mi0.setTitle(getString(R.string.settings_world_label));

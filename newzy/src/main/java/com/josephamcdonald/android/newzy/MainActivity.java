@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (newzysTopic.equals(getString(R.string.settings_breaking_news_value))) {
             newzysTitle = getString(R.string.settings_breaking_news_label);
-            newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_news);
+            newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_breaking);
 
         } else if (newzysTopic.equals(getString(R.string.settings_world_value))) {
             newzysTitle = getString(R.string.settings_world_label);
