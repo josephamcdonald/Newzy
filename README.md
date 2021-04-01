@@ -18,13 +18,13 @@ Newzy is activated with a free API token. Benefits of your personal token includ
 
 Android Studio 4.1.3
 
-Gradle 6.6.0
+Gradle 6.8.3
 
 API Level: 26. Android 8.0 (OREO)
 
 ## Versioning
 
-2.2.6
+2.3.0
 
 ## Author
 
