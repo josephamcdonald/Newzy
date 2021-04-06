@@ -17,7 +17,7 @@
 
     <SwitchPreference
         android:defaultValue="@string/settings_show_support_default"
-        android:icon="@drawable/ic_support"
+        android:icon="@drawable/ic_show"
         android:key="@string/settings_show_support_key"
         android:summary="@string/support_screen_summary"
         android:title="@string/settings_show_support_label" />
