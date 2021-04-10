@@ -50,9 +50,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     // Declare Newzys topic.
     private String newzysTopic;
 
-    // Declare Newzys topic icon.
-    private Drawable newzysTopicIcon;
-
     // Declare Navigation Drawer.
     private DrawerLayout drawer;
 
@@ -113,11 +110,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         newzysTopic = sp.getString(getString(R.string.settings_topic_key),
                 getString(R.string.settings_topic_default));
 
-        if (Objects.requireNonNull(newzysTopic).equals(getString(R.string.settings_breaking_news_value))) {
-            newzysTitle = getString(R.string.settings_breaking_news_label);
-            newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_breaking);
+        // Declare Newzys topic icon.
+        Drawable newzysTopicIcon;
 
-        } else if (newzysTopic.equals(getString(R.string.settings_world_value))) {
+        if (Objects.requireNonNull(newzysTopic).equals(getString(R.string.settings_world_value))) {
             newzysTitle = getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_world);
 
@@ -148,6 +144,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (newzysTopic.equals(getString(R.string.settings_health_value))) {
             newzysTitle = getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_health);
+
+        } else {
+            newzysTitle = getString(R.string.settings_breaking_news_label);
+            newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_breaking);
         }
 
         mi0.setTitle(newzysTitle);
@@ -223,10 +223,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             newzysTopic = sp.getString(getString(R.string.settings_topic_key),
                     getString(R.string.settings_topic_default));
 
-            if (Objects.requireNonNull(newzysTopic).equals(getString(R.string.settings_breaking_news_value))) {
-                newzysTitle = getString(R.string.settings_breaking_news_label);
-
-            } else if (newzysTopic.equals(getString(R.string.settings_world_value))) {
+            if (Objects.requireNonNull(newzysTopic).equals(getString(R.string.settings_world_value))) {
                 newzysTitle = getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news);
 
             } else if (newzysTopic.equals(getString(R.string.settings_nation_value))) {
@@ -249,8 +246,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             } else if (newzysTopic.equals(getString(R.string.settings_health_value))) {
                 newzysTitle = getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news);
-            }
 
+            } else {
+                newzysTitle = getString(R.string.settings_breaking_news_label);
+            }
         } else if (item.getItemId() == R.id.newzys_one) {
             newzysSearch = true;
             newzysTitle = sp.getString(
@@ -308,7 +307,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (item.getItemId() == R.id.settings) {
             newzysTitle = getString(R.string.settings);
 
-        } else if (item.getItemId() == R.id.support) {
+        } else {
             newzysTitle = getString(R.string.support);
         }
         launchFragment(item.getItemId());
