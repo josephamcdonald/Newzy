@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         sp = PreferenceManager.getDefaultSharedPreferences(this);
 
         // Set menu with current Newzy titles.
-        setNewzyTitles(nv.getMenu());
+        setMenuItems(nv.getMenu());
 
         // Get "Show Support on startup" switch preference.
         boolean showSupport = sp.getBoolean(getString(R.string.settings_show_support_key), true);
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    private void setNewzyTitles(Menu menu) {
+    private void setMenuItems(Menu menu) {
         // Find the Menu Items.
         country = menu.findItem(R.id.newzys_country);
         topic = menu.findItem(R.id.newzys_topic);
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_breaking);
         }
 
-        country.setTitle(newzysCountry+getString(R.string.space)+getString(R.string.newzys));
+        country.setTitle(newzysCountry + getString(R.string.space) + getString(R.string.newzys));
         topic.setTitle(newzysTitle);
         topic.setIcon(newzysTopicIcon);
 
