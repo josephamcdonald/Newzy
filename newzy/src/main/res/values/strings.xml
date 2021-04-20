@@ -55,7 +55,7 @@
     <string name="to_date">To Date</string>
 
     <!--Navigation -->
-    <string name="choose_your_newzys">Choose your Newzys!</string>
+    <string name="newzys">Newzys!</string>
     <string name="settings">Settings</string>
     <string name="support">Support</string>
     <string name="open_navigation_drawer">Open navigation drawer</string>

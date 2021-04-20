@@ -182,40 +182,40 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         } else {
             // A new Topic is chosen and update its menu item.
             if (stringValue.equals(getString(R.string.settings_world_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.mi0.setIcon(R.drawable.ic_world);
+                MainActivity.topic.setTitle(getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topic.setIcon(R.drawable.ic_world);
 
             } else if (stringValue.equals(getString(R.string.settings_nation_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.mi0.setIcon(R.drawable.ic_national);
+                MainActivity.topic.setTitle(getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topic.setIcon(R.drawable.ic_national);
 
             } else if (stringValue.equals(getString(R.string.settings_business_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.mi0.setIcon(R.drawable.ic_business);
+                MainActivity.topic.setTitle(getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topic.setIcon(R.drawable.ic_business);
 
             } else if (stringValue.equals(getString(R.string.settings_technology_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.mi0.setIcon(R.drawable.ic_technology);
+                MainActivity.topic.setTitle(getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topic.setIcon(R.drawable.ic_technology);
 
             } else if (stringValue.equals(getString(R.string.settings_entertainment_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.mi0.setIcon(R.drawable.ic_entertainment);
+                MainActivity.topic.setTitle(getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topic.setIcon(R.drawable.ic_entertainment);
 
             } else if (stringValue.equals(getString(R.string.settings_sports_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.mi0.setIcon(R.drawable.ic_sports);
+                MainActivity.topic.setTitle(getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topic.setIcon(R.drawable.ic_sports);
 
             } else if (stringValue.equals(getString(R.string.settings_science_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.mi0.setIcon(R.drawable.ic_science);
+                MainActivity.topic.setTitle(getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topic.setIcon(R.drawable.ic_science);
 
             } else if (stringValue.equals(getString(R.string.settings_health_value))) {
-                MainActivity.mi0.setTitle(getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.mi0.setIcon(R.drawable.ic_health);
+                MainActivity.topic.setTitle(getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topic.setIcon(R.drawable.ic_health);
 
             } else {
-                MainActivity.mi0.setTitle(getString(R.string.settings_breaking_news_label));
-                MainActivity.mi0.setIcon(R.drawable.ic_breaking);
+                MainActivity.topic.setTitle(getString(R.string.settings_breaking_news_label));
+                MainActivity.topic.setIcon(R.drawable.ic_breaking);
             }
         }
         return true;

@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     static boolean newzysSearch;
 
     // Declare Navigation Drawer menu items.
-    static MenuItem mi0;
+    static MenuItem country;
+    static MenuItem topic;
     static MenuItem mi1;
     static MenuItem mi2;
     static MenuItem mi3;
@@ -99,7 +100,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void setNewzyTitles(Menu menu) {
         // Find the Menu Items.
-        mi0 = menu.findItem(R.id.newzys_topic);
+        country = menu.findItem(R.id.newzys_country);
+        topic = menu.findItem(R.id.newzys_topic);
         mi1 = menu.findItem(R.id.newzys_one);
         mi2 = menu.findItem(R.id.newzys_two);
         mi3 = menu.findItem(R.id.newzys_three);
@@ -107,6 +109,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mi5 = menu.findItem(R.id.newzys_five);
         mi6 = menu.findItem(R.id.newzys_six);
 
+        // Declare Newzys Country;
+        String newzysCountry = sp.getString(getString(R.string.settings_country_key),
+                getString(R.string.settings_country_default));
         newzysTopic = sp.getString(getString(R.string.settings_topic_key),
                 getString(R.string.settings_topic_default));
 
@@ -150,8 +155,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_breaking);
         }
 
-        mi0.setTitle(newzysTitle);
-        mi0.setIcon(newzysTopicIcon);
+        country.setTitle(newzysCountry+getString(R.string.space)+getString(R.string.newzys));
+        topic.setTitle(newzysTitle);
+        topic.setIcon(newzysTopicIcon);
 
         String title1 = sp.getString(getString(R.string.settings_newzy_title_one_key),
                 getString(R.string.settings_newzy_title_one_default));
