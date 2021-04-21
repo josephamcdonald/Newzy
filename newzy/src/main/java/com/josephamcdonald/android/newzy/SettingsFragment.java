@@ -137,144 +137,144 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         // If Country setting is changed, update its menu item.
         if (preferenceKey.equals(getString(R.string.settings_country_key))) {
             if (stringValue.equals(getString(R.string.settings_au_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_au_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_au_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_br_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_br_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_br_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_ca_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_ca_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_ca_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_cn_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_cn_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_cn_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_eg_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_eg_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_eg_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_fr_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_fr_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_fr_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_de_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_de_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_de_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_gr_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_gr_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_gr_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_hk_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_hk_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_hk_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_in_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_in_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_in_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_ie_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_ie_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_ie_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_il_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_il_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_il_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_it_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_it_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_it_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_jp_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_jp_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_jp_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_nl_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_nl_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_nl_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_no_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_no_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_no_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_pk_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_pk_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_pk_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_pe_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_pe_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_pe_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_ph_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_ph_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_ph_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_pt_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_pt_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_pt_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_ro_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_ro_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_ro_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_ru_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_ru_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_ru_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_sg_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_sg_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_sg_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_se_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_se_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_se_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_ch_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_ch_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_ch_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_tw_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_tw_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_tw_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_ua_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_ua_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_ua_label) + getString(R.string.space) + getString(R.string.newzys));
             } else if (stringValue.equals(getString(R.string.settings_gb_value))) {
-                MainActivity.country.setTitle(getString(R.string.settings_gb_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_gb_label) + getString(R.string.space) + getString(R.string.newzys));
             } else {
-                MainActivity.country.setTitle(getString(R.string.settings_us_label) + getString(R.string.space) + getString(R.string.newzys));
+                MainActivity.countryItem.setTitle(getString(R.string.settings_us_label) + getString(R.string.space) + getString(R.string.newzys));
             }
 
         } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_one_key))) {
             // If Newzy Title is changed, update its menu item.
             if (stringValue.isEmpty()) {
-                MainActivity.mi1.setVisible(false);
+                MainActivity.titleItem1.setVisible(false);
 
             } else {
-                MainActivity.mi1.setTitle(stringValue);
-                MainActivity.mi1.setVisible(true);
+                MainActivity.titleItem1.setTitle(stringValue);
+                MainActivity.titleItem1.setVisible(true);
             }
         } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_two_key))) {
             if (stringValue.isEmpty()) {
-                MainActivity.mi2.setVisible(false);
+                MainActivity.titleItem2.setVisible(false);
 
             } else {
-                MainActivity.mi2.setTitle(stringValue);
-                MainActivity.mi2.setVisible(true);
+                MainActivity.titleItem2.setTitle(stringValue);
+                MainActivity.titleItem2.setVisible(true);
             }
         } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_three_key))) {
             if (stringValue.isEmpty()) {
-                MainActivity.mi3.setVisible(false);
+                MainActivity.titleItem3.setVisible(false);
 
             } else {
-                MainActivity.mi3.setTitle(stringValue);
-                MainActivity.mi3.setVisible(true);
+                MainActivity.titleItem3.setTitle(stringValue);
+                MainActivity.titleItem3.setVisible(true);
             }
         } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_four_key))) {
             if (stringValue.isEmpty()) {
-                MainActivity.mi4.setVisible(false);
+                MainActivity.titleItem4.setVisible(false);
 
             } else {
-                MainActivity.mi4.setTitle(stringValue);
-                MainActivity.mi4.setVisible(true);
+                MainActivity.titleItem4.setTitle(stringValue);
+                MainActivity.titleItem4.setVisible(true);
             }
         } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_five_key))) {
             if (stringValue.isEmpty()) {
-                MainActivity.mi5.setVisible(false);
+                MainActivity.titleItem5.setVisible(false);
 
             } else {
-                MainActivity.mi5.setTitle(stringValue);
-                MainActivity.mi5.setVisible(true);
+                MainActivity.titleItem5.setTitle(stringValue);
+                MainActivity.titleItem5.setVisible(true);
             }
         } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_six_key))) {
             if (stringValue.isEmpty()) {
-                MainActivity.mi6.setVisible(false);
+                MainActivity.titleItem6.setVisible(false);
 
             } else {
-                MainActivity.mi6.setTitle(stringValue);
-                MainActivity.mi6.setVisible(true);
+                MainActivity.titleItem6.setTitle(stringValue);
+                MainActivity.titleItem6.setVisible(true);
             }
 
         } else {
             // A Topic setting changed, update its menu item.
             if (stringValue.equals(getString(R.string.settings_world_value))) {
-                MainActivity.topic.setTitle(getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.topic.setIcon(R.drawable.ic_world);
+                MainActivity.topicItem.setTitle(getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topicItem.setIcon(R.drawable.ic_world);
             } else if (stringValue.equals(getString(R.string.settings_nation_value))) {
-                MainActivity.topic.setTitle(getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.topic.setIcon(R.drawable.ic_national);
+                MainActivity.topicItem.setTitle(getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topicItem.setIcon(R.drawable.ic_national);
             } else if (stringValue.equals(getString(R.string.settings_business_value))) {
-                MainActivity.topic.setTitle(getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.topic.setIcon(R.drawable.ic_business);
+                MainActivity.topicItem.setTitle(getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topicItem.setIcon(R.drawable.ic_business);
             } else if (stringValue.equals(getString(R.string.settings_technology_value))) {
-                MainActivity.topic.setTitle(getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.topic.setIcon(R.drawable.ic_technology);
+                MainActivity.topicItem.setTitle(getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topicItem.setIcon(R.drawable.ic_technology);
             } else if (stringValue.equals(getString(R.string.settings_entertainment_value))) {
-                MainActivity.topic.setTitle(getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.topic.setIcon(R.drawable.ic_entertainment);
+                MainActivity.topicItem.setTitle(getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topicItem.setIcon(R.drawable.ic_entertainment);
             } else if (stringValue.equals(getString(R.string.settings_sports_value))) {
-                MainActivity.topic.setTitle(getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.topic.setIcon(R.drawable.ic_sports);
+                MainActivity.topicItem.setTitle(getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topicItem.setIcon(R.drawable.ic_sports);
             } else if (stringValue.equals(getString(R.string.settings_science_value))) {
-                MainActivity.topic.setTitle(getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.topic.setIcon(R.drawable.ic_science);
+                MainActivity.topicItem.setTitle(getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topicItem.setIcon(R.drawable.ic_science);
             } else if (stringValue.equals(getString(R.string.settings_health_value))) {
-                MainActivity.topic.setTitle(getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news));
-                MainActivity.topic.setIcon(R.drawable.ic_health);
+                MainActivity.topicItem.setTitle(getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news));
+                MainActivity.topicItem.setIcon(R.drawable.ic_health);
             } else {
-                MainActivity.topic.setTitle(getString(R.string.settings_breaking_news_label));
-                MainActivity.topic.setIcon(R.drawable.ic_breaking);
+                MainActivity.topicItem.setTitle(getString(R.string.settings_breaking_news_label));
+                MainActivity.topicItem.setIcon(R.drawable.ic_breaking);
             }
         }
         return true;

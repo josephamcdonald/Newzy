@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     static boolean newzysSearch;
 
     // Declare Navigation Drawer menu items.
-    static MenuItem country;
-    static MenuItem topic;
-    static MenuItem mi1;
-    static MenuItem mi2;
-    static MenuItem mi3;
-    static MenuItem mi4;
-    static MenuItem mi5;
-    static MenuItem mi6;
+    static MenuItem countryItem;
+    static MenuItem topicItem;
+    static MenuItem titleItem1;
+    static MenuItem titleItem2;
+    static MenuItem titleItem3;
+    static MenuItem titleItem4;
+    static MenuItem titleItem5;
+    static MenuItem titleItem6;
 
     // Declare Newzys title.
     private String newzysTitle;
@@ -100,76 +100,76 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void setMenuItems(Menu menu) {
         // Find the Menu Items.
-        country = menu.findItem(R.id.newzys_country);
-        topic = menu.findItem(R.id.newzys_topic);
-        mi1 = menu.findItem(R.id.newzys_one);
-        mi2 = menu.findItem(R.id.newzys_two);
-        mi3 = menu.findItem(R.id.newzys_three);
-        mi4 = menu.findItem(R.id.newzys_four);
-        mi5 = menu.findItem(R.id.newzys_five);
-        mi6 = menu.findItem(R.id.newzys_six);
+        countryItem = menu.findItem(R.id.newzys_country);
+        topicItem = menu.findItem(R.id.newzys_topic);
+        titleItem1 = menu.findItem(R.id.newzys_one);
+        titleItem2 = menu.findItem(R.id.newzys_two);
+        titleItem3 = menu.findItem(R.id.newzys_three);
+        titleItem4 = menu.findItem(R.id.newzys_four);
+        titleItem5 = menu.findItem(R.id.newzys_five);
+        titleItem6 = menu.findItem(R.id.newzys_six);
 
         String newzysCountry = sp.getString(getString(R.string.settings_country_key),
                 getString(R.string.settings_country_default));
 
         if (Objects.requireNonNull(newzysCountry).equals(getString(R.string.settings_au_value))) {
-            country.setTitle(getString(R.string.settings_au_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_au_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_br_value))) {
-            country.setTitle(getString(R.string.settings_br_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_br_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_ca_value))) {
-            country.setTitle(getString(R.string.settings_ca_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_ca_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_cn_value))) {
-            country.setTitle(getString(R.string.settings_cn_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_cn_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_eg_value))) {
-            country.setTitle(getString(R.string.settings_eg_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_eg_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_fr_value))) {
-            country.setTitle(getString(R.string.settings_fr_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_fr_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_de_value))) {
-            country.setTitle(getString(R.string.settings_de_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_de_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_gr_value))) {
-            country.setTitle(getString(R.string.settings_gr_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_gr_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_hk_value))) {
-            country.setTitle(getString(R.string.settings_hk_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_hk_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_in_value))) {
-            country.setTitle(getString(R.string.settings_in_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_in_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_ie_value))) {
-            country.setTitle(getString(R.string.settings_ie_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_ie_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_il_value))) {
-            country.setTitle(getString(R.string.settings_il_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_il_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_it_value))) {
-            country.setTitle(getString(R.string.settings_it_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_it_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_jp_value))) {
-            country.setTitle(getString(R.string.settings_jp_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_jp_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_nl_value))) {
-            country.setTitle(getString(R.string.settings_nl_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_nl_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_no_value))) {
-            country.setTitle(getString(R.string.settings_no_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_no_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_pk_value))) {
-            country.setTitle(getString(R.string.settings_pk_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_pk_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_pe_value))) {
-            country.setTitle(getString(R.string.settings_pe_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_pe_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_ph_value))) {
-            country.setTitle(getString(R.string.settings_ph_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_ph_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_pt_value))) {
-            country.setTitle(getString(R.string.settings_pt_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_pt_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_ro_value))) {
-            country.setTitle(getString(R.string.settings_ro_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_ro_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_ru_value))) {
-            country.setTitle(getString(R.string.settings_ru_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_ru_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_sg_value))) {
-            country.setTitle(getString(R.string.settings_sg_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_sg_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_se_value))) {
-            country.setTitle(getString(R.string.settings_se_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_se_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_ch_value))) {
-            country.setTitle(getString(R.string.settings_ch_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_ch_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_tw_value))) {
-            country.setTitle(getString(R.string.settings_tw_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_tw_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_ua_value))) {
-            country.setTitle(getString(R.string.settings_ua_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_ua_label) + getString(R.string.space) + getString(R.string.newzys));
         } else if (newzysCountry.equals(getString(R.string.settings_gb_value))) {
-            country.setTitle(getString(R.string.settings_gb_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_gb_label) + getString(R.string.space) + getString(R.string.newzys));
         } else {
-            country.setTitle(getString(R.string.settings_us_label) + getString(R.string.space) + getString(R.string.newzys));
+            countryItem.setTitle(getString(R.string.settings_us_label) + getString(R.string.space) + getString(R.string.newzys));
         }
 
         newzysTopic = sp.getString(getString(R.string.settings_topic_key),
@@ -213,8 +213,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_breaking);
         }
 
-        topic.setTitle(newzysTitle);
-        topic.setIcon(newzysTopicIcon);
+        topicItem.setTitle(newzysTitle);
+        topicItem.setIcon(newzysTopicIcon);
 
         String title1 = sp.getString(getString(R.string.settings_newzy_title_one_key),
                 getString(R.string.settings_newzy_title_one_default));
@@ -230,40 +230,40 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getString(R.string.settings_newzy_title_six_default));
 
         if (Objects.requireNonNull(title1).isEmpty()) {
-            mi1.setVisible(false);
+            titleItem1.setVisible(false);
         } else {
-            mi1.setTitle(title1);
-            mi1.setVisible(true);
+            titleItem1.setTitle(title1);
+            titleItem1.setVisible(true);
         }
         if (Objects.requireNonNull(title2).isEmpty()) {
-            mi2.setVisible(false);
+            titleItem2.setVisible(false);
         } else {
-            mi2.setTitle(title2);
-            mi2.setVisible(true);
+            titleItem2.setTitle(title2);
+            titleItem2.setVisible(true);
         }
         if (Objects.requireNonNull(title3).isEmpty()) {
-            mi3.setVisible(false);
+            titleItem3.setVisible(false);
         } else {
-            mi3.setTitle(title3);
-            mi3.setVisible(true);
+            titleItem3.setTitle(title3);
+            titleItem3.setVisible(true);
         }
         if (Objects.requireNonNull(title4).isEmpty()) {
-            mi4.setVisible(false);
+            titleItem4.setVisible(false);
         } else {
-            mi4.setTitle(title4);
-            mi4.setVisible(true);
+            titleItem4.setTitle(title4);
+            titleItem4.setVisible(true);
         }
         if (Objects.requireNonNull(title5).isEmpty()) {
-            mi5.setVisible(false);
+            titleItem5.setVisible(false);
         } else {
-            mi5.setTitle(title5);
-            mi5.setVisible(true);
+            titleItem5.setTitle(title5);
+            titleItem5.setVisible(true);
         }
         if (Objects.requireNonNull(title6).isEmpty()) {
-            mi6.setVisible(false);
+            titleItem6.setVisible(false);
         } else {
-            mi6.setTitle(title6);
-            mi6.setVisible(true);
+            titleItem6.setTitle(title6);
+            titleItem6.setVisible(true);
         }
     }
 
