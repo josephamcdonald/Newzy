@@ -29,25 +29,26 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         setPreferencesFromResource(R.xml.preferences, rootKey);
 
         //Find Newzy Preferences.
-        ListPreference newzyTopic = findPreference(getString(R.string.settings_topic_key));
+        ListPreference prefCountry = findPreference(getString(R.string.settings_country_key));
+        ListPreference prefTopic = findPreference(getString(R.string.settings_topic_key));
 
-        EditTextPreference newzyApiKey = findPreference(getString(R.string.settings_api_key_key));
-        EditTextPreference newzyFromDate = findPreference(getString(R.string.settings_newzys_from_date_key));
-        EditTextPreference newzyToDate = findPreference(getString(R.string.settings_newzys_to_date_key));
+        EditTextPreference prefApiKey = findPreference(getString(R.string.settings_api_key_key));
+        EditTextPreference prefFromDate = findPreference(getString(R.string.settings_newzys_from_date_key));
+        EditTextPreference prefToDate = findPreference(getString(R.string.settings_newzys_to_date_key));
 
-        EditTextPreference newzyTitleOne = findPreference(getString(R.string.settings_newzy_title_one_key));
-        EditTextPreference newzyTitleTwo = findPreference(getString(R.string.settings_newzy_title_two_key));
-        EditTextPreference newzyTitleThree = findPreference(getString(R.string.settings_newzy_title_three_key));
-        EditTextPreference newzyTitleFour = findPreference(getString(R.string.settings_newzy_title_four_key));
-        EditTextPreference newzyTitleFive = findPreference(getString(R.string.settings_newzy_title_five_key));
-        EditTextPreference newzyTitleSix = findPreference(getString(R.string.settings_newzy_title_six_key));
+        EditTextPreference prefTitleOne = findPreference(getString(R.string.settings_newzy_title_one_key));
+        EditTextPreference prefTitleTwo = findPreference(getString(R.string.settings_newzy_title_two_key));
+        EditTextPreference prefTitleThree = findPreference(getString(R.string.settings_newzy_title_three_key));
+        EditTextPreference prefTitleFour = findPreference(getString(R.string.settings_newzy_title_four_key));
+        EditTextPreference prefTitleFive = findPreference(getString(R.string.settings_newzy_title_five_key));
+        EditTextPreference prefTitleSix = findPreference(getString(R.string.settings_newzy_title_six_key));
 
-        EditTextPreference newzySearchOne = findPreference(getString(R.string.settings_newzy_search_one_key));
-        EditTextPreference newzySearchTwo = findPreference(getString(R.string.settings_newzy_search_two_key));
-        EditTextPreference newzySearchThree = findPreference(getString(R.string.settings_newzy_search_three_key));
-        EditTextPreference newzySearchFour = findPreference(getString(R.string.settings_newzy_search_four_key));
-        EditTextPreference newzySearchFive = findPreference(getString(R.string.settings_newzy_search_five_key));
-        EditTextPreference newzySearchSix = findPreference(getString(R.string.settings_newzy_search_six_key));
+        EditTextPreference prefSearchOne = findPreference(getString(R.string.settings_newzy_search_one_key));
+        EditTextPreference prefSearchTwo = findPreference(getString(R.string.settings_newzy_search_two_key));
+        EditTextPreference prefSearchThree = findPreference(getString(R.string.settings_newzy_search_three_key));
+        EditTextPreference prefSearchFour = findPreference(getString(R.string.settings_newzy_search_four_key));
+        EditTextPreference prefSearchFive = findPreference(getString(R.string.settings_newzy_search_five_key));
+        EditTextPreference prefSearchSix = findPreference(getString(R.string.settings_newzy_search_six_key));
 
         // Create listener to set input type and hint for News API key.
         EditTextPreference.OnBindEditTextListener apiKeyBindEditTextListener = new EditTextPreference.OnBindEditTextListener() {
@@ -90,38 +91,41 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         };
 
         // Set listener on News API key preference.
-        Objects.requireNonNull(newzyApiKey).setOnBindEditTextListener(apiKeyBindEditTextListener);
+        Objects.requireNonNull(prefApiKey).setOnBindEditTextListener(apiKeyBindEditTextListener);
 
         // Set listeners on Newzy title preferences.
-        Objects.requireNonNull(newzyTitleOne).setOnBindEditTextListener(titleBindEditTextListener);
-        Objects.requireNonNull(newzyTitleTwo).setOnBindEditTextListener(titleBindEditTextListener);
-        Objects.requireNonNull(newzyTitleThree).setOnBindEditTextListener(titleBindEditTextListener);
-        Objects.requireNonNull(newzyTitleFour).setOnBindEditTextListener(titleBindEditTextListener);
-        Objects.requireNonNull(newzyTitleFive).setOnBindEditTextListener(titleBindEditTextListener);
-        Objects.requireNonNull(newzyTitleSix).setOnBindEditTextListener(titleBindEditTextListener);
+        Objects.requireNonNull(prefTitleOne).setOnBindEditTextListener(titleBindEditTextListener);
+        Objects.requireNonNull(prefTitleTwo).setOnBindEditTextListener(titleBindEditTextListener);
+        Objects.requireNonNull(prefTitleThree).setOnBindEditTextListener(titleBindEditTextListener);
+        Objects.requireNonNull(prefTitleFour).setOnBindEditTextListener(titleBindEditTextListener);
+        Objects.requireNonNull(prefTitleFive).setOnBindEditTextListener(titleBindEditTextListener);
+        Objects.requireNonNull(prefTitleSix).setOnBindEditTextListener(titleBindEditTextListener);
 
         // Set listeners on Newzy search preferences.
-        Objects.requireNonNull(newzySearchOne).setOnBindEditTextListener(searchBindEditTextListener);
-        Objects.requireNonNull(newzySearchTwo).setOnBindEditTextListener(searchBindEditTextListener);
-        Objects.requireNonNull(newzySearchThree).setOnBindEditTextListener(searchBindEditTextListener);
-        Objects.requireNonNull(newzySearchFour).setOnBindEditTextListener(searchBindEditTextListener);
-        Objects.requireNonNull(newzySearchFive).setOnBindEditTextListener(searchBindEditTextListener);
-        Objects.requireNonNull(newzySearchSix).setOnBindEditTextListener(searchBindEditTextListener);
+        Objects.requireNonNull(prefSearchOne).setOnBindEditTextListener(searchBindEditTextListener);
+        Objects.requireNonNull(prefSearchTwo).setOnBindEditTextListener(searchBindEditTextListener);
+        Objects.requireNonNull(prefSearchThree).setOnBindEditTextListener(searchBindEditTextListener);
+        Objects.requireNonNull(prefSearchFour).setOnBindEditTextListener(searchBindEditTextListener);
+        Objects.requireNonNull(prefSearchFive).setOnBindEditTextListener(searchBindEditTextListener);
+        Objects.requireNonNull(prefSearchSix).setOnBindEditTextListener(searchBindEditTextListener);
 
         // Set listeners on Newzy date preferences.
-        Objects.requireNonNull(newzyFromDate).setOnBindEditTextListener(dateBindEditTextListener);
-        Objects.requireNonNull(newzyToDate).setOnBindEditTextListener(dateBindEditTextListener);
+        Objects.requireNonNull(prefFromDate).setOnBindEditTextListener(dateBindEditTextListener);
+        Objects.requireNonNull(prefToDate).setOnBindEditTextListener(dateBindEditTextListener);
+
+        // Set listener on Newzy country preference.
+        Objects.requireNonNull(prefCountry).setOnPreferenceChangeListener(this);
 
         // Set listener on Newzy topic preference.
-        Objects.requireNonNull(newzyTopic).setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(prefTopic).setOnPreferenceChangeListener(this);
 
         // Set preference change listeners on Newzy title preferences.
-        Objects.requireNonNull(newzyTitleOne).setOnPreferenceChangeListener(this);
-        Objects.requireNonNull(newzyTitleTwo).setOnPreferenceChangeListener(this);
-        Objects.requireNonNull(newzyTitleThree).setOnPreferenceChangeListener(this);
-        Objects.requireNonNull(newzyTitleFour).setOnPreferenceChangeListener(this);
-        Objects.requireNonNull(newzyTitleFive).setOnPreferenceChangeListener(this);
-        Objects.requireNonNull(newzyTitleSix).setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(prefTitleOne).setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(prefTitleTwo).setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(prefTitleThree).setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(prefTitleFour).setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(prefTitleFive).setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(prefTitleSix).setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -130,8 +134,70 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         String preferenceKey = preference.getKey();
         String stringValue = newValue.toString();
 
-        // If a Newzy Title is changed, update its menu item and its visibility.
-        if (preferenceKey.equals(getString(R.string.settings_newzy_title_one_key))) {
+        // If Country setting is changed, update its menu item.
+        if (preferenceKey.equals(getString(R.string.settings_country_key))) {
+            if (stringValue.equals(getString(R.string.settings_au_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_au_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_br_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_br_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_ca_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_ca_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_cn_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_cn_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_eg_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_eg_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_fr_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_fr_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_de_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_de_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_gr_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_gr_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_hk_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_hk_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_in_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_in_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_ie_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_ie_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_il_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_il_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_it_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_it_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_jp_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_jp_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_nl_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_nl_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_no_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_no_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_pk_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_pk_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_pe_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_pe_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_ph_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_ph_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_pt_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_pt_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_ro_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_ro_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_ru_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_ru_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_sg_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_sg_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_se_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_se_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_ch_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_ch_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_tw_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_tw_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_ua_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_ua_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else if (stringValue.equals(getString(R.string.settings_gb_value))) {
+                MainActivity.country.setTitle(getString(R.string.settings_gb_label) + getString(R.string.space) + getString(R.string.newzys));
+            } else {
+                MainActivity.country.setTitle(getString(R.string.settings_us_label) + getString(R.string.space) + getString(R.string.newzys));
+            }
+
+        } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_one_key))) {
+            // If Newzy Title is changed, update its menu item.
             if (stringValue.isEmpty()) {
                 MainActivity.mi1.setVisible(false);
 
@@ -179,40 +245,33 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
                 MainActivity.mi6.setTitle(stringValue);
                 MainActivity.mi6.setVisible(true);
             }
+
         } else {
-            // A new Topic is chosen and update its menu item.
+            // A Topic setting changed, update its menu item.
             if (stringValue.equals(getString(R.string.settings_world_value))) {
                 MainActivity.topic.setTitle(getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.topic.setIcon(R.drawable.ic_world);
-
             } else if (stringValue.equals(getString(R.string.settings_nation_value))) {
                 MainActivity.topic.setTitle(getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.topic.setIcon(R.drawable.ic_national);
-
             } else if (stringValue.equals(getString(R.string.settings_business_value))) {
                 MainActivity.topic.setTitle(getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.topic.setIcon(R.drawable.ic_business);
-
             } else if (stringValue.equals(getString(R.string.settings_technology_value))) {
                 MainActivity.topic.setTitle(getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.topic.setIcon(R.drawable.ic_technology);
-
             } else if (stringValue.equals(getString(R.string.settings_entertainment_value))) {
                 MainActivity.topic.setTitle(getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.topic.setIcon(R.drawable.ic_entertainment);
-
             } else if (stringValue.equals(getString(R.string.settings_sports_value))) {
                 MainActivity.topic.setTitle(getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.topic.setIcon(R.drawable.ic_sports);
-
             } else if (stringValue.equals(getString(R.string.settings_science_value))) {
                 MainActivity.topic.setTitle(getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.topic.setIcon(R.drawable.ic_science);
-
             } else if (stringValue.equals(getString(R.string.settings_health_value))) {
                 MainActivity.topic.setTitle(getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.topic.setIcon(R.drawable.ic_health);
-
             } else {
                 MainActivity.topic.setTitle(getString(R.string.settings_breaking_news_label));
                 MainActivity.topic.setIcon(R.drawable.ic_breaking);

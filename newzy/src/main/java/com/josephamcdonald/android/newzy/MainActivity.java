@@ -80,10 +80,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Get current preferences.
         sp = PreferenceManager.getDefaultSharedPreferences(this);
 
-        // Set menu with current Newzy titles.
+        // Set menu items with current preferences.
         setMenuItems(nv.getMenu());
 
-        // Get "Show Support on startup" switch preference.
+        // Get "Show Support Screen" switch preference.
         boolean showSupport = sp.getBoolean(getString(R.string.settings_show_support_key), true);
 
         // Launch startup fragment.
@@ -109,13 +109,71 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mi5 = menu.findItem(R.id.newzys_five);
         mi6 = menu.findItem(R.id.newzys_six);
 
-        // Declare Newzys Country;
         String newzysCountry = sp.getString(getString(R.string.settings_country_key),
                 getString(R.string.settings_country_default));
+
+        if (Objects.requireNonNull(newzysCountry).equals(getString(R.string.settings_au_value))) {
+            country.setTitle(getString(R.string.settings_au_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_br_value))) {
+            country.setTitle(getString(R.string.settings_br_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_ca_value))) {
+            country.setTitle(getString(R.string.settings_ca_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_cn_value))) {
+            country.setTitle(getString(R.string.settings_cn_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_eg_value))) {
+            country.setTitle(getString(R.string.settings_eg_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_fr_value))) {
+            country.setTitle(getString(R.string.settings_fr_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_de_value))) {
+            country.setTitle(getString(R.string.settings_de_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_gr_value))) {
+            country.setTitle(getString(R.string.settings_gr_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_hk_value))) {
+            country.setTitle(getString(R.string.settings_hk_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_in_value))) {
+            country.setTitle(getString(R.string.settings_in_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_ie_value))) {
+            country.setTitle(getString(R.string.settings_ie_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_il_value))) {
+            country.setTitle(getString(R.string.settings_il_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_it_value))) {
+            country.setTitle(getString(R.string.settings_it_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_jp_value))) {
+            country.setTitle(getString(R.string.settings_jp_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_nl_value))) {
+            country.setTitle(getString(R.string.settings_nl_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_no_value))) {
+            country.setTitle(getString(R.string.settings_no_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_pk_value))) {
+            country.setTitle(getString(R.string.settings_pk_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_pe_value))) {
+            country.setTitle(getString(R.string.settings_pe_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_ph_value))) {
+            country.setTitle(getString(R.string.settings_ph_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_pt_value))) {
+            country.setTitle(getString(R.string.settings_pt_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_ro_value))) {
+            country.setTitle(getString(R.string.settings_ro_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_ru_value))) {
+            country.setTitle(getString(R.string.settings_ru_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_sg_value))) {
+            country.setTitle(getString(R.string.settings_sg_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_se_value))) {
+            country.setTitle(getString(R.string.settings_se_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_ch_value))) {
+            country.setTitle(getString(R.string.settings_ch_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_tw_value))) {
+            country.setTitle(getString(R.string.settings_tw_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_ua_value))) {
+            country.setTitle(getString(R.string.settings_ua_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else if (newzysCountry.equals(getString(R.string.settings_gb_value))) {
+            country.setTitle(getString(R.string.settings_gb_label) + getString(R.string.space) + getString(R.string.newzys));
+        } else {
+            country.setTitle(getString(R.string.settings_us_label) + getString(R.string.space) + getString(R.string.newzys));
+        }
+
         newzysTopic = sp.getString(getString(R.string.settings_topic_key),
                 getString(R.string.settings_topic_default));
-
-        // Declare Newzys topic icon.
         Drawable newzysTopicIcon;
 
         if (Objects.requireNonNull(newzysTopic).equals(getString(R.string.settings_world_value))) {
@@ -155,7 +213,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_breaking);
         }
 
-        country.setTitle(newzysCountry + getString(R.string.space) + getString(R.string.newzys));
         topic.setTitle(newzysTitle);
         topic.setIcon(newzysTopicIcon);
 
@@ -174,47 +231,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (Objects.requireNonNull(title1).isEmpty()) {
             mi1.setVisible(false);
-
         } else {
             mi1.setTitle(title1);
             mi1.setVisible(true);
         }
-
         if (Objects.requireNonNull(title2).isEmpty()) {
             mi2.setVisible(false);
-
         } else {
             mi2.setTitle(title2);
             mi2.setVisible(true);
         }
-
         if (Objects.requireNonNull(title3).isEmpty()) {
             mi3.setVisible(false);
-
         } else {
             mi3.setTitle(title3);
             mi3.setVisible(true);
         }
-
         if (Objects.requireNonNull(title4).isEmpty()) {
             mi4.setVisible(false);
-
         } else {
             mi4.setTitle(title4);
             mi4.setVisible(true);
         }
-
         if (Objects.requireNonNull(title5).isEmpty()) {
             mi5.setVisible(false);
-
         } else {
             mi5.setTitle(title5);
             mi5.setVisible(true);
         }
-
         if (Objects.requireNonNull(title6).isEmpty()) {
             mi6.setVisible(false);
-
         } else {
             mi6.setTitle(title6);
             mi6.setVisible(true);
@@ -231,31 +277,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             if (Objects.requireNonNull(newzysTopic).equals(getString(R.string.settings_world_value))) {
                 newzysTitle = getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news);
-
             } else if (newzysTopic.equals(getString(R.string.settings_nation_value))) {
                 newzysTitle = getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.news);
-
             } else if (newzysTopic.equals(getString(R.string.settings_business_value))) {
                 newzysTitle = getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.news);
-
             } else if (newzysTopic.equals(getString(R.string.settings_technology_value))) {
                 newzysTitle = getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.news);
-
             } else if (newzysTopic.equals(getString(R.string.settings_entertainment_value))) {
                 newzysTitle = getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.news);
-
             } else if (newzysTopic.equals(getString(R.string.settings_sports_value))) {
                 newzysTitle = getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.news);
-
             } else if (newzysTopic.equals(getString(R.string.settings_science_value))) {
                 newzysTitle = getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.news);
-
             } else if (newzysTopic.equals(getString(R.string.settings_health_value))) {
                 newzysTitle = getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news);
-
             } else {
                 newzysTitle = getString(R.string.settings_breaking_news_label);
             }
+
         } else if (item.getItemId() == R.id.newzys_one) {
             newzysSearch = true;
             newzysTitle = sp.getString(
@@ -334,11 +373,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case (R.id.settings):
                 ft.replace(R.id.frame_layout_content, new SettingsFragment());
                 break;
-
             case (R.id.support):
                 ft.replace(R.id.frame_layout_content, new SupportFragment());
                 break;
-
             default:
                 ft.replace(R.id.frame_layout_content, new NewzyFragment());
         }
@@ -350,7 +387,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // If destination drawer is open, then close it.
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-
         } else {
             super.onBackPressed();
         }
