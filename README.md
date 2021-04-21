@@ -24,7 +24,7 @@ API Level: 26. Android 8.0 (OREO)
 
 ## Versioning
 
-2.3.5
+2.4.0
 
 ## Author
 
