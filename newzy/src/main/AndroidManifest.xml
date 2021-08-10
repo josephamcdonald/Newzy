@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (c) 2021. josephamcdonald - All Rights Reserved
   ~  Unauthorized copying of this file, via any medium is strictly prohibited
   ~  Proprietary and confidential
@@ -28,8 +27,8 @@
         <activity
             android:name="com.josephamcdonald.android.newzy.MainActivity"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
