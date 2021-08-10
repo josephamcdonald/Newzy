@@ -96,14 +96,8 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         swipeLayout.setColorSchemeColors(ContextCompat.getColor(requireActivity(), R.color.colorAccent));
 
         // Declare and set the OnRefreshListener to the swipe refresh layout.
-        SwipeRefreshLayout.OnRefreshListener onRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-
-                // Populate the Newzy list.
-                getTheNewzys();
-            }
-        };
+        // Populate the Newzy list.
+        SwipeRefreshLayout.OnRefreshListener onRefreshListener = this::getTheNewzys;
         swipeLayout.setOnRefreshListener(onRefreshListener);
 
         // Show the progress views.
