@@ -181,13 +181,12 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // If there is a valid list of newzyData returned, then add it to the adapter's data set.
         if (newzyData != null && !newzyData.isEmpty()) {
 
-            // Hide the empty list view.
-            emptyNewzysView.setVisibility(View.GONE);
-
             // Assign the data to the adapter and RecyclerView.
             newzyAdapter = new NewzyAdapter(getContext(), newzyData);
-            newzyAdapter.notifyDataSetChanged();
             newzyRecyclerView.setAdapter(newzyAdapter);
+
+            // Hide the empty list view.
+            emptyNewzysView.setVisibility(View.GONE);
 
             // Show the Newzy RecyclerView.
             newzyRecyclerView.setVisibility(View.VISIBLE);
