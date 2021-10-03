@@ -8,40 +8,44 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <EditTextPreference
-        android:icon="@drawable/ic_key"
-        android:key="@string/settings_api_key_key"
-        android:summary="@string/provide_api_key"
-        android:title="@string/settings_api_key_label"
-        app:useSimpleSummaryProvider="true" />
+    <PreferenceCategory
+        android:title="@string/general"
+        app:iconSpaceReserved="false">
+        <EditTextPreference
+            android:icon="@drawable/ic_key"
+            android:key="@string/settings_api_key_key"
+            android:summary="@string/provide_api_key"
+            android:title="@string/settings_api_key_label"
+            app:useSimpleSummaryProvider="true" />
 
-    <SwitchPreference
-        android:defaultValue="@string/settings_show_support_default"
-        android:icon="@drawable/ic_show"
-        android:key="@string/settings_show_support_key"
-        android:summary="@string/support_screen_summary"
-        android:title="@string/settings_show_support_label" />
+        <ListPreference
+            android:defaultValue="@string/settings_country_default"
+            android:entries="@array/settings_country_labels"
+            android:entryValues="@array/settings_country_values"
+            android:icon="@drawable/ic_country"
+            android:key="@string/settings_country_key"
+            android:title="@string/settings_country_label"
+            app:useSimpleSummaryProvider="true" />
 
-    <ListPreference
-        android:defaultValue="@string/settings_country_default"
-        android:entries="@array/settings_country_labels"
-        android:entryValues="@array/settings_country_values"
-        android:icon="@drawable/ic_country"
-        android:key="@string/settings_country_key"
-        android:title="@string/settings_country_label"
-        app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:defaultValue="@string/settings_topic_default"
+            android:entries="@array/settings_topic_labels"
+            android:entryValues="@array/settings_topic_values"
+            android:icon="@drawable/ic_topic"
+            android:key="@string/settings_topic_key"
+            android:title="@string/settings_topic_label"
+            app:useSimpleSummaryProvider="true" />
 
-    <ListPreference
-        android:defaultValue="@string/settings_topic_default"
-        android:entries="@array/settings_topic_labels"
-        android:entryValues="@array/settings_topic_values"
-        android:icon="@drawable/ic_topic"
-        android:key="@string/settings_topic_key"
-        android:title="@string/settings_topic_label"
-        app:useSimpleSummaryProvider="true" />
+        <SwitchPreference
+            android:defaultValue="@string/settings_show_support_default"
+            android:icon="@drawable/ic_show"
+            android:key="@string/settings_show_support_key"
+            android:summary="@string/support_screen_summary"
+            android:title="@string/settings_show_support_label" />
+    </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/titles_and_searches"
+        android:title="@string/custom_searches"
         app:iconSpaceReserved="false">
         <EditTextPreference
             android:icon="@drawable/ic_news"

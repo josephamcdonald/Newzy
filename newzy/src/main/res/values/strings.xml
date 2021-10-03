@@ -21,6 +21,7 @@
     <string name="empty_view_image" translatable="false">Empty View Image</string>
     <string name="empty_string" />
     <string name="null_string">null</string>
+    <string name="country_colon">Country: </string>
 
     <!-- Build Request URL -->
     <string name="country" translatable="false">country</string>
@@ -33,7 +34,8 @@
     <string name="token" translatable="false">token</string>
 
     <!-- Preferences -->
-    <string name="titles_and_searches">TITLES &amp; SEARCHES</string>
+    <string name="general">GENERAL</string>
+    <string name="custom_searches">CUSTOM SEARCHES</string>
     <string name="organize">ORGANIZE</string>
     <string name="optional">OPTIONAL</string>
     <string name="gnews_api_token">GNews API Token</string>
@@ -55,7 +57,6 @@
     <string name="to_date">To Date</string>
 
     <!--Navigation -->
-    <string name="newzys">Newzys!</string>
     <string name="settings">Settings</string>
     <string name="support">Support</string>
     <string name="open_navigation_drawer">Open navigation drawer</string>
