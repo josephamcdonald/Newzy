@@ -129,35 +129,35 @@
     <string name="settings_topic_default" translatable="false">@string/settings_breaking_news_value</string>
 
     <!-- Strings for Country labels -->
-    <string name="settings_au_label">Australia</string>
-    <string name="settings_br_label">Brazil</string>
-    <string name="settings_ca_label">Canada</string>
-    <string name="settings_ch_label">Switzerland</string>
-    <string name="settings_cn_label">China</string>
-    <string name="settings_de_label">Germany</string>
-    <string name="settings_eg_label">Egypt</string>
-    <string name="settings_fr_label">France</string>
-    <string name="settings_gb_label">United Kingdom</string>
-    <string name="settings_gr_label">Greece</string>
-    <string name="settings_hk_label">Hong Kong</string>
-    <string name="settings_ie_label">Ireland</string>
-    <string name="settings_il_label">Israel</string>
-    <string name="settings_in_label">India</string>
-    <string name="settings_it_label">Italy</string>
-    <string name="settings_jp_label">Japan</string>
-    <string name="settings_nl_label">Netherlands</string>
-    <string name="settings_no_label">Norway</string>
-    <string name="settings_pe_label">Peru</string>
-    <string name="settings_ph_label">Philippines</string>
-    <string name="settings_pk_label">Pakistan</string>
-    <string name="settings_pt_label">Portugal</string>
-    <string name="settings_ro_label">Romania</string>
-    <string name="settings_ru_label">Russian Federation</string>
-    <string name="settings_se_label">Sweden</string>
-    <string name="settings_sg_label">Singapore</string>
-    <string name="settings_tw_label">Taiwan</string>
-    <string name="settings_ua_label">Ukraine</string>
-    <string name="settings_us_label">United States</string>
+    <string name="settings_au_label">Australia 🇦🇺</string>
+    <string name="settings_br_label">Brazil 🇧🇷</string>
+    <string name="settings_ca_label">Canada 🇨🇦</string>
+    <string name="settings_ch_label">Switzerland 🇨🇭</string>
+    <string name="settings_cn_label">China 🇨🇳</string>
+    <string name="settings_de_label">Germany 🇩🇪</string>
+    <string name="settings_eg_label">Egypt 🇪🇬</string>
+    <string name="settings_fr_label">France 🇫🇷</string>
+    <string name="settings_gb_label">United Kingdom 🇬🇧</string>
+    <string name="settings_gr_label">Greece 🇬🇷</string>
+    <string name="settings_hk_label">Hong Kong 🇭🇰</string>
+    <string name="settings_ie_label">Ireland 🇮🇪</string>
+    <string name="settings_il_label">Israel 🇮🇱</string>
+    <string name="settings_in_label">India 🇮🇳</string>
+    <string name="settings_it_label">Italy 🇮🇹</string>
+    <string name="settings_jp_label">Japan 🇯🇵</string>
+    <string name="settings_nl_label">Netherlands 🇳🇱</string>
+    <string name="settings_no_label">Norway 🇳🇴</string>
+    <string name="settings_pe_label">Peru 🇵🇪</string>
+    <string name="settings_ph_label">Philippines 🇵🇭</string>
+    <string name="settings_pk_label">Pakistan 🇵🇰</string>
+    <string name="settings_pt_label">Portugal 🇵🇹</string>
+    <string name="settings_ro_label">Romania 🇷🇴</string>
+    <string name="settings_ru_label">Russian Federation 🇷🇺</string>
+    <string name="settings_se_label">Sweden 🇸🇪</string>
+    <string name="settings_sg_label">Singapore 🇸🇬</string>
+    <string name="settings_tw_label">Taiwan 🇹🇼</string>
+    <string name="settings_ua_label">Ukraine 🇺🇦</string>
+    <string name="settings_us_label">United States 🇺🇸</string>
 
     <!-- Strings for Country values -->
     <string name="settings_au_value">au</string>
