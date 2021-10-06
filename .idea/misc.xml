@@ -8,6 +8,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw600dp/newzy_item.xml" value="0.421875" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw720dp/newzy_item.xml" value="0.16875" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/activity_main.xml" value="0.225" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/app_bar_main.xml" value="0.225" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/nav_header_main.xml" value="0.225" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/newzy_item.xml" value="0.22056159420289856" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/newzy_list.xml" value="0.225" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/support_content.xml" value="0.225" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/xml/preferences.xml" value="0.11197916666666667" />
       </map>
     </option>
