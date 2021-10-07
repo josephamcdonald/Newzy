@@ -20,11 +20,13 @@ Android Gradle Plugin 7.0.2
 
 Gradle 7.0.2
 
+Target API Level: 31 Android 12.0 (S)
+
 Min API Level: 26 Android 8.0 (OREO)
 
 ## Versioning
 
-2.4.7
+2.4.8
 
 ## Author
 
