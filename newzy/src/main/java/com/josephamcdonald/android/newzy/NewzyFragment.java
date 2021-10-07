@@ -195,10 +195,9 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
             // Hide the Newzy recycler view.
             newzyRecyclerView.setVisibility(View.GONE);
 
-            // Set "No Newzys" image and instructions.
-            // Show the empty list views.
+            // Set error image and error message. Show the error views.
             emptyNewzysImage.setImageResource(R.drawable.empty_box);
-            emptyNewzysText.setText(R.string.no_newzys_to_display);
+            emptyNewzysText.setText(NewzyUtils.errorMessage);
             emptyNewzysView.setVisibility(View.VISIBLE);
         }
         // Stop the swipe refresh animation.

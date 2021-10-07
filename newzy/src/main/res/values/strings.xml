@@ -82,7 +82,6 @@
 
     <!-- Empty list view notifications -->
     <string name="no_internet_available">No internet available.\nPlease check internet connectivity and try again.</string>
-    <string name="no_newzys_to_display">No Newzys to display.\nPlease confirm settings for API token, searches, keywords or choose other Newzys.</string>
 
     <!-- API endpoint URLs -->
     <string name="default_request_url"><![CDATA[https://gnews.io/api/v4/top-headlines?]]></string>

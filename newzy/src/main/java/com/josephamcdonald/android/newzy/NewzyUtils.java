@@ -35,6 +35,9 @@ class NewzyUtils {
     // Tag for the log messages.
     private static final String LOG_TAG = NewzyUtils.class.getSimpleName();
 
+    // Declare the error message.
+    static String errorMessage;
+
     static List<Newzy> fetchNewzys(String requestUrl) {
 
         // Assign the URL object.
@@ -90,14 +93,33 @@ class NewzyUtils {
             urlConnection.setConnectTimeout(TIMEOUT_15_SECONDS);
             urlConnection.connect();
 
+            // HTTP response code from API.
+            int httpResponseCode = urlConnection.getResponseCode();
+
             // If the request was successful (response code 200=OK),
             // then read the input stream and parse the response.
-            if (urlConnection.getResponseCode() == HttpsURLConnection.HTTP_OK) {
+            if (httpResponseCode == HttpsURLConnection.HTTP_OK) {
                 inputStream = urlConnection.getInputStream();
                 jsonResponse = readFromStream(inputStream);
 
+            } else if (httpResponseCode == HttpsURLConnection.HTTP_BAD_REQUEST) {
+                errorMessage = "No Newzys to display.\nYour request was not valid. Please check your searches and keywords.";
+                Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
+                Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
+
+            } else if (httpResponseCode == HttpsURLConnection.HTTP_UNAUTHORIZED) {
+                errorMessage = "No Newzys to display.\nYour API token is incorrect. Please confirm it within settings.";
+                Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
+                Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
+
+            } else if (httpResponseCode == HttpsURLConnection.HTTP_FORBIDDEN) {
+                errorMessage = "No Newzys to display.\nYou have reached your daily request limit. The next reset is at 00:00 UTC.";
+                Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
+                Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
+
             } else {
-                Log.e(LOG_TAG, "Error response code: " + urlConnection.getResponseCode());
+                errorMessage = "No Newzys to display.\nThere was a internal server problem. Please try again later.";
+                Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
             }
         } catch (IOException e) {
