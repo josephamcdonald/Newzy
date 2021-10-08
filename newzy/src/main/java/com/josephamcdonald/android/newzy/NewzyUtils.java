@@ -103,12 +103,12 @@ class NewzyUtils {
                 jsonResponse = readFromStream(inputStream);
 
             } else if (httpResponseCode == HttpsURLConnection.HTTP_BAD_REQUEST) {
-                errorMessage = "No Newzys to display.\nYour request was not valid. Please check your searches and keywords.";
+                errorMessage = "No Newzys to display.\nYour search request was invalid. Please confirm the search syntax within Settings.";
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
             } else if (httpResponseCode == HttpsURLConnection.HTTP_UNAUTHORIZED) {
-                errorMessage = "No Newzys to display.\nYour API token is incorrect. Please confirm it within settings.";
+                errorMessage = "No Newzys to display.\nYour API token is missing or incorrect. Please confirm the token within Settings.";
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
@@ -118,7 +118,7 @@ class NewzyUtils {
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
             } else {
-                errorMessage = "No Newzys to display.\nThere was a internal server problem. Please try again later.";
+                errorMessage = "No Newzys to display.\nThere was an internal server problem. Please try again later.";
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
             }
