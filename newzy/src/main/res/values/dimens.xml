@@ -15,8 +15,8 @@
     <dimen name="margin_12dp">12dp</dimen>
     <dimen name="margin_8dp">8dp</dimen>
     <dimen name="margin_4dp">4dp</dimen>
-    <dimen name="touch_target">48dp</dimen>
-    <dimen name="touch_target_sw600dp">72dp</dimen>
+    <dimen name="touch_target">60dp</dimen>
+    <dimen name="touch_target_sw600dp">84dp</dimen>
     <dimen name="touch_target_sw720dp">96dp</dimen>
     <dimen name="padding_standard">16dp</dimen>
     <dimen name="padding_standard_sw600dp">24dp</dimen>
