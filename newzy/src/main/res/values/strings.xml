@@ -69,7 +69,7 @@
     <string name="dates">DATES</string>
     <string name="powered_by">Powered by:</string>
     <string name="version">version</string>
-    <string name="support_activate">Newzy is activated with a free GNews API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token in Settings. Get your token at:</string>
+    <string name="support_activate">Newzy is activated with a FREE GNews API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token in Settings. Get your token at:</string>
     <string name="support_customize">Configured within Settings, set the Topic and Country of choice. GNews API tracks headlines across several topics and many countries.\n\nIn addition, Newzy includes up to six (6) custom Newzy Titles and Searches. Also configured within Settings, Newzy Titles are descriptive labels for your personal Newzy Searches and appear in the side menu.</string>
     <string name="support_search">Newzy Searches contain the words and phrases you seek in your news lists. These searches (also configured in Settings) may range from simple to more complex. Search tips:\n\n&#8226; Surround phrases with quotes (\") for an exact match.\nExample: \"Bitcoin Marketplace\"\n\n&#8226; Alternatively, you may use the AND / OR / NOT keywords, and optionally group these with parentheses.\nExample: crypto AND (ethereum OR litecoin) NOT bitcoin</string>
     <string name="support_dates">Focus your Newzys within an optional date range in Settings. Dates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26</string>
@@ -109,12 +109,16 @@
     <string name="settings_10_newzys_label">10 (GNews FREE plan)</string>
     <string name="settings_10_newzys_value" translatable="false">10</string>
 
-    <!-- Label for 30 Newzys option -->
-    <string name="settings_30_newzys_label">30 (GNews PLUS plan)</string>
-    <string name="settings_30_newzys_value" translatable="false">30</string>
+    <!-- Label for 25 Newzys option -->
+    <string name="settings_25_newzys_label">25 (GNews ESSENTIAL plan)</string>
+    <string name="settings_25_newzys_value" translatable="false">25</string>
+
+    <!-- Label for 50 Newzys option -->
+    <string name="settings_50_newzys_label">50 (GNews BUSINESS plan)</string>
+    <string name="settings_50_newzys_value" translatable="false">50</string>
 
     <!-- Label for 100 Newzys option -->
-    <string name="settings_100_newzys_label">100 (GNews PRO plan)</string>
+    <string name="settings_100_newzys_label">100 (GNews ENTERPRISE plan)</string>
     <string name="settings_100_newzys_value" translatable="false">100</string>
 
     <!-- Strings For Country Preference [CHAR LIMIT=30] -->
