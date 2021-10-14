@@ -28,12 +28,12 @@
             app:useSimpleSummaryProvider="true" />
 
         <ListPreference
-            android:defaultValue="@string/settings_topic_default"
-            android:entries="@array/settings_topic_labels"
-            android:entryValues="@array/settings_topic_values"
+            android:defaultValue="@string/settings_top_headlines_default"
+            android:entries="@array/settings_top_headlines_labels"
+            android:entryValues="@array/settings_top_headlines_values"
             android:icon="@drawable/ic_topic"
-            android:key="@string/settings_topic_key"
-            android:title="@string/settings_topic_label"
+            android:key="@string/settings_top_headlines_key"
+            android:title="@string/settings_top_headlines_label"
             app:useSimpleSummaryProvider="true" />
 
         <SwitchPreference

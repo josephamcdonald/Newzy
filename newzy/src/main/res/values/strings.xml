@@ -43,7 +43,7 @@
     <string name="support_screen_summary">Display support screen at launch</string>
     <string name="show_support">show-support</string>
     <string name="choose_country">Choose Country</string>
-    <string name="choose_topic">Choose Topic</string>
+    <string name="choose_top_headlines">Choose Top Headlines</string>
     <string name="newzy_title">Newzy Title</string>
     <string name="newzy_search">Newzy Search</string>
     <string name="news">News</string>
@@ -70,7 +70,7 @@
     <string name="powered_by">Powered by:</string>
     <string name="version">version</string>
     <string name="support_activate">Newzy is activated with a FREE GNews API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token in Settings. Get your token at:</string>
-    <string name="support_customize">Configured within Settings, set the Topic and Country of choice. GNews API tracks headlines across several topics and many countries.\n\nIn addition, Newzy includes up to six (6) custom Newzy Titles and Searches. Also configured within Settings, Newzy Titles are descriptive labels for your personal Newzy Searches and appear in the side menu.</string>
+    <string name="support_customize">Configured within Settings, set the Country and Top Headlines topic of your choice. GNews API tracks headlines across several topics and many countries.\n\nIn addition, Newzy includes up to six (6) custom Newzy Titles and Searches. Also configured within Settings, Newzy Titles are descriptive labels for your personal Newzy Searches and appear in the side menu.</string>
     <string name="support_search">Newzy Searches contain the words and phrases you seek in your news lists. These searches (also configured in Settings) may range from simple to more complex. Search tips:\n\n&#8226; Surround phrases with quotes (\") for an exact match.\nExample: \"Bitcoin Marketplace\"\n\n&#8226; Alternatively, you may use the AND / OR / NOT keywords, and optionally group these with parentheses.\nExample: crypto AND (ethereum OR litecoin) NOT bitcoin</string>
     <string name="support_dates">Focus your Newzys within an optional date range in Settings. Dates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26</string>
 
@@ -106,19 +106,19 @@
     <string name="settings_newzys_to_list_default" translatable="false">@string/settings_10_newzys_value</string>
 
     <!-- Label for 10 Newzys option -->
-    <string name="settings_10_newzys_label">10 (GNews FREE plan)</string>
+    <string name="settings_10_newzys_label">10 (FREE plan)</string>
     <string name="settings_10_newzys_value" translatable="false">10</string>
 
     <!-- Label for 25 Newzys option -->
-    <string name="settings_25_newzys_label">25 (GNews ESSENTIAL plan)</string>
+    <string name="settings_25_newzys_label">25 (ESSENTIAL plan)</string>
     <string name="settings_25_newzys_value" translatable="false">25</string>
 
     <!-- Label for 50 Newzys option -->
-    <string name="settings_50_newzys_label">50 (GNews BUSINESS plan)</string>
+    <string name="settings_50_newzys_label">50 (BUSINESS plan)</string>
     <string name="settings_50_newzys_value" translatable="false">50</string>
 
     <!-- Label for 100 Newzys option -->
-    <string name="settings_100_newzys_label">100 (GNews ENTERPRISE plan)</string>
+    <string name="settings_100_newzys_label">100 (ENTERPRISE plan)</string>
     <string name="settings_100_newzys_value" translatable="false">100</string>
 
     <!-- Strings For Country Preference [CHAR LIMIT=30] -->
@@ -127,9 +127,9 @@
     <string name="settings_country_default" translatable="false">@string/settings_us_value</string>
 
     <!-- Strings For Topic Preference [CHAR LIMIT=30] -->
-    <string name="settings_topic_label">@string/choose_topic</string>
-    <string name="settings_topic_key" translatable="false">@string/topic</string>
-    <string name="settings_topic_default" translatable="false">@string/settings_breaking_news_value</string>
+    <string name="settings_top_headlines_label">@string/choose_top_headlines</string>
+    <string name="settings_top_headlines_key" translatable="false">@string/topic</string>
+    <string name="settings_top_headlines_default" translatable="false">@string/settings_breaking_news_value</string>
 
     <!-- Strings for Country labels -->
     <string name="settings_au_label">Australia 🇦🇺</string>
@@ -193,7 +193,7 @@
     <string name="settings_ua_value">ua</string>
     <string name="settings_us_value">us</string>
 
-    <!-- Strings for Topic labels -->
+    <!-- Strings for Top Headlines labels -->
     <string name="settings_breaking_news_label">Breaking News</string>
     <string name="settings_world_label">World</string>
     <string name="settings_nation_label">National</string>
@@ -204,7 +204,7 @@
     <string name="settings_science_label">Science</string>
     <string name="settings_health_label">Health</string>
 
-    <!-- Strings for Topic values -->
+    <!-- Strings for Top Headlines values -->
     <string name="settings_breaking_news_value">breaking-news</string>
     <string name="settings_world_value">world</string>
     <string name="settings_nation_value">nation</string>

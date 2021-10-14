@@ -210,8 +210,8 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
         // Assign Preferences string variables.
         String newzysTopic = sp.getString(
-                getString(R.string.settings_topic_key),
-                getString(R.string.settings_topic_default));
+                getString(R.string.settings_top_headlines_key),
+                getString(R.string.settings_top_headlines_default));
 
         String newzysCountry = sp.getString(
                 getString(R.string.settings_country_key),

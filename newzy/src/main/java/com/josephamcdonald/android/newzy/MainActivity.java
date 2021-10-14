@@ -94,14 +94,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else {
             newzysSearch = false;
-            launchFragment(R.id.newzys_topic);
+            launchFragment(R.id.newzys_top_headlines);
         }
     }
 
     private void setMenuItems(Menu menu) {
         // Find the Menu Items.
         countryItem = menu.findItem(R.id.newzys_country);
-        topicItem = menu.findItem(R.id.newzys_topic);
+        topicItem = menu.findItem(R.id.newzys_top_headlines);
         titleItem1 = menu.findItem(R.id.newzys_one);
         titleItem2 = menu.findItem(R.id.newzys_two);
         titleItem3 = menu.findItem(R.id.newzys_three);
@@ -172,8 +172,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             countryItem.setTitle(getString(R.string.country_colon) + getString(R.string.space) + getString(R.string.settings_us_label));
         }
 
-        newzysTopic = sp.getString(getString(R.string.settings_topic_key),
-                getString(R.string.settings_topic_default));
+        newzysTopic = sp.getString(getString(R.string.settings_top_headlines_key),
+                getString(R.string.settings_top_headlines_default));
         Drawable newzysTopicIcon;
 
         if (Objects.requireNonNull(newzysTopic).equals(getString(R.string.settings_world_value))) {
@@ -270,10 +270,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
 
-        if (item.getItemId() == R.id.newzys_topic) {
+        if (item.getItemId() == R.id.newzys_top_headlines) {
             newzysSearch = false;
-            newzysTopic = sp.getString(getString(R.string.settings_topic_key),
-                    getString(R.string.settings_topic_default));
+            newzysTopic = sp.getString(getString(R.string.settings_top_headlines_key),
+                    getString(R.string.settings_top_headlines_default));
 
             if (Objects.requireNonNull(newzysTopic).equals(getString(R.string.settings_world_value))) {
                 newzysTitle = getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news);

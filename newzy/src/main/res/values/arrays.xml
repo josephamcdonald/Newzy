@@ -30,7 +30,7 @@
         <item>@string/settings_100_newzys_value</item>
     </string-array>
 
-    <string-array name="settings_topic_labels">
+    <string-array name="settings_top_headlines_labels">
         <item>@string/settings_breaking_news_label</item>
         <item>@string/settings_world_label</item>
         <item>@string/settings_nation_label</item>
@@ -42,7 +42,7 @@
         <item>@string/settings_health_label</item>
     </string-array>
 
-    <string-array name="settings_topic_values">
+    <string-array name="settings_top_headlines_values">
         <item>@string/settings_breaking_news_value</item>
         <item>@string/settings_world_value</item>
         <item>@string/settings_nation_value</item>

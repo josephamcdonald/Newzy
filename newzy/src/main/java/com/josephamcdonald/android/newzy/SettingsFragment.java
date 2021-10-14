@@ -29,7 +29,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
 
         //Find Newzy Preferences.
         ListPreference prefCountry = findPreference(getString(R.string.settings_country_key));
-        ListPreference prefTopic = findPreference(getString(R.string.settings_topic_key));
+        ListPreference prefTopic = findPreference(getString(R.string.settings_top_headlines_key));
 
         EditTextPreference prefApiKey = findPreference(getString(R.string.settings_api_key_key));
         EditTextPreference prefFromDate = findPreference(getString(R.string.settings_newzys_from_date_key));
