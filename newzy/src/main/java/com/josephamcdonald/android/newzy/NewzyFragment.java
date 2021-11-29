@@ -195,6 +195,11 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
             // Hide the Newzy recycler view.
             newzyRecyclerView.setVisibility(View.GONE);
 
+            // If no Newzys were found, set the error message.
+            if (newzyData != null && newzyData.isEmpty()) {
+                NewzyUtils.errorMessage = "No Newzys to display.\nYour request returned no results. Please try another search within Settings.";
+            }
+
             // Set error image and error message. Show the error views.
             emptyNewzysImage.setImageResource(R.drawable.empty_box);
             emptyNewzysText.setText(NewzyUtils.errorMessage);
