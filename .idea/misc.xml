@@ -8,7 +8,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/dinosaur.xml" value="0.2578125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_breaking.xml" value="0.2578125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_entertainment.xml" value="0.2578125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_health.xml" value="0.2578125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_national.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_newspaper.xml" value="0.2578125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_sports.xml" value="0.2578125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/outline_arrow_back_24.xml" value="0.2578125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/outline_sports_basketball_24.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw600dp/newzy_item.xml" value="0.421875" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw600dp/support_content.xml" value="0.4453125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw720dp/newzy_item.xml" value="0.16875" />
