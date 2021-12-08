@@ -12,8 +12,10 @@
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_breaking.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_entertainment.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_health.xml" value="0.2578125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_key.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_national.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_newspaper.xml" value="0.2578125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_settings.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/ic_sports.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/outline_arrow_back_24.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/outline_sports_basketball_24.xml" value="0.2578125" />
@@ -28,6 +30,8 @@
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/newzy_list.xml" value="0.225" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/support_content.xml" value="0.4" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/menu/activity_main_drawer.xml" value="0.2375" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2578125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/xml/preferences.xml" value="0.264" />
       </map>
     </option>
