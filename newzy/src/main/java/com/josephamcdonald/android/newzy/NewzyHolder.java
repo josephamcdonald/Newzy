@@ -72,7 +72,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
 
         // If no Newzy image provided, use a stock image.
         if (currentNewzy.getNewzyImage().equals(context.getString(R.string.null_string)) || currentNewzy.getNewzyImage().equals(context.getString(R.string.empty_string))) {
-            newzyImageView.setImageResource(R.drawable.newzy);
+            newzyImageView.setImageResource(R.drawable.newzy_banner);
 
         } else {
             int IMAGE_TARGET_WIDTH = 500;
@@ -80,7 +80,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
             Picasso.get().load(currentNewzy.getNewzyImage())
                     .resize(IMAGE_TARGET_WIDTH, IMAGE_TARGET_HEIGHT)
                     .centerCrop()
-                    .error(R.drawable.newzy)
+                    .error(R.drawable.newzy_banner)
                     .into(newzyImageView);
         }
     }

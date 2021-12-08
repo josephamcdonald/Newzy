@@ -197,7 +197,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
             // If no Newzys were found, set the error message.
             if (newzyData != null && newzyData.isEmpty()) {
-                NewzyUtils.errorMessage = "No Newzys to display.\nYour request returned no results. Please try another search within Settings.";
+                NewzyUtils.errorMessage = "No Newzys to display.\nYour request returned no results.\nPlease try another search within Settings.";
             }
 
             // Set error image and error message. Show the error views.

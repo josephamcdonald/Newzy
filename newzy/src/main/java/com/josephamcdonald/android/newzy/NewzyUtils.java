@@ -103,22 +103,22 @@ class NewzyUtils {
                 jsonResponse = readFromStream(inputStream);
 
             } else if (httpResponseCode == HttpsURLConnection.HTTP_BAD_REQUEST) {
-                errorMessage = "No Newzys to display.\nYour search request was invalid. Please confirm the search syntax within Settings.";
+                errorMessage = "No Newzys to display.\nYour search request was invalid.\nPlease confirm the search syntax within Settings.";
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
             } else if (httpResponseCode == HttpsURLConnection.HTTP_UNAUTHORIZED) {
-                errorMessage = "No Newzys to display.\nYour API token is missing or incorrect. Please confirm the token within Settings.";
+                errorMessage = "No Newzys to display.\nYour API token is missing or incorrect.\nPlease confirm the token within Settings.";
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
             } else if (httpResponseCode == HttpsURLConnection.HTTP_FORBIDDEN) {
-                errorMessage = "No Newzys to display.\nYou have reached your daily request limit. The next reset is at 00:00 UTC.";
+                errorMessage = "No Newzys to display.\nYou have reached your daily request limit.\nThe next reset is at 00:00 UTC.";
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
             } else {
-                errorMessage = "No Newzys to display.\nThere was an internal server problem. Please try again later.";
+                errorMessage = "No Newzys to display.\nThere was an internal server problem.\nPlease try again later.";
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
             }
