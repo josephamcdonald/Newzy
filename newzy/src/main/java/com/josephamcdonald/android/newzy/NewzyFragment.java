@@ -132,7 +132,7 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
             // Set "No Internet" image and instructions.
             // Show the empty list views.
-            emptyNewzysImage.setImageResource(R.drawable.dinosaur);
+            emptyNewzysImage.setImageResource(R.drawable.downasaur);
             emptyNewzysText.setText(R.string.no_internet_available);
             emptyNewzysView.setVisibility(View.VISIBLE);
 
