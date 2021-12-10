@@ -16,7 +16,7 @@ Newzy is activated with a free API token. Benefits of your personal token includ
 
 ## Built With
 
-Android Gradle Plugin 7.0.3
+Android Gradle Plugin 7.0.4
 
 Gradle 7.0.2
 
