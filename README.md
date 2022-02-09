@@ -1,6 +1,6 @@
 # Newzy
 
-### Your Custom "Newzy" News
+### Find your own "Newzy" news!
 
 **Simple...Efficient...Free.** Newzy gathers and displays the news results you want to see. These results are affectionately called "Newzys."
 
@@ -16,7 +16,7 @@ Newzy is activated with a free API token. Benefits of your personal token includ
 
 ## Built With
 
-Android Gradle Plugin 7.1.0
+Android Gradle Plugin 7.1.1
 
 Gradle 7.2
 
@@ -26,7 +26,7 @@ Min API Level: 26 Android 8.0 (OREO)
 
 ## Versioning
 
-2.6.5
+2.6.6
 
 ## Author
 

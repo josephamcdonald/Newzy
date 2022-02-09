@@ -1,7 +1,3 @@
 <component name="CopyrightManager">
-  <settings default="android">
-    <module2copyright>
-      <element module="Project Source Files" copyright="android" />
-    </module2copyright>
-  </settings>
+  <settings default="android" />
 </component>
