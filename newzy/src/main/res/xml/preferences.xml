@@ -48,13 +48,6 @@
         android:title="@string/custom_searches"
         app:iconSpaceReserved="false">
         <EditTextPreference
-            android:icon="@drawable/ic_newspaper"
-            android:key="@string/settings_newzy_title_one_key"
-            android:summary="@string/provide_newzy_title_one"
-            android:title="@string/settings_newzy_title_one_label"
-            app:useSimpleSummaryProvider="true" />
-
-        <EditTextPreference
             android:icon="@drawable/ic_search"
             android:key="@string/settings_newzy_search_one_key"
             android:summary="@string/provide_newzy_search_one"
@@ -63,10 +56,9 @@
 
         <EditTextPreference
             android:icon="@drawable/ic_newspaper"
-            android:key="@string/settings_newzy_title_two_key"
-            android:summary="@string/provide_newzy_title_two"
-            android:title="@string/settings_newzy_title_two_label"
-            app:allowDividerAbove="true"
+            android:key="@string/settings_newzy_title_one_key"
+            android:summary="@string/provide_newzy_title_one"
+            android:title="@string/settings_newzy_title_one_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
@@ -74,14 +66,14 @@
             android:key="@string/settings_newzy_search_two_key"
             android:summary="@string/provide_newzy_search_two"
             android:title="@string/settings_newzy_search_two_label"
+            app:allowDividerAbove="true"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             android:icon="@drawable/ic_newspaper"
-            android:key="@string/settings_newzy_title_three_key"
-            android:summary="@string/provide_newzy_title_three"
-            android:title="@string/settings_newzy_title_three_label"
-            app:allowDividerAbove="true"
+            android:key="@string/settings_newzy_title_two_key"
+            android:summary="@string/provide_newzy_title_two"
+            android:title="@string/settings_newzy_title_two_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
@@ -89,14 +81,14 @@
             android:key="@string/settings_newzy_search_three_key"
             android:summary="@string/provide_newzy_search_three"
             android:title="@string/settings_newzy_search_three_label"
+            app:allowDividerAbove="true"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             android:icon="@drawable/ic_newspaper"
-            android:key="@string/settings_newzy_title_four_key"
-            android:summary="@string/provide_newzy_title_four"
-            android:title="@string/settings_newzy_title_four_label"
-            app:allowDividerAbove="true"
+            android:key="@string/settings_newzy_title_three_key"
+            android:summary="@string/provide_newzy_title_three"
+            android:title="@string/settings_newzy_title_three_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
@@ -104,14 +96,14 @@
             android:key="@string/settings_newzy_search_four_key"
             android:summary="@string/provide_newzy_search_four"
             android:title="@string/settings_newzy_search_four_label"
+            app:allowDividerAbove="true"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             android:icon="@drawable/ic_newspaper"
-            android:key="@string/settings_newzy_title_five_key"
-            android:summary="@string/provide_newzy_title_five"
-            android:title="@string/settings_newzy_title_five_label"
-            app:allowDividerAbove="true"
+            android:key="@string/settings_newzy_title_four_key"
+            android:summary="@string/provide_newzy_title_four"
+            android:title="@string/settings_newzy_title_four_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
@@ -119,14 +111,14 @@
             android:key="@string/settings_newzy_search_five_key"
             android:summary="@string/provide_newzy_search_five"
             android:title="@string/settings_newzy_search_five_label"
+            app:allowDividerAbove="true"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             android:icon="@drawable/ic_newspaper"
-            android:key="@string/settings_newzy_title_six_key"
-            android:summary="@string/provide_newzy_title_six"
-            android:title="@string/settings_newzy_title_six_label"
-            app:allowDividerAbove="true"
+            android:key="@string/settings_newzy_title_five_key"
+            android:summary="@string/provide_newzy_title_five"
+            android:title="@string/settings_newzy_title_five_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
@@ -134,6 +126,14 @@
             android:key="@string/settings_newzy_search_six_key"
             android:summary="@string/provide_newzy_search_six"
             android:title="@string/settings_newzy_search_six_label"
+            app:allowDividerAbove="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:icon="@drawable/ic_newspaper"
+            android:key="@string/settings_newzy_title_six_key"
+            android:summary="@string/provide_newzy_title_six"
+            android:title="@string/settings_newzy_title_six_label"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 
