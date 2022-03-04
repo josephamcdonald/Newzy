@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 #
-# Copyright (c) 2022. josephamcdonald - All Rights Reserved
+# Copyright (c) 2019-2022. josephamcdonald - All Rights Reserved
 #  Unauthorized copying of this file, via any medium is strictly prohibited
 #  Proprietary and confidential
 #  Written by josephamcdonald
