@@ -26,7 +26,7 @@ Min API Level: 26 Android 8.0 (OREO)
 
 ## Versioning
 
-2.6.8
+2.6.9
 
 ## Author
 
