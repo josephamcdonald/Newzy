@@ -30,13 +30,11 @@
     <string name="from" translatable="false">from</string>
     <string name="to" translatable="false">to</string>
     <string name="sortby" translatable="false">sortby</string>
-    <string name="max" translatable="false">max</string>
     <string name="token" translatable="false">token</string>
 
     <!-- Preferences -->
     <string name="general">GENERAL</string>
     <string name="custom_searches">CUSTOM SEARCHES</string>
-    <string name="organize">ORGANIZE</string>
     <string name="optional">OPTIONAL</string>
     <string name="gnews_api_token">GNews API Token</string>
     <string name="show_support_screen">Show Support Screen</string>
