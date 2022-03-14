@@ -36,6 +36,15 @@
             android:title="@string/settings_top_headlines_label"
             app:useSimpleSummaryProvider="true" />
 
+        <ListPreference
+            android:defaultValue="@string/settings_sort_newzys_by_default"
+            android:entries="@array/settings_sort_newzys_by_labels"
+            android:entryValues="@array/settings_sort_newzys_by_values"
+            android:icon="@drawable/ic_sort"
+            android:key="@string/settings_sort_newzys_by_key"
+            android:title="@string/settings_sort_newzys_by_label"
+            app:useSimpleSummaryProvider="true" />
+
         <SwitchPreference
             android:defaultValue="@string/settings_show_support_default"
             android:icon="@drawable/ic_show"
@@ -134,28 +143,6 @@
             android:key="@string/settings_menu_title_six_key"
             android:summary="@string/provide_menu_title_six"
             android:title="@string/settings_menu_title_six_label"
-            app:useSimpleSummaryProvider="true" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/organize"
-        app:iconSpaceReserved="false">
-        <ListPreference
-            android:defaultValue="@string/settings_sort_newzys_by_default"
-            android:entries="@array/settings_sort_newzys_by_labels"
-            android:entryValues="@array/settings_sort_newzys_by_values"
-            android:icon="@drawable/ic_sort"
-            android:key="@string/settings_sort_newzys_by_key"
-            android:title="@string/settings_sort_newzys_by_label"
-            app:useSimpleSummaryProvider="true" />
-
-        <ListPreference
-            android:defaultValue="@string/settings_newzys_to_list_default"
-            android:entries="@array/settings_newzys_to_list_labels"
-            android:entryValues="@array/settings_newzys_to_list_values"
-            android:icon="@drawable/ic_list_numbered"
-            android:key="@string/settings_newzys_to_list_key"
-            android:title="@string/settings_newzys_to_list_label"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 

@@ -226,10 +226,6 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
                 getString(R.string.settings_sort_newzys_by_key),
                 getString(R.string.settings_sort_newzys_by_default));
 
-        String newzysToList = sp.getString(
-                getString(R.string.settings_newzys_to_list_key),
-                getString(R.string.settings_newzys_to_list_default));
-
         String newzysFromDate = sp.getString(
                 getString(R.string.settings_newzys_from_date_key),
                 getString(R.string.settings_newzys_from_date_default));
@@ -262,9 +258,6 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         }
         // Append COUNTRY parameter.
         uriBuilder.appendQueryParameter(getString(R.string.country), newzysCountry);
-
-        // Append MAX items to list parameter.
-        uriBuilder.appendQueryParameter(getString(R.string.max), newzysToList);
 
         // If NOT empty, append FROM date parameter.
         if (!Objects.requireNonNull(newzysFromDate).isEmpty()) {

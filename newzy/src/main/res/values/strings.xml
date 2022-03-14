@@ -53,7 +53,6 @@
     <string name="sort_newzys_by">Sort Newzys By</string>
     <string name="newest">Newest</string>
     <string name="relevance">Relevance</string>
-    <string name="newzys_to_list">Newzys To List</string>
     <string name="from_date">From Date</string>
     <string name="to_date">To Date</string>
 
@@ -100,27 +99,6 @@
     <!-- Label for order-by relevance option [CHAR LIMIT=20] -->
     <string name="settings_sort_newzys_by_relevance_label">@string/relevance</string>
     <string name="settings_sort_newzys_by_relevance_value" translatable="false">relevance</string>
-
-    <!-- Strings For Newzys To List Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzys_to_list_label">@string/newzys_to_list</string>
-    <string name="settings_newzys_to_list_key" translatable="false">@string/max</string>
-    <string name="settings_newzys_to_list_default" translatable="false">@string/settings_10_newzys_value</string>
-
-    <!-- Label for 10 Newzys option -->
-    <string name="settings_10_newzys_label">10 (FREE plan)</string>
-    <string name="settings_10_newzys_value" translatable="false">10</string>
-
-    <!-- Label for 25 Newzys option -->
-    <string name="settings_25_newzys_label">25 (ESSENTIAL plan)</string>
-    <string name="settings_25_newzys_value" translatable="false">25</string>
-
-    <!-- Label for 50 Newzys option -->
-    <string name="settings_50_newzys_label">50 (BUSINESS plan)</string>
-    <string name="settings_50_newzys_value" translatable="false">50</string>
-
-    <!-- Label for 100 Newzys option -->
-    <string name="settings_100_newzys_label">100 (ENTERPRISE plan)</string>
-    <string name="settings_100_newzys_value" translatable="false">100</string>
 
     <!-- Strings For Country Preference [CHAR LIMIT=30] -->
     <string name="settings_country_label">@string/choose_country</string>

@@ -16,20 +16,6 @@
         <item>@string/settings_sort_newzys_by_relevance_value</item>
     </string-array>
 
-    <string-array name="settings_newzys_to_list_labels">
-        <item>@string/settings_10_newzys_label</item>
-        <item>@string/settings_25_newzys_label</item>
-        <item>@string/settings_50_newzys_label</item>
-        <item>@string/settings_100_newzys_label</item>
-    </string-array>
-
-    <string-array name="settings_newzys_to_list_values">
-        <item>@string/settings_10_newzys_value</item>
-        <item>@string/settings_25_newzys_value</item>
-        <item>@string/settings_50_newzys_value</item>
-        <item>@string/settings_100_newzys_value</item>
-    </string-array>
-
     <string-array name="settings_top_headlines_labels">
         <item>@string/settings_breaking_news_label</item>
         <item>@string/settings_world_label</item>
