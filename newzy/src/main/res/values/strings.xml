@@ -44,11 +44,11 @@
     <string name="show_support">show-support</string>
     <string name="choose_country">Choose Country</string>
     <string name="choose_top_headlines">Choose Top Headlines</string>
-    <string name="newzy_title">Newzy Title</string>
+    <string name="menu_title">Menu Title</string>
     <string name="newzy_search">Newzy Search</string>
     <string name="top">Top</string>
     <string name="news">News</string>
-    <string name="provide_newzy_title">Provide Newzy Title</string>
+    <string name="provide_menu_title">Provide Menu Title</string>
     <string name="provide_newzy_search">Provide Newzy Search</string>
     <string name="sort_newzys_by">Sort Newzys By</string>
     <string name="newest">Newest</string>
@@ -239,41 +239,41 @@
     <string name="settings_api_key_default" translatable="false">@string/empty_string</string>
     <string name="provide_api_key">Provide GNews API token</string>
 
-    <!-- Strings For Newzy Title 1 Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzy_title_one_label">@string/newzy_title</string>
-    <string name="settings_newzy_title_one_key" translatable="false">title</string>
-    <string name="settings_newzy_title_one_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_title_one">@string/provide_newzy_title</string>
+    <!-- Strings For Menu Title 1 Preference [CHAR LIMIT=30] -->
+    <string name="settings_menu_title_one_label">@string/menu_title</string>
+    <string name="settings_menu_title_one_key" translatable="false">title</string>
+    <string name="settings_menu_title_one_default" translatable="false">@string/empty_string</string>
+    <string name="provide_menu_title_one">@string/provide_menu_title</string>
 
-    <!-- Strings For Newzy Title 2 Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzy_title_two_label">@string/newzy_title</string>
-    <string name="settings_newzy_title_two_key" translatable="false">title2</string>
-    <string name="settings_newzy_title_two_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_title_two">@string/provide_newzy_title</string>
+    <!-- Strings For Menu Title 2 Preference [CHAR LIMIT=30] -->
+    <string name="settings_menu_title_two_label">@string/menu_title</string>
+    <string name="settings_menu_title_two_key" translatable="false">title2</string>
+    <string name="settings_menu_title_two_default" translatable="false">@string/empty_string</string>
+    <string name="provide_menu_title_two">@string/provide_menu_title</string>
 
-    <!-- Strings For Newzy Title 3 Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzy_title_three_label">@string/newzy_title</string>
-    <string name="settings_newzy_title_three_key" translatable="false">title3</string>
-    <string name="settings_newzy_title_three_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_title_three">@string/provide_newzy_title</string>
+    <!-- Strings For Menu Title 3 Preference [CHAR LIMIT=30] -->
+    <string name="settings_menu_title_three_label">@string/menu_title</string>
+    <string name="settings_menu_title_three_key" translatable="false">title3</string>
+    <string name="settings_menu_title_three_default" translatable="false">@string/empty_string</string>
+    <string name="provide_menu_title_three">@string/provide_menu_title</string>
 
-    <!-- Strings For Newzy Title 4 Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzy_title_four_label">@string/newzy_title</string>
-    <string name="settings_newzy_title_four_key" translatable="false">title4</string>
-    <string name="settings_newzy_title_four_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_title_four">@string/provide_newzy_title</string>
+    <!-- Strings For Menu Title 4 Preference [CHAR LIMIT=30] -->
+    <string name="settings_menu_title_four_label">@string/menu_title</string>
+    <string name="settings_menu_title_four_key" translatable="false">title4</string>
+    <string name="settings_menu_title_four_default" translatable="false">@string/empty_string</string>
+    <string name="provide_menu_title_four">@string/provide_menu_title</string>
 
-    <!-- Strings For Newzy Title 5 Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzy_title_five_label">@string/newzy_title</string>
-    <string name="settings_newzy_title_five_key" translatable="false">title5</string>
-    <string name="settings_newzy_title_five_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_title_five">@string/provide_newzy_title</string>
+    <!-- Strings For Menu Title 5 Preference [CHAR LIMIT=30] -->
+    <string name="settings_menu_title_five_label">@string/menu_title</string>
+    <string name="settings_menu_title_five_key" translatable="false">title5</string>
+    <string name="settings_menu_title_five_default" translatable="false">@string/empty_string</string>
+    <string name="provide_menu_title_five">@string/provide_menu_title</string>
 
-    <!-- Strings For Newzy Title 6 Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzy_title_six_label">@string/newzy_title</string>
-    <string name="settings_newzy_title_six_key" translatable="false">title6</string>
-    <string name="settings_newzy_title_six_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_title_six">@string/provide_newzy_title</string>
+    <!-- Strings For Menu Title 6 Preference [CHAR LIMIT=30] -->
+    <string name="settings_menu_title_six_label">@string/menu_title</string>
+    <string name="settings_menu_title_six_key" translatable="false">title6</string>
+    <string name="settings_menu_title_six_default" translatable="false">@string/empty_string</string>
+    <string name="provide_menu_title_six">@string/provide_menu_title</string>
 
     <!-- Strings For Newzy Search 1 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_search_one_label">@string/newzy_search</string>

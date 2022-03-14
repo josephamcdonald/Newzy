@@ -17,27 +17,27 @@
                 <item
                     android:id="@+id/newzys_one"
                     android:icon="@drawable/ic_newspaper"
-                    android:title="@string/settings_newzy_title_one_default" />
+                    android:title="@string/settings_menu_title_one_default" />
                 <item
                     android:id="@+id/newzys_two"
                     android:icon="@drawable/ic_newspaper"
-                    android:title="@string/settings_newzy_title_two_default" />
+                    android:title="@string/settings_menu_title_two_default" />
                 <item
                     android:id="@+id/newzys_three"
                     android:icon="@drawable/ic_newspaper"
-                    android:title="@string/settings_newzy_title_three_default" />
+                    android:title="@string/settings_menu_title_three_default" />
                 <item
                     android:id="@+id/newzys_four"
                     android:icon="@drawable/ic_newspaper"
-                    android:title="@string/settings_newzy_title_four_default" />
+                    android:title="@string/settings_menu_title_four_default" />
                 <item
                     android:id="@+id/newzys_five"
                     android:icon="@drawable/ic_newspaper"
-                    android:title="@string/settings_newzy_title_five_default" />
+                    android:title="@string/settings_menu_title_five_default" />
                 <item
                     android:id="@+id/newzys_six"
                     android:icon="@drawable/ic_newspaper"
-                    android:title="@string/settings_newzy_title_six_default" />
+                    android:title="@string/settings_menu_title_six_default" />
             </group>
         </menu>
     </item>

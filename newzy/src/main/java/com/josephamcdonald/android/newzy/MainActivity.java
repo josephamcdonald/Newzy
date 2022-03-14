@@ -216,18 +216,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         topicItem.setTitle(newzysTitle);
         topicItem.setIcon(newzysTopicIcon);
 
-        String title1 = sp.getString(getString(R.string.settings_newzy_title_one_key),
-                getString(R.string.settings_newzy_title_one_default));
-        String title2 = sp.getString(getString(R.string.settings_newzy_title_two_key),
-                getString(R.string.settings_newzy_title_two_default));
-        String title3 = sp.getString(getString(R.string.settings_newzy_title_three_key),
-                getString(R.string.settings_newzy_title_three_default));
-        String title4 = sp.getString(getString(R.string.settings_newzy_title_four_key),
-                getString(R.string.settings_newzy_title_four_default));
-        String title5 = sp.getString(getString(R.string.settings_newzy_title_five_key),
-                getString(R.string.settings_newzy_title_five_default));
-        String title6 = sp.getString(getString(R.string.settings_newzy_title_six_key),
-                getString(R.string.settings_newzy_title_six_default));
+        String title1 = sp.getString(getString(R.string.settings_menu_title_one_key),
+                getString(R.string.settings_menu_title_one_default));
+        String title2 = sp.getString(getString(R.string.settings_menu_title_two_key),
+                getString(R.string.settings_menu_title_two_default));
+        String title3 = sp.getString(getString(R.string.settings_menu_title_three_key),
+                getString(R.string.settings_menu_title_three_default));
+        String title4 = sp.getString(getString(R.string.settings_menu_title_four_key),
+                getString(R.string.settings_menu_title_four_default));
+        String title5 = sp.getString(getString(R.string.settings_menu_title_five_key),
+                getString(R.string.settings_menu_title_five_default));
+        String title6 = sp.getString(getString(R.string.settings_menu_title_six_key),
+                getString(R.string.settings_menu_title_six_default));
 
         if (Objects.requireNonNull(title1).isEmpty()) {
             titleItem1.setVisible(false);
@@ -298,8 +298,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (item.getItemId() == R.id.newzys_one) {
             newzysSearch = true;
             newzysTitle = sp.getString(
-                    getString(R.string.settings_newzy_title_one_key),
-                    getString(R.string.settings_newzy_title_one_default));
+                    getString(R.string.settings_menu_title_one_key),
+                    getString(R.string.settings_menu_title_one_default));
             newzysQuery = sp.getString(
                     getString(R.string.settings_newzy_search_one_key),
                     getString(R.string.settings_newzy_search_one_default));
@@ -307,8 +307,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (item.getItemId() == R.id.newzys_two) {
             newzysSearch = true;
             newzysTitle = sp.getString(
-                    getString(R.string.settings_newzy_title_two_key),
-                    getString(R.string.settings_newzy_title_two_default));
+                    getString(R.string.settings_menu_title_two_key),
+                    getString(R.string.settings_menu_title_two_default));
             newzysQuery = sp.getString(
                     getString(R.string.settings_newzy_search_two_key),
                     getString(R.string.settings_newzy_search_two_default));
@@ -316,8 +316,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (item.getItemId() == R.id.newzys_three) {
             newzysSearch = true;
             newzysTitle = sp.getString(
-                    getString(R.string.settings_newzy_title_three_key),
-                    getString(R.string.settings_newzy_title_three_default));
+                    getString(R.string.settings_menu_title_three_key),
+                    getString(R.string.settings_menu_title_three_default));
             newzysQuery = sp.getString(
                     getString(R.string.settings_newzy_search_three_key),
                     getString(R.string.settings_newzy_search_three_default));
@@ -325,8 +325,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (item.getItemId() == R.id.newzys_four) {
             newzysSearch = true;
             newzysTitle = sp.getString(
-                    getString(R.string.settings_newzy_title_four_key),
-                    getString(R.string.settings_newzy_title_four_default));
+                    getString(R.string.settings_menu_title_four_key),
+                    getString(R.string.settings_menu_title_four_default));
             newzysQuery = sp.getString(
                     getString(R.string.settings_newzy_search_four_key),
                     getString(R.string.settings_newzy_search_four_default));
@@ -334,8 +334,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (item.getItemId() == R.id.newzys_five) {
             newzysSearch = true;
             newzysTitle = sp.getString(
-                    getString(R.string.settings_newzy_title_five_key),
-                    getString(R.string.settings_newzy_title_five_default));
+                    getString(R.string.settings_menu_title_five_key),
+                    getString(R.string.settings_menu_title_five_default));
             newzysQuery = sp.getString(
                     getString(R.string.settings_newzy_search_five_key),
                     getString(R.string.settings_newzy_search_five_default));
@@ -343,8 +343,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (item.getItemId() == R.id.newzys_six) {
             newzysSearch = true;
             newzysTitle = sp.getString(
-                    getString(R.string.settings_newzy_title_six_key),
-                    getString(R.string.settings_newzy_title_six_default));
+                    getString(R.string.settings_menu_title_six_key),
+                    getString(R.string.settings_menu_title_six_default));
             newzysQuery = sp.getString(
                     getString(R.string.settings_newzy_search_six_key),
                     getString(R.string.settings_newzy_search_six_default));

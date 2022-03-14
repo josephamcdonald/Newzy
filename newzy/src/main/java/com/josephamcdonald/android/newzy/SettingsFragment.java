@@ -35,12 +35,12 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         EditTextPreference prefFromDate = findPreference(getString(R.string.settings_newzys_from_date_key));
         EditTextPreference prefToDate = findPreference(getString(R.string.settings_newzys_to_date_key));
 
-        EditTextPreference prefTitleOne = findPreference(getString(R.string.settings_newzy_title_one_key));
-        EditTextPreference prefTitleTwo = findPreference(getString(R.string.settings_newzy_title_two_key));
-        EditTextPreference prefTitleThree = findPreference(getString(R.string.settings_newzy_title_three_key));
-        EditTextPreference prefTitleFour = findPreference(getString(R.string.settings_newzy_title_four_key));
-        EditTextPreference prefTitleFive = findPreference(getString(R.string.settings_newzy_title_five_key));
-        EditTextPreference prefTitleSix = findPreference(getString(R.string.settings_newzy_title_six_key));
+        EditTextPreference prefTitleOne = findPreference(getString(R.string.settings_menu_title_one_key));
+        EditTextPreference prefTitleTwo = findPreference(getString(R.string.settings_menu_title_two_key));
+        EditTextPreference prefTitleThree = findPreference(getString(R.string.settings_menu_title_three_key));
+        EditTextPreference prefTitleFour = findPreference(getString(R.string.settings_menu_title_four_key));
+        EditTextPreference prefTitleFive = findPreference(getString(R.string.settings_menu_title_five_key));
+        EditTextPreference prefTitleSix = findPreference(getString(R.string.settings_menu_title_six_key));
 
         EditTextPreference prefSearchOne = findPreference(getString(R.string.settings_newzy_search_one_key));
         EditTextPreference prefSearchTwo = findPreference(getString(R.string.settings_newzy_search_two_key));
@@ -59,7 +59,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         // Create listener to set input type and hint for Newzy titles.
         EditTextPreference.OnBindEditTextListener titleBindEditTextListener = editText -> {
             editText.setInputType(InputType.TYPE_CLASS_TEXT);
-            editText.setHint(R.string.provide_newzy_title);
+            editText.setHint(R.string.provide_menu_title);
             editText.selectAll();
         };
 
@@ -184,7 +184,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
                 MainActivity.countryItem.setTitle(getString(R.string.country_colon) + getString(R.string.space) + getString(R.string.settings_us_label));
             }
 
-        } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_one_key))) {
+        } else if (preferenceKey.equals(getString(R.string.settings_menu_title_one_key))) {
             // If Newzy Title is changed, update its menu item.
             if (stringValue.isEmpty()) {
                 MainActivity.titleItem1.setVisible(false);
@@ -193,7 +193,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
                 MainActivity.titleItem1.setTitle(stringValue);
                 MainActivity.titleItem1.setVisible(true);
             }
-        } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_two_key))) {
+        } else if (preferenceKey.equals(getString(R.string.settings_menu_title_two_key))) {
             if (stringValue.isEmpty()) {
                 MainActivity.titleItem2.setVisible(false);
 
@@ -201,7 +201,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
                 MainActivity.titleItem2.setTitle(stringValue);
                 MainActivity.titleItem2.setVisible(true);
             }
-        } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_three_key))) {
+        } else if (preferenceKey.equals(getString(R.string.settings_menu_title_three_key))) {
             if (stringValue.isEmpty()) {
                 MainActivity.titleItem3.setVisible(false);
 
@@ -209,7 +209,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
                 MainActivity.titleItem3.setTitle(stringValue);
                 MainActivity.titleItem3.setVisible(true);
             }
-        } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_four_key))) {
+        } else if (preferenceKey.equals(getString(R.string.settings_menu_title_four_key))) {
             if (stringValue.isEmpty()) {
                 MainActivity.titleItem4.setVisible(false);
 
@@ -217,7 +217,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
                 MainActivity.titleItem4.setTitle(stringValue);
                 MainActivity.titleItem4.setVisible(true);
             }
-        } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_five_key))) {
+        } else if (preferenceKey.equals(getString(R.string.settings_menu_title_five_key))) {
             if (stringValue.isEmpty()) {
                 MainActivity.titleItem5.setVisible(false);
 
@@ -225,7 +225,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
                 MainActivity.titleItem5.setTitle(stringValue);
                 MainActivity.titleItem5.setVisible(true);
             }
-        } else if (preferenceKey.equals(getString(R.string.settings_newzy_title_six_key))) {
+        } else if (preferenceKey.equals(getString(R.string.settings_menu_title_six_key))) {
             if (stringValue.isEmpty()) {
                 MainActivity.titleItem6.setVisible(false);
 
