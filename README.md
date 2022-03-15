@@ -1,8 +1,8 @@
 # Newzy
 
-### Find your own "Newzy" news!
+### Find and display your personalized "Newzy" news!
 
-**Simple...Efficient...Free.** Newzy gathers and displays the news results you want to see. These results are affectionately called "Newzys."
+**Simple...Efficient...FREE.** Newzy gathers and displays the news results you want to see. These results are affectionately called "Newzys."
 
 [![Image](screenshots/google-play-badge-small.png)](http://newzy.josephamcdonald.com "Get it on Google Play!")
 
