@@ -103,12 +103,12 @@ class NewzyUtils {
                 jsonResponse = readFromStream(inputStream);
 
             } else if (httpResponseCode == HttpsURLConnection.HTTP_BAD_REQUEST) {
-                errorMessage = "No Newzys to display.\nYour search request was invalid.\nPlease confirm the search syntax within Settings.";
+                errorMessage = "No Newzys to display.\nYour search request was invalid.\nPlease confirm the search syntax in Settings.";
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
             } else if (httpResponseCode == HttpsURLConnection.HTTP_UNAUTHORIZED) {
-                errorMessage = "No Newzys to display.\nYour API token is missing or incorrect.\nPlease confirm the token within Settings.";
+                errorMessage = "No Newzys to display.\nYour API token is missing or incorrect.\nPlease confirm the token in Settings.";
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
