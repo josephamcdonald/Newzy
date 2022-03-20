@@ -15,7 +15,7 @@
     <string name="no_newzy_provided">No Newzy Provided!</string>
     <string name="date_pattern_out" translatable="false">"d MMM yyyy h:mm a"</string>
     <string name="date_format" translatable="false">YYYY-MM-DD</string>
-    <string name="time_format" translatable="false">HH:MM:SS</string>
+    <string name="time_format" translatable="false">HH:mm:ss</string>
     <string name="progress_image" translatable="false">progress image</string>
     <string name="empty_view_image" translatable="false">Empty View Image</string>
     <string name="empty_string" />
@@ -77,7 +77,7 @@
     <string name="support_activate">Newzy is activated with a FREE GNews API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token in Settings. Get your token at:</string>
     <string name="support_customize">Configured within Settings, set the Country and Top Headlines topic of your choice. GNews API tracks headlines across several topics and many countries.\n\nIn addition, Newzy includes up to six (6) custom Newzy Titles and Searches. Also configured within Settings, Newzy Titles are descriptive labels for your personal Newzy Searches and appear in the side menu.</string>
     <string name="support_search">Newzy Searches contain the words and phrases you seek in your news lists. These searches (also configured in Settings) may range from simple to more complex. Search tips:\n\n&#8226; Surround phrases with quotes (\") for an exact match.\nExample: \"Bitcoin Marketplace\"\n\n&#8226; Alternatively, you may use the AND / OR / NOT keywords, and optionally group these with parentheses.\nExample: crypto AND (ethereum OR litecoin) NOT bitcoin</string>
-    <string name="support_dates">Focus your Newzys within an optional date/time range in Settings.\nDates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26\nTimes should be entered in HH:MM:SS (24-hour) format.\nExample: 14:20:00</string>
+    <string name="support_dates">Focus your Newzys within an optional date/time range in Settings.\nDates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26\nTimes should be entered in HH:mm:ss (24-hour) format.\nExample: 14:20:00</string>
 
     <!-- News API URLs -->
     <string name="news_api" translatable="false">GNews API</string>

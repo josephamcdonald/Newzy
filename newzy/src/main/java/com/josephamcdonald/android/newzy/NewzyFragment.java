@@ -269,13 +269,15 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
         // If NOT empty, append FROM date and time parameters.
         if (!Objects.requireNonNull(newzysFromDate).isEmpty() && !Objects.requireNonNull(newzysFromTime).isEmpty()) {
-            uriBuilder.appendQueryParameter(getString(R.string.from), newzysFromDate + getString(R.string.t) +
-                    newzysFromTime + getString(R.string.z));
+
+            String fromDateTimeString = newzysFromDate + getString(R.string.t) + newzysFromTime + getString(R.string.z);
+            uriBuilder.appendQueryParameter(getString(R.string.from), fromDateTimeString);
         }
         // If NOT empty, append TO date and time parameters.
         if (!Objects.requireNonNull(newzysToDate).isEmpty() && !Objects.requireNonNull(newzysToTime).isEmpty()) {
-            uriBuilder.appendQueryParameter(getString(R.string.to), newzysToDate + getString(R.string.t) +
-                    newzysToTime + getString(R.string.z));
+
+            String toDateTimeString = newzysToDate + getString(R.string.t) + newzysToTime + getString(R.string.z);
+            uriBuilder.appendQueryParameter(getString(R.string.to), toDateTimeString);
         }
         // Append API TOKEN parameter.
         uriBuilder.appendQueryParameter(getString(R.string.token), token);
