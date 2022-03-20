@@ -14,9 +14,8 @@
     <string name="space">\u0020</string>
     <string name="no_newzy_provided">No Newzy Provided!</string>
     <string name="date_pattern_out" translatable="false">"d MMM yyyy h:mm a"</string>
-    <string name="from_time_append" translatable="false">"T00:00:00Z"</string>
-    <string name="to_time_append" translatable="false">"T23:59:59Z"</string>
     <string name="date_format" translatable="false">YYYY-MM-DD</string>
+    <string name="time_format" translatable="false">HH:MM:SS</string>
     <string name="progress_image" translatable="false">progress image</string>
     <string name="empty_view_image" translatable="false">Empty View Image</string>
     <string name="empty_string" />
@@ -51,8 +50,14 @@
     <string name="sort_newzys_by">Sort Newzys By</string>
     <string name="newest">Newest</string>
     <string name="relevance">Relevance</string>
+    <string name="date_from">date_from</string>
+    <string name="date_to">date_to</string>
+    <string name="time_from">time_from</string>
+    <string name="time_to">time_to</string>
     <string name="from_date">From Date</string>
     <string name="to_date">To Date</string>
+    <string name="from_time">From Time</string>
+    <string name="to_time">To Time</string>
 
     <!--Navigation -->
     <string name="settings">Settings</string>
@@ -194,15 +199,23 @@
 
     <!-- Strings For Newzys From Date Preference [CHAR LIMIT=30] -->
     <string name="settings_newzys_from_date_label">@string/from_date</string>
-    <string name="settings_newzys_from_date_key" translatable="false">@string/from</string>
+    <string name="settings_newzys_from_date_key" translatable="false">@string/date_from</string>
     <string name="settings_newzys_from_date_default" translatable="false">@string/empty_string</string>
-    <string name="provide_optional_from_date">Provide From Date:</string>
 
-    <!-- Strings For Newzys To Retrieve Preference [CHAR LIMIT=30] -->
+    <!-- Strings For Newzys To Date Preference [CHAR LIMIT=30] -->
     <string name="settings_newzys_to_date_label">@string/to_date</string>
-    <string name="settings_newzys_to_date_key" translatable="false">@string/to</string>
+    <string name="settings_newzys_to_date_key" translatable="false">@string/date_to</string>
     <string name="settings_newzys_to_date_default" translatable="false">@string/empty_string</string>
-    <string name="provide_optional_to_date">Provide To Date:</string>
+
+    <!-- Strings For Newzys From Time Preference [CHAR LIMIT=30] -->
+    <string name="settings_newzys_from_time_label">@string/from_time</string>
+    <string name="settings_newzys_from_time_key" translatable="false">@string/time_from</string>
+    <string name="settings_newzys_from_time_default" translatable="false">@string/empty_string</string>
+
+    <!-- Strings For Newzys To Time Preference [CHAR LIMIT=30] -->
+    <string name="settings_newzys_to_time_label">@string/to_time</string>
+    <string name="settings_newzys_to_time_key" translatable="false">@string/time_to</string>
+    <string name="settings_newzys_to_time_default" translatable="false">@string/empty_string</string>
 
     <!-- Strings For Show Support Preference -->
     <string name="settings_show_support_label">@string/show_support_screen</string>
@@ -286,4 +299,6 @@
     <string name="settings_newzy_search_six_key" translatable="false">search6</string>
     <string name="settings_newzy_search_six_default" translatable="false">@string/empty_string</string>
     <string name="provide_newzy_search_six">@string/provide_newzy_search</string>
+    <string name="t">T</string>
+    <string name="z">Z</string>
 </resources>

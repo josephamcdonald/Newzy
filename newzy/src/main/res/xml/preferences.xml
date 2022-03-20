@@ -5,11 +5,10 @@
   ~  Written by josephamcdonald
   -->
 
-<androidx.preference.PreferenceScreen
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
     <PreferenceCategory
-        app:title="@string/general"
-        app:iconSpaceReserved="false">
+        app:iconSpaceReserved="false"
+        app:title="@string/general">
         <EditTextPreference
             app:icon="@drawable/ic_key"
             app:key="@string/settings_api_key_key"
@@ -53,8 +52,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        app:title="@string/custom_searches"
-        app:iconSpaceReserved="false">
+        app:iconSpaceReserved="false"
+        app:title="@string/custom_searches">
         <EditTextPreference
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_one_key"
@@ -70,11 +69,11 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
+            app:allowDividerAbove="true"
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_two_key"
             app:summary="@string/provide_newzy_search_two"
             app:title="@string/settings_newzy_search_two_label"
-            app:allowDividerAbove="true"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
@@ -85,11 +84,11 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
+            app:allowDividerAbove="true"
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_three_key"
             app:summary="@string/provide_newzy_search_three"
             app:title="@string/settings_newzy_search_three_label"
-            app:allowDividerAbove="true"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
@@ -100,11 +99,11 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
+            app:allowDividerAbove="true"
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_four_key"
             app:summary="@string/provide_newzy_search_four"
             app:title="@string/settings_newzy_search_four_label"
-            app:allowDividerAbove="true"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
@@ -115,11 +114,11 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
+            app:allowDividerAbove="true"
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_five_key"
             app:summary="@string/provide_newzy_search_five"
             app:title="@string/settings_newzy_search_five_label"
-            app:allowDividerAbove="true"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
@@ -130,11 +129,11 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
+            app:allowDividerAbove="true"
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_six_key"
             app:summary="@string/provide_newzy_search_six"
             app:title="@string/settings_newzy_search_six_label"
-            app:allowDividerAbove="true"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
@@ -146,20 +145,31 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        app:title="@string/optional"
-        app:iconSpaceReserved="false">
+        app:iconSpaceReserved="false"
+        app:title="@string/optional">
         <EditTextPreference
             app:icon="@drawable/ic_date_from"
             app:key="@string/settings_newzys_from_date_key"
-            app:summary="@string/provide_optional_from_date"
             app:title="@string/settings_newzys_from_date_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
+            app:icon="@drawable/ic_time_from"
+            app:key="@string/settings_newzys_from_time_key"
+            app:title="@string/settings_newzys_from_time_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:allowDividerAbove="true"
             app:icon="@drawable/ic_date_to"
             app:key="@string/settings_newzys_to_date_key"
-            app:summary="@string/provide_optional_to_date"
             app:title="@string/settings_newzys_to_date_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_time_to"
+            app:key="@string/settings_newzys_to_time_key"
+            app:title="@string/settings_newzys_to_time_label"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 </androidx.preference.PreferenceScreen>

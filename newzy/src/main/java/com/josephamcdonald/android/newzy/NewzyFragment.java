@@ -234,6 +234,14 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
                 getString(R.string.settings_newzys_to_date_key),
                 getString(R.string.settings_newzys_to_date_default));
 
+        String newzysFromTime = sp.getString(
+                getString(R.string.settings_newzys_from_time_key),
+                getString(R.string.settings_newzys_from_time_default));
+
+        String newzysToTime = sp.getString(
+                getString(R.string.settings_newzys_to_time_key),
+                getString(R.string.settings_newzys_to_time_default));
+
         String token = sp.getString(
                 getString(R.string.settings_api_key_key),
                 getString(R.string.settings_api_key_default));
@@ -260,12 +268,14 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         uriBuilder.appendQueryParameter(getString(R.string.country), newzysCountry);
 
         // If NOT empty, append FROM date parameter.
-        if (!Objects.requireNonNull(newzysFromDate).isEmpty()) {
-            uriBuilder.appendQueryParameter(getString(R.string.from), newzysFromDate + getString(R.string.from_time_append));
+        if (!Objects.requireNonNull(newzysFromDate).isEmpty() && !Objects.requireNonNull(newzysFromTime).isEmpty()) {
+            uriBuilder.appendQueryParameter(getString(R.string.from), newzysFromDate + getString(R.string.t) +
+                    newzysFromTime + getString(R.string.z));
         }
         // If NOT empty, append TO date parameter.
-        if (!Objects.requireNonNull(newzysToDate).isEmpty()) {
-            uriBuilder.appendQueryParameter(getString(R.string.to), newzysToDate + getString(R.string.to_time_append));
+        if (!Objects.requireNonNull(newzysToDate).isEmpty() && !Objects.requireNonNull(newzysToTime).isEmpty()) {
+            uriBuilder.appendQueryParameter(getString(R.string.to), newzysToDate + getString(R.string.t) +
+                    newzysToTime + getString(R.string.z));
         }
         // Append API TOKEN parameter.
         uriBuilder.appendQueryParameter(getString(R.string.token), token);

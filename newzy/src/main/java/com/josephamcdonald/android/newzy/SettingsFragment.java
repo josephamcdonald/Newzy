@@ -34,6 +34,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         EditTextPreference prefApiKey = findPreference(getString(R.string.settings_api_key_key));
         EditTextPreference prefFromDate = findPreference(getString(R.string.settings_newzys_from_date_key));
         EditTextPreference prefToDate = findPreference(getString(R.string.settings_newzys_to_date_key));
+        EditTextPreference prefFromTime = findPreference(getString(R.string.settings_newzys_from_time_key));
+        EditTextPreference prefToTime = findPreference(getString(R.string.settings_newzys_to_time_key));
 
         EditTextPreference prefTitleOne = findPreference(getString(R.string.settings_menu_title_one_key));
         EditTextPreference prefTitleTwo = findPreference(getString(R.string.settings_menu_title_two_key));
@@ -77,6 +79,13 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
             editText.selectAll();
         };
 
+        // Create listener to set input type and hint for Newzy times.
+        EditTextPreference.OnBindEditTextListener timeBindEditTextListener = editText -> {
+            editText.setInputType(InputType.TYPE_CLASS_DATETIME);
+            editText.setHint(R.string.time_format);
+            editText.selectAll();
+        };
+
         // Set listener on News API key preference.
         Objects.requireNonNull(prefApiKey).setOnBindEditTextListener(apiKeyBindEditTextListener);
 
@@ -99,6 +108,10 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         // Set listeners on Newzy date preferences.
         Objects.requireNonNull(prefFromDate).setOnBindEditTextListener(dateBindEditTextListener);
         Objects.requireNonNull(prefToDate).setOnBindEditTextListener(dateBindEditTextListener);
+
+        // Set listeners on Newzy time preferences.
+        Objects.requireNonNull(prefFromTime).setOnBindEditTextListener(timeBindEditTextListener);
+        Objects.requireNonNull(prefToTime).setOnBindEditTextListener(timeBindEditTextListener);
 
         // Set listener on Newzy country preference.
         Objects.requireNonNull(prefCountry).setOnPreferenceChangeListener(this);
