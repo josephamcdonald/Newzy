@@ -135,7 +135,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         String stringValue = newValue.toString();
 
         // If Country setting is changed, update its menu item.
-        // If Country setting is changed, update its menu item.
         if (preferenceKey.equals(getString(R.string.settings_country_key))) {
             if (stringValue.equals(getString(R.string.settings_au_value))) {
                 MainActivity.countryItem.setTitle(getString(R.string.country_colon) + getString(R.string.space) + getString(R.string.settings_au_label));

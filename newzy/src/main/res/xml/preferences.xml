@@ -57,14 +57,12 @@
         <EditTextPreference
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_one_key"
-            app:summary="@string/provide_newzy_search_one"
             app:title="@string/settings_newzy_search_one_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             app:icon="@drawable/ic_newspaper"
             app:key="@string/settings_menu_title_one_key"
-            app:summary="@string/provide_menu_title_one"
             app:title="@string/settings_menu_title_one_label"
             app:useSimpleSummaryProvider="true" />
 
@@ -72,14 +70,12 @@
             app:allowDividerAbove="true"
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_two_key"
-            app:summary="@string/provide_newzy_search_two"
             app:title="@string/settings_newzy_search_two_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             app:icon="@drawable/ic_newspaper"
             app:key="@string/settings_menu_title_two_key"
-            app:summary="@string/provide_menu_title_two"
             app:title="@string/settings_menu_title_two_label"
             app:useSimpleSummaryProvider="true" />
 
@@ -87,14 +83,12 @@
             app:allowDividerAbove="true"
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_three_key"
-            app:summary="@string/provide_newzy_search_three"
             app:title="@string/settings_newzy_search_three_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             app:icon="@drawable/ic_newspaper"
             app:key="@string/settings_menu_title_three_key"
-            app:summary="@string/provide_menu_title_three"
             app:title="@string/settings_menu_title_three_label"
             app:useSimpleSummaryProvider="true" />
 
@@ -102,14 +96,12 @@
             app:allowDividerAbove="true"
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_four_key"
-            app:summary="@string/provide_newzy_search_four"
             app:title="@string/settings_newzy_search_four_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             app:icon="@drawable/ic_newspaper"
             app:key="@string/settings_menu_title_four_key"
-            app:summary="@string/provide_menu_title_four"
             app:title="@string/settings_menu_title_four_label"
             app:useSimpleSummaryProvider="true" />
 
@@ -117,14 +109,12 @@
             app:allowDividerAbove="true"
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_five_key"
-            app:summary="@string/provide_newzy_search_five"
             app:title="@string/settings_newzy_search_five_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             app:icon="@drawable/ic_newspaper"
             app:key="@string/settings_menu_title_five_key"
-            app:summary="@string/provide_menu_title_five"
             app:title="@string/settings_menu_title_five_label"
             app:useSimpleSummaryProvider="true" />
 
@@ -132,14 +122,12 @@
             app:allowDividerAbove="true"
             app:icon="@drawable/ic_search"
             app:key="@string/settings_newzy_search_six_key"
-            app:summary="@string/provide_newzy_search_six"
             app:title="@string/settings_newzy_search_six_label"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             app:icon="@drawable/ic_newspaper"
             app:key="@string/settings_menu_title_six_key"
-            app:summary="@string/provide_menu_title_six"
             app:title="@string/settings_menu_title_six_label"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>

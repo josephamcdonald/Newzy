@@ -58,6 +58,8 @@
     <string name="to_date">To Date</string>
     <string name="from_time">From Time</string>
     <string name="to_time">To Time</string>
+    <string name="t">T</string>
+    <string name="z">Z</string>
 
     <!--Navigation -->
     <string name="settings">Settings</string>
@@ -69,13 +71,13 @@
     <string name="activate">ACTIVATE</string>
     <string name="customize">CUSTOMIZE</string>
     <string name="search">SEARCH</string>
-    <string name="dates">DATES</string>
+    <string name="dates">DATES/TIMES</string>
     <string name="powered_by">Powered by:</string>
     <string name="version">version</string>
     <string name="support_activate">Newzy is activated with a FREE GNews API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token in Settings. Get your token at:</string>
     <string name="support_customize">Configured within Settings, set the Country and Top Headlines topic of your choice. GNews API tracks headlines across several topics and many countries.\n\nIn addition, Newzy includes up to six (6) custom Newzy Titles and Searches. Also configured within Settings, Newzy Titles are descriptive labels for your personal Newzy Searches and appear in the side menu.</string>
     <string name="support_search">Newzy Searches contain the words and phrases you seek in your news lists. These searches (also configured in Settings) may range from simple to more complex. Search tips:\n\n&#8226; Surround phrases with quotes (\") for an exact match.\nExample: \"Bitcoin Marketplace\"\n\n&#8226; Alternatively, you may use the AND / OR / NOT keywords, and optionally group these with parentheses.\nExample: crypto AND (ethereum OR litecoin) NOT bitcoin</string>
-    <string name="support_dates">Focus your Newzys within an optional date range in Settings. Dates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26</string>
+    <string name="support_dates">Focus your Newzys within an optional date/time range in Settings.\nDates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26\nTimes should be entered in HH:MM:SS (24-hour) format.\nExample: 14:20:00</string>
 
     <!-- News API URLs -->
     <string name="news_api" translatable="false">GNews API</string>
@@ -232,73 +234,60 @@
     <string name="settings_menu_title_one_label">@string/menu_title</string>
     <string name="settings_menu_title_one_key" translatable="false">title</string>
     <string name="settings_menu_title_one_default" translatable="false">@string/empty_string</string>
-    <string name="provide_menu_title_one">@string/provide_menu_title</string>
 
     <!-- Strings For Menu Title 2 Preference [CHAR LIMIT=30] -->
     <string name="settings_menu_title_two_label">@string/menu_title</string>
     <string name="settings_menu_title_two_key" translatable="false">title2</string>
     <string name="settings_menu_title_two_default" translatable="false">@string/empty_string</string>
-    <string name="provide_menu_title_two">@string/provide_menu_title</string>
 
     <!-- Strings For Menu Title 3 Preference [CHAR LIMIT=30] -->
     <string name="settings_menu_title_three_label">@string/menu_title</string>
     <string name="settings_menu_title_three_key" translatable="false">title3</string>
     <string name="settings_menu_title_three_default" translatable="false">@string/empty_string</string>
-    <string name="provide_menu_title_three">@string/provide_menu_title</string>
 
     <!-- Strings For Menu Title 4 Preference [CHAR LIMIT=30] -->
     <string name="settings_menu_title_four_label">@string/menu_title</string>
     <string name="settings_menu_title_four_key" translatable="false">title4</string>
     <string name="settings_menu_title_four_default" translatable="false">@string/empty_string</string>
-    <string name="provide_menu_title_four">@string/provide_menu_title</string>
 
     <!-- Strings For Menu Title 5 Preference [CHAR LIMIT=30] -->
     <string name="settings_menu_title_five_label">@string/menu_title</string>
     <string name="settings_menu_title_five_key" translatable="false">title5</string>
     <string name="settings_menu_title_five_default" translatable="false">@string/empty_string</string>
-    <string name="provide_menu_title_five">@string/provide_menu_title</string>
 
     <!-- Strings For Menu Title 6 Preference [CHAR LIMIT=30] -->
     <string name="settings_menu_title_six_label">@string/menu_title</string>
     <string name="settings_menu_title_six_key" translatable="false">title6</string>
     <string name="settings_menu_title_six_default" translatable="false">@string/empty_string</string>
-    <string name="provide_menu_title_six">@string/provide_menu_title</string>
 
     <!-- Strings For Newzy Search 1 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_search_one_label">@string/newzy_search</string>
     <string name="settings_newzy_search_one_key" translatable="false">search</string>
     <string name="settings_newzy_search_one_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_search_one">@string/provide_newzy_search</string>
 
     <!-- Strings For Newzy Search 2 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_search_two_label">@string/newzy_search</string>
     <string name="settings_newzy_search_two_key" translatable="false">search2</string>
     <string name="settings_newzy_search_two_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_search_two">@string/provide_newzy_search</string>
 
     <!-- Strings For Newzy Search 3 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_search_three_label">@string/newzy_search</string>
     <string name="settings_newzy_search_three_key" translatable="false">search3</string>
     <string name="settings_newzy_search_three_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_search_three">@string/provide_newzy_search</string>
 
     <!-- Strings For Newzy Search 4 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_search_four_label">@string/newzy_search</string>
     <string name="settings_newzy_search_four_key" translatable="false">search4</string>
     <string name="settings_newzy_search_four_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_search_four">@string/provide_newzy_search</string>
 
     <!-- Strings For Newzy Search 5 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_search_five_label">@string/newzy_search</string>
     <string name="settings_newzy_search_five_key" translatable="false">search5</string>
     <string name="settings_newzy_search_five_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_search_five">@string/provide_newzy_search</string>
 
     <!-- Strings For Newzy Search 6 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_search_six_label">@string/newzy_search</string>
     <string name="settings_newzy_search_six_key" translatable="false">search6</string>
     <string name="settings_newzy_search_six_default" translatable="false">@string/empty_string</string>
-    <string name="provide_newzy_search_six">@string/provide_newzy_search</string>
-    <string name="t">T</string>
-    <string name="z">Z</string>
+
 </resources>
