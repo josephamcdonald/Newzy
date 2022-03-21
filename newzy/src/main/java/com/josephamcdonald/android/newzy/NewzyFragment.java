@@ -274,19 +274,19 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         if (!Objects.requireNonNull(newzysFromDate).isEmpty() && !Objects.requireNonNull(newzysFromTime).isEmpty()) {
 
             String fromDateTimeString = newzysFromDate + getString(R.string.t) + newzysFromTime;
-            LocalDateTime localFromDateTime = LocalDateTime.parse(fromDateTimeString);
+            LocalDateTime localFromDateTime = LocalDateTime.parse(fromDateTimeString).withSecond(1);
 
-            ZonedDateTime utcFromDateTime = localFromDateTime.withSecond(1).atZone(ZoneOffset.UTC);
-            uriBuilder.appendQueryParameter(getString(R.string.from), utcFromDateTime.toString());
+            ZonedDateTime apiFromDateTime = localFromDateTime.atZone(ZoneOffset.UTC);
+            uriBuilder.appendQueryParameter(getString(R.string.from), apiFromDateTime.toString());
         }
         // If NOT empty, append TO date and time parameters.
         if (!Objects.requireNonNull(newzysToDate).isEmpty() && !Objects.requireNonNull(newzysToTime).isEmpty()) {
 
             String toDateTimeString = newzysToDate + getString(R.string.t) + newzysToTime;
-            LocalDateTime localToDateTime = LocalDateTime.parse(toDateTimeString);
+            LocalDateTime localToDateTime = LocalDateTime.parse(toDateTimeString).withSecond(1);
 
-            ZonedDateTime utcToDateTime = localToDateTime.withSecond(1).atZone(ZoneOffset.UTC);
-            uriBuilder.appendQueryParameter(getString(R.string.to), utcToDateTime.toString());
+            ZonedDateTime apiToDateTime = localToDateTime.atZone(ZoneOffset.UTC);
+            uriBuilder.appendQueryParameter(getString(R.string.to), apiToDateTime.toString());
         }
         // Append API TOKEN parameter.
         uriBuilder.appendQueryParameter(getString(R.string.token), token);
