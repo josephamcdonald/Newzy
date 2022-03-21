@@ -53,6 +53,7 @@
 
     <PreferenceCategory
         app:iconSpaceReserved="false"
+        app:initialExpandedChildrenCount="6"
         app:title="@string/custom_searches">
         <EditTextPreference
             app:icon="@drawable/ic_search"
