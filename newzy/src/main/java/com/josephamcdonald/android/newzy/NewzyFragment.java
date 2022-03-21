@@ -35,6 +35,9 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.Objects;
 
@@ -270,14 +273,20 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
         // If NOT empty, append FROM date and time parameters.
         if (!Objects.requireNonNull(newzysFromDate).isEmpty() && !Objects.requireNonNull(newzysFromTime).isEmpty()) {
 
-            String fromDateTimeString = newzysFromDate + getString(R.string.t) + newzysFromTime + getString(R.string.z);
-            uriBuilder.appendQueryParameter(getString(R.string.from), fromDateTimeString);
+            String fromDateTimeString = newzysFromDate + getString(R.string.t) + newzysFromTime;
+            LocalDateTime localFromDateTime = LocalDateTime.parse(fromDateTimeString);
+
+            ZonedDateTime utcFromDateTime = localFromDateTime.withSecond(1).atZone(ZoneOffset.UTC);
+            uriBuilder.appendQueryParameter(getString(R.string.from), utcFromDateTime.toString());
         }
         // If NOT empty, append TO date and time parameters.
         if (!Objects.requireNonNull(newzysToDate).isEmpty() && !Objects.requireNonNull(newzysToTime).isEmpty()) {
 
-            String toDateTimeString = newzysToDate + getString(R.string.t) + newzysToTime + getString(R.string.z);
-            uriBuilder.appendQueryParameter(getString(R.string.to), toDateTimeString);
+            String toDateTimeString = newzysToDate + getString(R.string.t) + newzysToTime;
+            LocalDateTime localToDateTime = LocalDateTime.parse(toDateTimeString);
+
+            ZonedDateTime utcToDateTime = localToDateTime.withSecond(1).atZone(ZoneOffset.UTC);
+            uriBuilder.appendQueryParameter(getString(R.string.to), utcToDateTime.toString());
         }
         // Append API TOKEN parameter.
         uriBuilder.appendQueryParameter(getString(R.string.token), token);
