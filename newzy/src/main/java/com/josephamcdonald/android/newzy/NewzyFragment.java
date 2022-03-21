@@ -275,8 +275,8 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
             String fromDateTimeString = newzysFromDate + getString(R.string.t) + newzysFromTime;
             LocalDateTime localFromDateTime = LocalDateTime.parse(fromDateTimeString).withSecond(1);
-
-            ZonedDateTime apiFromDateTime = localFromDateTime.atZone(ZoneOffset.UTC);
+            ZonedDateTime zonedFromDateTime = localFromDateTime.atZone(ZoneOffset.systemDefault());
+            ZonedDateTime apiFromDateTime = zonedFromDateTime.withZoneSameInstant(ZoneOffset.UTC);
             uriBuilder.appendQueryParameter(getString(R.string.from), apiFromDateTime.toString());
         }
         // If NOT empty, append TO date and time parameters.
@@ -284,8 +284,8 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
             String toDateTimeString = newzysToDate + getString(R.string.t) + newzysToTime;
             LocalDateTime localToDateTime = LocalDateTime.parse(toDateTimeString).withSecond(1);
-
-            ZonedDateTime apiToDateTime = localToDateTime.atZone(ZoneOffset.UTC);
+            ZonedDateTime zonedToDateTime = localToDateTime.atZone(ZoneOffset.systemDefault());
+            ZonedDateTime apiToDateTime = zonedToDateTime.withZoneSameInstant(ZoneOffset.UTC);
             uriBuilder.appendQueryParameter(getString(R.string.to), apiToDateTime.toString());
         }
         // Append API TOKEN parameter.
