@@ -15,7 +15,7 @@
     <string name="no_newzy_provided">No Newzy Provided!</string>
     <string name="date_pattern_out" translatable="false">"d MMM yyyy h:mm a"</string>
     <string name="date_format" translatable="false">YYYY-MM-DD</string>
-    <string name="time_format" translatable="false">HH:mm</string>
+    <string name="time_format" translatable="false">HH:mm (24-hr)</string>
     <string name="progress_image" translatable="false">progress image</string>
     <string name="empty_view_image" translatable="false">Empty View Image</string>
     <string name="empty_string" />
