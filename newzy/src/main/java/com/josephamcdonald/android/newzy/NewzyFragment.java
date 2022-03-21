@@ -272,25 +272,24 @@ public class NewzyFragment extends Fragment implements LoaderCallbacks<List<Newz
 
         // If NOT empty, append FROM date and time parameters.
         if (!Objects.requireNonNull(newzysFromDate).isEmpty() && !Objects.requireNonNull(newzysFromTime).isEmpty()) {
-
-            String fromDateTimeString = newzysFromDate + getString(R.string.t) + newzysFromTime;
-            LocalDateTime localFromDateTime = LocalDateTime.parse(fromDateTimeString).withSecond(1);
-            ZonedDateTime zonedFromDateTime = localFromDateTime.atZone(ZoneOffset.systemDefault());
-            ZonedDateTime apiFromDateTime = zonedFromDateTime.withZoneSameInstant(ZoneOffset.UTC);
-            uriBuilder.appendQueryParameter(getString(R.string.from), apiFromDateTime.toString());
+            uriBuilder.appendQueryParameter(getString(R.string.from), apiDateTime(newzysFromDate, newzysFromTime));
         }
         // If NOT empty, append TO date and time parameters.
         if (!Objects.requireNonNull(newzysToDate).isEmpty() && !Objects.requireNonNull(newzysToTime).isEmpty()) {
-
-            String toDateTimeString = newzysToDate + getString(R.string.t) + newzysToTime;
-            LocalDateTime localToDateTime = LocalDateTime.parse(toDateTimeString).withSecond(1);
-            ZonedDateTime zonedToDateTime = localToDateTime.atZone(ZoneOffset.systemDefault());
-            ZonedDateTime apiToDateTime = zonedToDateTime.withZoneSameInstant(ZoneOffset.UTC);
-            uriBuilder.appendQueryParameter(getString(R.string.to), apiToDateTime.toString());
+            uriBuilder.appendQueryParameter(getString(R.string.to), apiDateTime(newzysToDate, newzysToTime));
         }
         // Append API TOKEN parameter.
         uriBuilder.appendQueryParameter(getString(R.string.token), token);
-
         return uriBuilder.toString();
+    }
+
+    @NonNull
+    private String apiDateTime(String dateIn, String timeIn) {
+
+        String dateTimeString = dateIn + getString(R.string.t) + timeIn;
+        LocalDateTime localDateTime = LocalDateTime.parse(dateTimeString).withSecond(1);
+        ZonedDateTime zonedDateTime = localDateTime.atZone(ZoneOffset.systemDefault());
+        ZonedDateTime apiDateTime = zonedDateTime.withZoneSameInstant(ZoneOffset.UTC);
+        return apiDateTime.toString();
     }
 }
