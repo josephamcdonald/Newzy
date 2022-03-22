@@ -136,6 +136,7 @@
 
     <PreferenceCategory
         app:iconSpaceReserved="false"
+        app:initialExpandedChildrenCount="0"
         app:title="@string/optional">
         <EditTextPreference
             app:icon="@drawable/ic_date_from"
