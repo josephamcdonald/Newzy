@@ -8,14 +8,8 @@
 <androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
     <PreferenceCategory
         app:iconSpaceReserved="false"
+        app:initialExpandedChildrenCount="2"
         app:title="@string/general">
-        <EditTextPreference
-            app:icon="@drawable/ic_key"
-            app:key="@string/settings_api_key_key"
-            app:summary="@string/provide_api_key"
-            app:title="@string/settings_api_key_label"
-            app:useSimpleSummaryProvider="true" />
-
         <ListPreference
             app:defaultValue="@string/settings_country_default"
             app:entries="@array/settings_country_labels"
@@ -41,6 +35,13 @@
             app:icon="@drawable/ic_sort"
             app:key="@string/settings_sort_newzys_by_key"
             app:title="@string/settings_sort_newzys_by_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_key"
+            app:key="@string/settings_api_key_key"
+            app:summary="@string/provide_api_key"
+            app:title="@string/settings_api_key_label"
             app:useSimpleSummaryProvider="true" />
 
         <SwitchPreference
