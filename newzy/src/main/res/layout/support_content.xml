@@ -22,7 +22,7 @@
         android:contentDescription="@string/newzy_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/support_dates"
+        app:layout_constraintTop_toBottomOf="@+id/support_focus"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
@@ -88,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/support_customize_header" />
 
     <TextView
-        android:id="@+id/support_searches_header"
+        android:id="@+id/support_search_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_16dp"
@@ -100,7 +100,7 @@
         app:layout_constraintTop_toBottomOf="@+id/support_customize" />
 
     <TextView
-        android:id="@+id/support_searches"
+        android:id="@+id/support_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_8dp"
@@ -110,10 +110,10 @@
         app:layout_constraintEnd_toEndOf="@+id/support_customize"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/support_customize"
-        app:layout_constraintTop_toBottomOf="@+id/support_searches_header" />
+        app:layout_constraintTop_toBottomOf="@+id/support_search_header" />
 
     <TextView
-        android:id="@+id/support_dates_header"
+        android:id="@+id/support_focus_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_16dp"
@@ -122,19 +122,19 @@
         android:textSize="@dimen/text_large"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/support_searches" />
+        app:layout_constraintTop_toBottomOf="@+id/support_search" />
 
     <TextView
-        android:id="@+id/support_dates"
+        android:id="@+id/support_focus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_8dp"
-        android:text="@string/support_dates"
+        android:text="@string/support_focus"
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/text_large"
-        app:layout_constraintEnd_toEndOf="@+id/support_searches"
-        app:layout_constraintStart_toStartOf="@+id/support_searches"
-        app:layout_constraintTop_toBottomOf="@+id/support_dates_header" />
+        app:layout_constraintEnd_toEndOf="@+id/support_search"
+        app:layout_constraintStart_toStartOf="@+id/support_search"
+        app:layout_constraintTop_toBottomOf="@+id/support_focus_header" />
 
     <TextView
         android:id="@+id/app_name"
