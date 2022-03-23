@@ -124,7 +124,7 @@ class NewzyUtils {
                 ZonedDateTime localResetTime = utcResetTime.withZoneSameInstant(ZoneOffset.systemDefault());
                 String nextReset = localResetTime.toLocalDateTime().format(timeFormat);
 
-                errorMessage = "No Newzys to display.\nYou have reached your daily request limit.\nThe next reset is at:\n" + nextReset;
+                errorMessage = "No Newzys to display.\nYou have reached your daily request limit. Next reset:\n" + nextReset;
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
