@@ -117,7 +117,7 @@ class NewzyUtils {
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
             } else if (httpResponseCode == HttpsURLConnection.HTTP_FORBIDDEN) {
-                DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("d MMM yyyy h:mm a");
+                DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("EEE d LLL yyyy h:mm a");
                 LocalDateTime nextResetTime = LocalDateTime.now(ZoneOffset.UTC)
                         .withHour(0).withMinute(0).withSecond(0).withNano(0).plusDays(1);
                 ZonedDateTime utcResetTime = nextResetTime.atZone(ZoneOffset.UTC);
