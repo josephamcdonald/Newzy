@@ -21,6 +21,10 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -113,7 +117,14 @@ class NewzyUtils {
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
             } else if (httpResponseCode == HttpsURLConnection.HTTP_FORBIDDEN) {
-                errorMessage = "No Newzys to display.\nYou have reached your daily request limit.\nThe next reset is at 00:00 UTC.";
+                DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("d MMM yyyy h:mm a");
+                LocalDateTime nextResetTime = LocalDateTime.now(ZoneOffset.UTC)
+                        .withHour(0).withMinute(0).withSecond(0).withNano(0).plusDays(1);
+                ZonedDateTime utcResetTime = nextResetTime.atZone(ZoneOffset.UTC);
+                ZonedDateTime localResetTime = utcResetTime.withZoneSameInstant(ZoneOffset.systemDefault());
+                String nextReset = localResetTime.toLocalDateTime().format(timeFormat);
+
+                errorMessage = "No Newzys to display.\nYou have reached your daily request limit.\nThe next reset is at:\n" + nextReset;
                 Log.e(LOG_TAG, "Error response code: " + httpResponseCode);
                 Log.e(LOG_TAG, "Error response message: " + urlConnection.getResponseMessage());
 
