@@ -118,9 +118,8 @@ class NewzyUtils {
 
             } else if (httpResponseCode == HttpsURLConnection.HTTP_FORBIDDEN) {
                 DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("EEE d LLL yyyy h:mm a");
-                LocalDateTime nextResetTime = LocalDateTime.now(ZoneOffset.UTC)
-                        .withHour(0).withMinute(0).withSecond(0).withNano(0).plusDays(1);
-                ZonedDateTime utcResetTime = nextResetTime.atZone(ZoneOffset.UTC);
+                ZonedDateTime utcResetTime = LocalDateTime.now(ZoneOffset.UTC).plusDays(1)
+                        .withHour(0).withMinute(0).withSecond(0).withNano(0).atZone(ZoneOffset.UTC);
                 ZonedDateTime localResetTime = utcResetTime.withZoneSameInstant(ZoneOffset.systemDefault());
                 String nextReset = localResetTime.toLocalDateTime().format(timeFormat);
 
