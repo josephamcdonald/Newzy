@@ -39,7 +39,8 @@
 
         <TextView
             android:id="@+id/newzy_author_text_view"
-            style="@style/item_text_sw720dp" />
+            style="@style/item_text_sw720dp"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/newzy_date_text_view"
