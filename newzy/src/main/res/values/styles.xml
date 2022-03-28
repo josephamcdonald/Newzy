@@ -61,7 +61,7 @@
 
     <!-- Newzy item title text layout, size and color. -->
     <style name="item_text_title" parent="item_text">
-        <item name="android:maxLines">2</item>
+        <item name="android:maxLines">3</item>
         <item name="android:textSize">@dimen/text_standard</item>
         <item name="android:textStyle">bold</item>
     </style>
