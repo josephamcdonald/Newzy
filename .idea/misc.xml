@@ -35,21 +35,24 @@
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/outline_arrow_back_24.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/outline_campaign_24.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/drawable/outline_sports_basketball_24.xml" value="0.2578125" />
-        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw600dp/newzy_item.xml" value="0.421875" />
-        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw600dp/support_content.xml" value="0.4453125" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw600dp/nav_header_main.xml" value="0.23020833333333332" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw600dp/newzy_item.xml" value="0.23020833333333332" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw600dp/support_content.xml" value="0.23020833333333332" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw720dp/nav_header_main.xml" value="0.17265625" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw720dp/newzy_item.xml" value="0.16875" />
-        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw720dp/support_content.xml" value="0.178125" />
-        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/activity_main.xml" value="0.225" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout-sw720dp/support_content.xml" value="0.17265625" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/activity_main.xml" value="0.18888888888888888" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/app_bar_main.xml" value="0.225" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/fragment_date_picker.xml" value="0.24166666666666667" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/nav_header_main.xml" value="0.225" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/newzy_item.xml" value="0.22056159420289856" />
-        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/newzy_list.xml" value="0.225" />
-        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/support_content.xml" value="0.24166666666666667" />
-        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/menu/activity_main_drawer.xml" value="0.2375" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/newzy_list.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/support_content.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/layout/support_main.xml" value="0.17265625" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/menu/activity_main_drawer.xml" value="0.17265625" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2578125" />
         <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2578125" />
-        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/xml/preferences.xml" value="0.1" />
+        <entry key="..\:/Users/micro/StudioProjects/Newzy/newzy/src/main/res/xml/preferences.xml" value="0.18888888888888888" />
       </map>
     </option>
   </component>
