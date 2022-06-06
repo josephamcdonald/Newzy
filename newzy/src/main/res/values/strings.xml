@@ -54,10 +54,10 @@
     <string name="date_to">date_to</string>
     <string name="time_from">time_from</string>
     <string name="time_to">time_to</string>
-    <string name="from_date">From Date</string>
-    <string name="to_date">To Date</string>
-    <string name="from_time">From Time</string>
-    <string name="to_time">To Time</string>
+    <string name="from_published_date">From Published Date</string>
+    <string name="to_published_date">To Published Date</string>
+    <string name="from_published_time">From Published Time</string>
+    <string name="to_published_time">To Published Time</string>
     <string name="t">T</string>
 
     <!--Navigation -->
@@ -76,7 +76,7 @@
     <string name="support_activate">Newzy is activated with a FREE GNews API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token within Settings. Get your token at:</string>
     <string name="support_customize">Find your personal Newzys with these options:\n\n&#8226; Set the Country news source and Top Headlines topic of your choice. GNews API tracks headlines across several topics and many countries.\n\n&#8226; Newzy allows up to six (6) custom Newzy Searches and Menu titles. Menu Titles are descriptive labels for your personal Newzy Searches and appear in the side menu.</string>
     <string name="support_search">Newzy Searches contain the words and phrases you seek in your news. These searches (also configured in Settings) may range from simple to more complex. Search tips:\n\n&#8226; Surround phrases with quotes (\") for an exact match.\nExample: \"Bitcoin Marketplace\"\n\n&#8226; Alternatively, you may use the AND / OR / NOT keywords, and optionally group these with parentheses.\nExample: crypto AND (ethereum OR litecoin) NOT bitcoin</string>
-    <string name="support_focus">Narrow your Newzy search with an optional date/time range within Settings. Some tips:\n\n&#8226; Dates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26\n\n&#8226; Times should be entered in HH:mm (24-hour) format.\nExample: 14:20 (2:20PM)</string>
+    <string name="support_focus">Narrow your Newzy search with an optional published date/time range within Settings. Some tips:\n\n&#8226; Dates should be entered in YYYY&#8211;MM&#8211;DD format.\nExample: 2019&#8211;07&#8211;26\n\n&#8226; Times should be entered in HH:mm (24-hour) format.\nExample: 14:20 (2:20PM)</string>
 
     <!-- News API URLs -->
     <string name="news_api" translatable="false">GNews API</string>
@@ -199,22 +199,22 @@
     <string name="settings_health_value">health</string>
 
     <!-- Strings For Newzys From Date Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzys_from_date_label">@string/from_date</string>
+    <string name="settings_newzys_from_date_label">@string/from_published_date</string>
     <string name="settings_newzys_from_date_key" translatable="false">@string/date_from</string>
     <string name="settings_newzys_from_date_default" translatable="false">@string/empty_string</string>
 
     <!-- Strings For Newzys To Date Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzys_to_date_label">@string/to_date</string>
+    <string name="settings_newzys_to_date_label">@string/to_published_date</string>
     <string name="settings_newzys_to_date_key" translatable="false">@string/date_to</string>
     <string name="settings_newzys_to_date_default" translatable="false">@string/empty_string</string>
 
     <!-- Strings For Newzys From Time Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzys_from_time_label">@string/from_time</string>
+    <string name="settings_newzys_from_time_label">@string/from_published_time</string>
     <string name="settings_newzys_from_time_key" translatable="false">@string/time_from</string>
     <string name="settings_newzys_from_time_default" translatable="false">@string/empty_string</string>
 
     <!-- Strings For Newzys To Time Preference [CHAR LIMIT=30] -->
-    <string name="settings_newzys_to_time_label">@string/to_time</string>
+    <string name="settings_newzys_to_time_label">@string/to_published_time</string>
     <string name="settings_newzys_to_time_key" translatable="false">@string/time_to</string>
     <string name="settings_newzys_to_time_default" translatable="false">@string/empty_string</string>
 
