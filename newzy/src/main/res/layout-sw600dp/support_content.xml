@@ -140,7 +140,7 @@
         android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:text="@string/app_name_tm"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/text_large_sw600dp"
         android:textStyle="bold"
