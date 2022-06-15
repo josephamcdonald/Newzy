@@ -4,7 +4,7 @@
 
 **Simple...Efficient...FREE.** 
 
-Newzy™ gathers and displays the news results you want to see. These results are affectionately called "Newzys."
+Newzy™ gathers and displays the national or international news you want to see. These articles are affectionately called "Newzys."
 
 [![Image](screenshots/google-play-badge-small.png)](http://newzy.josephamcdonald.com "Get it on Google Play!")
 
