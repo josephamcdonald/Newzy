@@ -4,13 +4,13 @@
 
 **Simple...Efficient...FREE.** 
 
-Newzy gathers and displays the news results you want to see. These results are affectionately called "Newzys."
+Newzy™ gathers and displays the news results you want to see. These results are affectionately called "Newzys."
 
 [![Image](screenshots/google-play-badge-small.png)](http://newzy.josephamcdonald.com "Get it on Google Play!")
 
 ## Getting Started
 
-Newzy is activated with a free API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token in Settings. Get your token at [GNews.io/register](https://gnews.io/register)
+Newzy™ is activated with a free API token. Benefits of your personal token include up to 100 API requests per day. Once obtained, provide your 32-character token in Settings. Get your token at [GNews.io/register](https://gnews.io/register)
 
 ## Screenshots
 
