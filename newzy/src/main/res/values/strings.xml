@@ -6,8 +6,7 @@
   -->
 
 <resources>
-    <string name="app_name" translatable="false">Newzy</string>
-    <string name="app_name_tm" translatable="false">Newzy™</string>
+    <string name="app_name" translatable="false">Newzy™</string>
     <string name="app_catch" translatable="false">Custom \"Newzy\" News!</string>
     <string name="newzy_image" translatable="false">newzy image</string>
     <string name="newzy_logo" translatable="false">newzy logo</string>
