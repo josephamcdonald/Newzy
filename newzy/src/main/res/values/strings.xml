@@ -20,7 +20,7 @@
     <string name="empty_view_image" translatable="false">Empty View Image</string>
     <string name="empty_string" />
     <string name="null_string">null</string>
-    <string name="country_colon">Country: </string>
+    <string name="newzys_from">Newzys from</string>
 
     <!-- Build Request URL -->
     <string name="country" translatable="false">country</string>
