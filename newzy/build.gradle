@@ -13,8 +13,8 @@ android {
         applicationId 'com.josephamcdonald.android.newzy'
         minSdkVersion 26
         targetSdk 32
-        versionCode 177
-        versionName '2.9.7'
+        versionCode 179
+        versionName '2.9.9'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -26,6 +26,11 @@ android {
     }
     buildToolsVersion '33.0.0'
     productFlavors {
+    }
+    bundle {
+        storeArchive {
+            enable = false
+        }
     }
 }
 
