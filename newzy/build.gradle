@@ -8,11 +8,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdk 32
+    compileSdk 33
     defaultConfig {
         applicationId 'com.josephamcdonald.android.newzy'
         minSdkVersion 26
-        targetSdk 32
+        targetSdk 33
         versionCode 179
         versionName '2.9.9'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
