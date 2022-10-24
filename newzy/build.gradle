@@ -32,6 +32,7 @@ android {
             enable = false
         }
     }
+    namespace 'com.josephamcdonald.android.newzy'
 }
 
 dependencies {
