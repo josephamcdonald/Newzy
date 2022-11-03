@@ -36,8 +36,8 @@
     <string name="custom_searches">CUSTOM SEARCHES</string>
     <string name="optional">OPTIONAL</string>
     <string name="gnews_api_token">GNews API Token</string>
-    <string name="show_support_screen">Show Support Screen</string>
-    <string name="support_screen_summary">Display support screen at launch</string>
+    <string name="show_support_page">Show Support Page</string>
+    <string name="support_page_summary">Display support page at launch</string>
     <string name="show_support">show-support</string>
     <string name="choose_country">Choose Country</string>
     <string name="choose_top_headlines">Choose Top Headlines</string>
@@ -219,7 +219,7 @@
     <string name="settings_newzys_to_time_default" translatable="false">@string/empty_string</string>
 
     <!-- Strings For Show Support Preference -->
-    <string name="settings_show_support_label">@string/show_support_screen</string>
+    <string name="settings_show_support_label">@string/show_support_page</string>
     <string name="settings_show_support_key" translatable="false">@string/show_support</string>
     <string name="settings_show_support_default" translatable="false">true</string>
 

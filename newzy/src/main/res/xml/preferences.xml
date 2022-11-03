@@ -46,9 +46,9 @@
 
         <SwitchPreference
             app:defaultValue="@string/settings_show_support_default"
-            app:icon="@drawable/ic_show"
+            app:icon="@drawable/ic_support"
             app:key="@string/settings_show_support_key"
-            app:summary="@string/support_screen_summary"
+            app:summary="@string/support_page_summary"
             app:title="@string/settings_show_support_label" />
     </PreferenceCategory>
 
