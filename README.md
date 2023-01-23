@@ -18,9 +18,9 @@ Newzy™ is activated with a free API token. Benefits of your personal token inc
 
 ## Built With
 
-Android Gradle Plugin 7.3.1
+Android Gradle Plugin 7.4.0
 
-Gradle 7.4
+Gradle 7.5
 
 Target API Level: 33 Android 13
 
@@ -28,7 +28,7 @@ Min API Level: 26 Android 8 (OREO)
 
 ## Versioning
 
-3.0.8
+3.0.9
 
 ## Author
 
