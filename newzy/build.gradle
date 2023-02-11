@@ -17,7 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '33.0.1'
+    buildToolsVersion '33.0.2'
     productFlavors {
     }
     bundle {
