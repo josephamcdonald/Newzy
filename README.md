@@ -50,7 +50,7 @@ Min API Level: 26 Android 8 (OREO)
 
 **SwipeRefreshLayout**
 
-**Glide for imaging**
+**Glide for images**
 
 **CustomTabsIntent browser**
 
