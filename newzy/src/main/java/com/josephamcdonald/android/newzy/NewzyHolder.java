@@ -20,7 +20,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -77,10 +78,10 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         } else {
             int IMAGE_TARGET_WIDTH = 500;
             int IMAGE_TARGET_HEIGHT = 300;
-            Picasso.get().load(currentNewzy.getNewzyImage())
-                    .resize(IMAGE_TARGET_WIDTH, IMAGE_TARGET_HEIGHT)
+            Glide.with(context)
+                    .load(currentNewzy.getNewzyImage())
+                    .override(IMAGE_TARGET_WIDTH, IMAGE_TARGET_HEIGHT)
                     .centerCrop()
-                    .error(R.drawable.newzy_banner)
                     .into(newzyImageView);
         }
     }
