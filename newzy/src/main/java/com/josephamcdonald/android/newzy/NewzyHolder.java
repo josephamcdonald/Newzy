@@ -81,9 +81,9 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
                     .load(currentNewzy.getNewzyImage())
                     .override(IMAGE_TARGET_WIDTH, IMAGE_TARGET_HEIGHT)
                     .centerCrop()
+                    .placeholder(R.drawable.newzy_banner)
                     .error(R.drawable.newzy_banner)
                     .into(newzyImageView);
-
         }
     }
 
