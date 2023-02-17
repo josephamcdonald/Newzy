@@ -12,6 +12,7 @@
     app:cardCornerRadius="@dimen/card_view_standard"
     app:cardElevation="@dimen/card_view_standard"
     app:cardMaxElevation="@dimen/card_view_standard"
+    app:cardUseCompatPadding="true"
     tools:context=".MainActivity">
 
     <ImageView
