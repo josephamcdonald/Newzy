@@ -12,7 +12,6 @@
     app:cardCornerRadius="@dimen/card_view_standard_swp600dp"
     app:cardElevation="@dimen/card_view_standard_swp600dp"
     app:cardMaxElevation="@dimen/card_view_standard_swp600dp"
-    app:cardUseCompatPadding="true"
     tools:context=".MainActivity">
 
     <ImageView
