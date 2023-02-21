@@ -43,6 +43,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         EditTextPreference prefTitleFour = findPreference(getString(R.string.settings_menu_title_four_key));
         EditTextPreference prefTitleFive = findPreference(getString(R.string.settings_menu_title_five_key));
         EditTextPreference prefTitleSix = findPreference(getString(R.string.settings_menu_title_six_key));
+        EditTextPreference prefTitleSeven = findPreference(getString(R.string.settings_menu_title_seven_key));
+        EditTextPreference prefTitleEight = findPreference(getString(R.string.settings_menu_title_eight_key));
 
         EditTextPreference prefSearchOne = findPreference(getString(R.string.settings_newzy_search_one_key));
         EditTextPreference prefSearchTwo = findPreference(getString(R.string.settings_newzy_search_two_key));
@@ -50,6 +52,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         EditTextPreference prefSearchFour = findPreference(getString(R.string.settings_newzy_search_four_key));
         EditTextPreference prefSearchFive = findPreference(getString(R.string.settings_newzy_search_five_key));
         EditTextPreference prefSearchSix = findPreference(getString(R.string.settings_newzy_search_six_key));
+        EditTextPreference prefSearchSeven = findPreference(getString(R.string.settings_newzy_search_seven_key));
+        EditTextPreference prefSearchEight = findPreference(getString(R.string.settings_newzy_search_eight_key));
 
         // Create listener to set input type and hint for News API key.
         EditTextPreference.OnBindEditTextListener apiKeyBindEditTextListener = editText -> {
@@ -96,6 +100,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         Objects.requireNonNull(prefTitleFour).setOnBindEditTextListener(titleBindEditTextListener);
         Objects.requireNonNull(prefTitleFive).setOnBindEditTextListener(titleBindEditTextListener);
         Objects.requireNonNull(prefTitleSix).setOnBindEditTextListener(titleBindEditTextListener);
+        Objects.requireNonNull(prefTitleSeven).setOnBindEditTextListener(titleBindEditTextListener);
+        Objects.requireNonNull(prefTitleEight).setOnBindEditTextListener(titleBindEditTextListener);
 
         // Set listeners on Newzy search preferences.
         Objects.requireNonNull(prefSearchOne).setOnBindEditTextListener(searchBindEditTextListener);
@@ -104,6 +110,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         Objects.requireNonNull(prefSearchFour).setOnBindEditTextListener(searchBindEditTextListener);
         Objects.requireNonNull(prefSearchFive).setOnBindEditTextListener(searchBindEditTextListener);
         Objects.requireNonNull(prefSearchSix).setOnBindEditTextListener(searchBindEditTextListener);
+        Objects.requireNonNull(prefSearchSeven).setOnBindEditTextListener(searchBindEditTextListener);
+        Objects.requireNonNull(prefSearchEight).setOnBindEditTextListener(searchBindEditTextListener);
 
         // Set listeners on Newzy date preferences.
         Objects.requireNonNull(prefFromDate).setOnBindEditTextListener(dateBindEditTextListener);
@@ -126,6 +134,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         Objects.requireNonNull(prefTitleFour).setOnPreferenceChangeListener(this);
         Objects.requireNonNull(prefTitleFive).setOnPreferenceChangeListener(this);
         Objects.requireNonNull(prefTitleSix).setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(prefTitleSeven).setOnPreferenceChangeListener(this);
+        Objects.requireNonNull(prefTitleEight).setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -245,7 +255,22 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
                 MainActivity.titleItem6.setTitle(stringValue);
                 MainActivity.titleItem6.setVisible(true);
             }
+        } else if (preferenceKey.equals(getString(R.string.settings_menu_title_seven_key))) {
+            if (stringValue.isEmpty()) {
+                MainActivity.titleItem7.setVisible(false);
 
+            } else {
+                MainActivity.titleItem7.setTitle(stringValue);
+                MainActivity.titleItem7.setVisible(true);
+            }
+        } else if (preferenceKey.equals(getString(R.string.settings_menu_title_eight_key))) {
+            if (stringValue.isEmpty()) {
+                MainActivity.titleItem8.setVisible(false);
+
+            } else {
+                MainActivity.titleItem8.setTitle(stringValue);
+                MainActivity.titleItem8.setVisible(true);
+            }
         } else {
             // A Topic setting changed, update its menu item.
             if (stringValue.equals(getString(R.string.settings_world_value))) {

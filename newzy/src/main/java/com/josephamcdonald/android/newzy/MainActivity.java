@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     static MenuItem titleItem4;
     static MenuItem titleItem5;
     static MenuItem titleItem6;
+    static MenuItem titleItem7;
+    static MenuItem titleItem8;
 
     // Declare Newzys title.
     private String newzysTitle;
@@ -108,6 +110,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         titleItem4 = menu.findItem(R.id.newzys_four);
         titleItem5 = menu.findItem(R.id.newzys_five);
         titleItem6 = menu.findItem(R.id.newzys_six);
+        titleItem7 = menu.findItem(R.id.newzys_seven);
+        titleItem8 = menu.findItem(R.id.newzys_eight);
 
         String newzysCountry = sp.getString(getString(R.string.settings_country_key),
                 getString(R.string.settings_country_default));
@@ -228,6 +232,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getString(R.string.settings_menu_title_five_default));
         String title6 = sp.getString(getString(R.string.settings_menu_title_six_key),
                 getString(R.string.settings_menu_title_six_default));
+        String title7 = sp.getString(getString(R.string.settings_menu_title_seven_key),
+                getString(R.string.settings_menu_title_seven_default));
+        String title8 = sp.getString(getString(R.string.settings_menu_title_eight_key),
+                getString(R.string.settings_menu_title_eight_default));
 
         if (Objects.requireNonNull(title1).isEmpty()) {
             titleItem1.setVisible(false);
@@ -264,6 +272,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else {
             titleItem6.setTitle(title6);
             titleItem6.setVisible(true);
+        }
+        if (Objects.requireNonNull(title7).isEmpty()) {
+            titleItem7.setVisible(false);
+        } else {
+            titleItem7.setTitle(title7);
+            titleItem7.setVisible(true);
+        }
+        if (Objects.requireNonNull(title8).isEmpty()) {
+            titleItem8.setVisible(false);
+        } else {
+            titleItem8.setTitle(title8);
+            titleItem8.setVisible(true);
         }
     }
 
@@ -348,6 +368,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             newzysQuery = sp.getString(
                     getString(R.string.settings_newzy_search_six_key),
                     getString(R.string.settings_newzy_search_six_default));
+
+        } else if (item.getItemId() == R.id.newzys_seven) {
+            newzysSearch = true;
+            newzysTitle = sp.getString(
+                    getString(R.string.settings_menu_title_seven_key),
+                    getString(R.string.settings_menu_title_seven_default));
+            newzysQuery = sp.getString(
+                    getString(R.string.settings_newzy_search_seven_key),
+                    getString(R.string.settings_newzy_search_seven_default));
+
+        } else if (item.getItemId() == R.id.newzys_eight) {
+            newzysSearch = true;
+            newzysTitle = sp.getString(
+                    getString(R.string.settings_menu_title_eight_key),
+                    getString(R.string.settings_menu_title_eight_default));
+            newzysQuery = sp.getString(
+                    getString(R.string.settings_newzy_search_eight_key),
+                    getString(R.string.settings_newzy_search_eight_default));
 
         } else if (item.getItemId() == R.id.settings) {
             newzysTitle = getString(R.string.settings);

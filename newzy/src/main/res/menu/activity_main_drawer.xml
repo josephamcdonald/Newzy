@@ -38,6 +38,14 @@
                     android:id="@+id/newzys_six"
                     android:icon="@drawable/ic_newspaper"
                     android:title="@string/settings_menu_title_six_default" />
+                <item
+                    android:id="@+id/newzys_seven"
+                    android:icon="@drawable/ic_newspaper"
+                    android:title="@string/settings_menu_title_seven_default" />
+                <item
+                    android:id="@+id/newzys_eight"
+                    android:icon="@drawable/ic_newspaper"
+                    android:title="@string/settings_menu_title_eight_default" />
             </group>
         </menu>
     </item>

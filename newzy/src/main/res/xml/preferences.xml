@@ -132,6 +132,32 @@
             app:key="@string/settings_menu_title_six_key"
             app:title="@string/settings_menu_title_six_label"
             app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:allowDividerAbove="true"
+            app:icon="@drawable/ic_search"
+            app:key="@string/settings_newzy_search_seven_key"
+            app:title="@string/settings_newzy_search_seven_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_newspaper"
+            app:key="@string/settings_menu_title_seven_key"
+            app:title="@string/settings_menu_title_seven_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:allowDividerAbove="true"
+            app:icon="@drawable/ic_search"
+            app:key="@string/settings_newzy_search_eight_key"
+            app:title="@string/settings_newzy_search_eight_label"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_newspaper"
+            app:key="@string/settings_menu_title_eight_key"
+            app:title="@string/settings_menu_title_eight_label"
+            app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 
     <PreferenceCategory
