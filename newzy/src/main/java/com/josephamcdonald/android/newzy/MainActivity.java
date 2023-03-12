@@ -213,7 +213,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_health);
 
         } else {
-            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_breaking_news_label);
+            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_general_label) + getString(R.string.space) + getString(R.string.news);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_breaking);
         }
 
@@ -312,7 +312,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             } else if (newzysTopic.equals(getString(R.string.settings_health_value))) {
                 newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news);
             } else {
-                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_breaking_news_label);
+                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_general_label) + getString(R.string.space) + getString(R.string.news);
             }
 
         } else if (item.getItemId() == R.id.newzys_one) {

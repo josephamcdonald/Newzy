@@ -298,7 +298,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
                 MainActivity.topicItem.setTitle(getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.topicItem.setIcon(R.drawable.ic_health);
             } else {
-                MainActivity.topicItem.setTitle(getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_breaking_news_label));
+                MainActivity.topicItem.setTitle(getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_general_label) + getString(R.string.space) + getString(R.string.news));
                 MainActivity.topicItem.setIcon(R.drawable.ic_breaking);
             }
         }

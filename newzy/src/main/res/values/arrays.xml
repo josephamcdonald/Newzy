@@ -17,7 +17,7 @@
     </string-array>
 
     <string-array name="settings_top_headlines_labels">
-        <item>@string/settings_breaking_news_label</item>
+        <item>@string/settings_general_label</item>
         <item>@string/settings_world_label</item>
         <item>@string/settings_nation_label</item>
         <item>@string/settings_business_label</item>
@@ -29,7 +29,7 @@
     </string-array>
 
     <string-array name="settings_top_headlines_values">
-        <item>@string/settings_breaking_news_value</item>
+        <item>@string/settings_general_value</item>
         <item>@string/settings_world_value</item>
         <item>@string/settings_nation_value</item>
         <item>@string/settings_business_value</item>

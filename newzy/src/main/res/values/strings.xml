@@ -112,7 +112,7 @@
     <!-- Strings For Topic Preference [CHAR LIMIT=30] -->
     <string name="settings_top_headlines_label">@string/choose_top_headlines</string>
     <string name="settings_top_headlines_key" translatable="false">@string/topic</string>
-    <string name="settings_top_headlines_default" translatable="false">@string/settings_breaking_news_value</string>
+    <string name="settings_top_headlines_default" translatable="false">@string/settings_general_value</string>
 
     <!-- Strings for Country labels -->
     <string name="settings_au_label">Australia 🇦🇺</string>
@@ -177,7 +177,7 @@
     <string name="settings_us_value">us</string>
 
     <!-- Strings for Top Headlines labels -->
-    <string name="settings_breaking_news_label">Breaking News</string>
+    <string name="settings_general_label">General</string>
     <string name="settings_world_label">World</string>
     <string name="settings_nation_label">National</string>
     <string name="settings_business_label">Business</string>
@@ -188,7 +188,7 @@
     <string name="settings_health_label">Health</string>
 
     <!-- Strings for Top Headlines values -->
-    <string name="settings_breaking_news_value">breaking-news</string>
+    <string name="settings_general_value">general</string>
     <string name="settings_world_value">world</string>
     <string name="settings_nation_value">nation</string>
     <string name="settings_business_value">business</string>
