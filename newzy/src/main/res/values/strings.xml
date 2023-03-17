@@ -44,7 +44,7 @@
     <string name="menu_title">Menu Title</string>
     <string name="newzy_search">Newzy Search</string>
     <string name="top">Top</string>
-    <string name="news">News</string>
+    <string name="newzys">Newzys</string>
     <string name="provide_menu_title">Provide Title (max 25 chars)</string>
     <string name="provide_newzy_search">Provide Newzy Search</string>
     <string name="sort_newzys_by">Sort Newzys By</string>

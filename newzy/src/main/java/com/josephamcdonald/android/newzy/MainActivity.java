@@ -181,39 +181,39 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Drawable newzysTopicIcon;
 
         if (Objects.requireNonNull(newzysTopic).equals(getString(R.string.settings_world_value))) {
-            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news);
+            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.newzys);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_world);
 
         } else if (newzysTopic.equals(getString(R.string.settings_nation_value))) {
-            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.news);
+            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.newzys);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_national);
 
         } else if (newzysTopic.equals(getString(R.string.settings_business_value))) {
-            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.news);
+            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.newzys);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_business);
 
         } else if (newzysTopic.equals(getString(R.string.settings_technology_value))) {
-            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.news);
+            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.newzys);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_technology);
 
         } else if (newzysTopic.equals(getString(R.string.settings_entertainment_value))) {
-            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.news);
+            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.newzys);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_entertainment);
 
         } else if (newzysTopic.equals(getString(R.string.settings_sports_value))) {
-            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.news);
+            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.newzys);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_sports);
 
         } else if (newzysTopic.equals(getString(R.string.settings_science_value))) {
-            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.news);
+            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.newzys);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_science);
 
         } else if (newzysTopic.equals(getString(R.string.settings_health_value))) {
-            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news);
+            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.newzys);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_health);
 
         } else {
-            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_general_label) + getString(R.string.space) + getString(R.string.news);
+            newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_general_label) + getString(R.string.space) + getString(R.string.newzys);
             newzysTopicIcon = ContextCompat.getDrawable(this, R.drawable.ic_breaking);
         }
 
@@ -296,23 +296,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     getString(R.string.settings_top_headlines_default));
 
             if (Objects.requireNonNull(newzysTopic).equals(getString(R.string.settings_world_value))) {
-                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.news);
+                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_world_label) + getString(R.string.space) + getString(R.string.newzys);
             } else if (newzysTopic.equals(getString(R.string.settings_nation_value))) {
-                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.news);
+                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_nation_label) + getString(R.string.space) + getString(R.string.newzys);
             } else if (newzysTopic.equals(getString(R.string.settings_business_value))) {
-                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.news);
+                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_business_label) + getString(R.string.space) + getString(R.string.newzys);
             } else if (newzysTopic.equals(getString(R.string.settings_technology_value))) {
-                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.news);
+                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_technology_label) + getString(R.string.space) + getString(R.string.newzys);
             } else if (newzysTopic.equals(getString(R.string.settings_entertainment_value))) {
-                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.news);
+                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_entertainment_label) + getString(R.string.space) + getString(R.string.newzys);
             } else if (newzysTopic.equals(getString(R.string.settings_sports_value))) {
-                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.news);
+                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_sports_label) + getString(R.string.space) + getString(R.string.newzys);
             } else if (newzysTopic.equals(getString(R.string.settings_science_value))) {
-                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.news);
+                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_science_label) + getString(R.string.space) + getString(R.string.newzys);
             } else if (newzysTopic.equals(getString(R.string.settings_health_value))) {
-                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.news);
+                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_health_label) + getString(R.string.space) + getString(R.string.newzys);
             } else {
-                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_general_label) + getString(R.string.space) + getString(R.string.news);
+                newzysTitle = getString(R.string.top) + getString(R.string.space) + getString(R.string.settings_general_label) + getString(R.string.space) + getString(R.string.newzys);
             }
 
         } else if (item.getItemId() == R.id.newzys_one) {
