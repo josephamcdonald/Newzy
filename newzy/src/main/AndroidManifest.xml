@@ -22,7 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <property android:name="REQUIRE_SECURE_ENV" android:value="1" />
+        <property
+            android:name="REQUIRE_SECURE_ENV"
+            android:value="1" />
         <activity
             android:name="com.josephamcdonald.android.newzy.MainActivity"
             android:configChanges="orientation|screenSize"
