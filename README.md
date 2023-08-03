@@ -1,6 +1,6 @@
-# Newzy
+# Newzy™
 
-### Find and display your personalized "Newzy" news!
+### Find and display your custom "Newzy" news!
 
 **Simple...Efficient...FREE.** 
 
