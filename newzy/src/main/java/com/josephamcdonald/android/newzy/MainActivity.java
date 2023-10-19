@@ -419,14 +419,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         ft.commit();
     }
-
-    @Override
-    public void onBackPressed() {
-        // If destination drawer is open, then close it.
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
 }
