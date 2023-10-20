@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 
@@ -418,5 +419,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 ft.replace(R.id.frame_layout_content, new NewzyFragment());
         }
         ft.commit();
+
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            // If destination drawer is open, then close it.
+            @Override
+            public void handleOnBackPressed() {
+                if (drawer.isDrawerOpen(GravityCompat.START)) {
+                    drawer.closeDrawer(GravityCompat.START);
+                }
+            }
+        });
     }
 }
