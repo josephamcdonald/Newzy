@@ -99,6 +99,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             newzysSearch = false;
             launchFragment(R.id.newzys_top_headlines);
         }
+
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            // If destination drawer is open, then close it.
+            @Override
+            public void handleOnBackPressed() {
+                if (drawer.isDrawerOpen(GravityCompat.START)) {
+                    drawer.closeDrawer(GravityCompat.START);
+                } else {
+                    finish();
+                }
+            }
+        });
     }
 
     private void setMenuItems(Menu menu) {
@@ -419,17 +431,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 ft.replace(R.id.frame_layout_content, new NewzyFragment());
         }
         ft.commit();
-
-        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
-            // If destination drawer is open, then close it.
-            @Override
-            public void handleOnBackPressed() {
-                if (drawer.isDrawerOpen(GravityCompat.START)) {
-                    drawer.closeDrawer(GravityCompat.START);
-                } else {
-                    finish();
-                }
-            }
-        });
     }
 }
