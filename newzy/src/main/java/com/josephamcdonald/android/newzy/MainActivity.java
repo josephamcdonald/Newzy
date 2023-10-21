@@ -412,7 +412,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
     private void launchFragment(int itemId) {
         // Set current title.
         setTitle(newzysTitle);
