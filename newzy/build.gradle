@@ -25,6 +25,9 @@ android {
         }
     }
     namespace 'com.josephamcdonald.android.newzy'
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 dependencies {
