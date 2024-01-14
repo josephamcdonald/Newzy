@@ -231,7 +231,7 @@
 
     <!-- Strings For Menu Title 1 Preference [CHAR LIMIT=30] -->
     <string name="settings_menu_title_one_label">@string/menu_title</string>
-    <string name="settings_menu_title_one_key" translatable="false">title</string>
+    <string name="settings_menu_title_one_key" translatable="false">title1</string>
     <string name="settings_menu_title_one_default" translatable="false">@string/empty_string</string>
 
     <!-- Strings For Menu Title 2 Preference [CHAR LIMIT=30] -->
@@ -271,7 +271,7 @@
 
     <!-- Strings For Newzy Search 1 Preference [CHAR LIMIT=30] -->
     <string name="settings_newzy_search_one_label">@string/newzy_search</string>
-    <string name="settings_newzy_search_one_key" translatable="false">search</string>
+    <string name="settings_newzy_search_one_key" translatable="false">search1</string>
     <string name="settings_newzy_search_one_default" translatable="false">@string/empty_string</string>
 
     <!-- Strings For Newzy Search 2 Preference [CHAR LIMIT=30] -->
