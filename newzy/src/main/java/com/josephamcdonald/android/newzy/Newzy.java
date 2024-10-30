@@ -7,7 +7,7 @@
 
 package com.josephamcdonald.android.newzy;
 
-class Newzy {
+public class Newzy {
 
     /**
      * Newzy source.
