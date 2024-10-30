@@ -22,13 +22,13 @@ Android Gradle Plugin 8.7.1
 
 Gradle 8.9
 
-Target API Level: 34 Android 14
+Target API Level: 35 Android 15 (Vanilla Ice Cream)
 
 Min API Level: 26 Android 8 (OREO)
 
 ## Versioning
 
-3.5.2
+3.5.3
 
 ## Author
 
