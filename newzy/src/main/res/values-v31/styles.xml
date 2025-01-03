@@ -1,10 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2019-2025. josephamcdonald - All Rights Reserved
-  ~  Unauthorized copying of this file, via any medium is strictly prohibited
-  ~  Proprietary and confidential
-  ~  Written by josephamcdonald
-  -->
-
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">

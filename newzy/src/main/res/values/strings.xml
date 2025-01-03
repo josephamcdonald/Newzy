@@ -1,10 +1,3 @@
-<!--
-  ~ Copyright (c) 2019-2025. josephamcdonald - All Rights Reserved
-  ~  Unauthorized copying of this file, via any medium is strictly prohibited
-  ~  Proprietary and confidential
-  ~  Written by josephamcdonald
-  -->
-
 <resources>
     <string name="app_name" translatable="false">Newzy™</string>
     <string name="app_catch" translatable="false">Custom \"Newzy\" News!</string>
